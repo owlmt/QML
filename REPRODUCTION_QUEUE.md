@@ -8,7 +8,7 @@ notebooks before re-dispatching.
 
 ## Policy
 
-- One agent per paper, briefed with `tools/AGENT_BRIEF.md`; about three agents at a time.
+- One agent per paper, briefed with `tools/AGENT_BRIEF.md`; about four agents at a time.
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
   unvalidated, or blocked (reason in the manifest Notes).
 - The dispatcher re-verifies each notebook (no error outputs, all code cells executed, figures,
@@ -17,12 +17,12 @@ notebooks before re-dispatching.
 
 ## In progress
 
-| QC-ID | Paper | Notebook (planned path) | Started |
+| QC-ID | Paper | Notebook (planned folder) | Started |
 |---|---|---|---|
-| QC-216 | de Abreu 2025, QuantumNetSec (completing the existing root notebook) | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | 2026-10-17 |
-| QC-034 | Kucukkara 2024, QNN platform-independent DDoS classification | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | 2026-10-17 |
-| QC-001 | Akter 2024, Quantum FGSM adversarial attacks | 05_Malware_Detection/... | 2026-10-17 |
-| QC-002 | Tehrani 2024, quantum-enhanced SIEM with Hoeffding trees (botnet) | 04_Botnet_DGA_Detection/... | 2026-10-17 |
+| QC-001 | Akter 2024, Quantum FGSM adversarial attacks | 05_Malware_Detection | 2026-10-17 |
+| QC-002 | Tehrani 2024, quantum-enhanced SIEM with Hoeffding trees (botnet) | 04_Botnet_DGA_Detection | 2026-10-17 |
+| QC-003 | Hdaib 2024, quantum deep learning anomaly detection | 01_Network_Intrusion_Detection | 2026-10-17 |
+| QC-004 | Moro 2023, quantum RBM anomaly detection speed-up | 19_Cybersecurity_Anomaly_Detection | 2026-10-17 |
 
 ## Published
 
@@ -31,6 +31,8 @@ notebooks before re-dispatching.
 | QC-033 | 03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb | partially reproduced | 721b84d |
 | QC-182 | 08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb | partially reproduced | e2972aa |
 | QC-087 | 01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb | partially reproduced | 41fa446 |
+| QC-034 | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | partially reproduced | 1aa2479 |
+| QC-216 | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | partially reproduced | 1e8722c |
 
 ## Notes
 

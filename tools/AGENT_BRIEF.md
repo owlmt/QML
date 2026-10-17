@@ -27,6 +27,9 @@ Factory" in the git repo `C:\Users\madji\Desktop\QML`. The dispatcher gives you 
 - Manifest row: `Import-Csv manifest.csv | Where-Object { $_.'QC-ID' -eq '<QC-ID>' } | Format-List`
   gives title, year, DOI, topic folder(s) and PDF filename (first author surname is in it).
 - Other agents are executing notebooks at the same time; CPU is shared. Keep FAST_MODE small.
+  Never stop or kill a python/ipykernel process you did not start yourself: record the PID that
+  your own `Start-Process` returns and only ever act on that PID. Never use `Get-Process python |
+  Stop-Process` or kill by name.
 - Published examples to imitate (dump cells with a small python script, never Read the raw
   .ipynb): `03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb`,
   `08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb`,

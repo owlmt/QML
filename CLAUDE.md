@@ -156,20 +156,34 @@ Colab metadata) and follow the same structure. Match it.
 8. Outputs are kept in the committed notebook only if they are small (figures OK, no multi-MB
    dumps); large outputs are cleared.
 
+## Tools (in `tools/`, run with the project venv `.venv\Scripts\python.exe`)
+
+- `tools/pdf_text.py <pdf> [--pages a-b] [--out file]` extracts paper text (PDF page rendering
+  is not available on this machine).
+- `tools/execute_notebook.py <nb> --timeout S --cwd <scratch dir>` runs every code cell with
+  nbclient, prints per-cell timing, writes outputs back into the notebook, exits 1 on any error.
+  Always point `--cwd` at a scratch directory outside the repo so downloaded data never lands
+  in the working tree.
+- `tools/publish_notebook.py --qc QC-xxx --notebook <repo path> --status <status>
+  --paper-metrics "..." --notebook-metrics "..." --notes "..."` updates the manifest row (adding
+  the reproduction columns on first use), appends to `REPRODUCTION_LOG.md`, stages only those
+  files, commits, pushes to origin main, fetches and verifies the commit is on origin/main, and
+  prints the GitHub and Colab URLs. Use `--dry-run` to only update manifest/log.
+- Progress is persisted in `manifest.csv` (columns `Notebook path`, `Reproduction status`, ...)
+  and `REPRODUCTION_LOG.md`; a new session resumes by reading those.
+
 ## Publication workflow (one commit and push per validated notebook)
 
-1. Confirm the notebook is validated per the list above and its manifest row is updated.
-2. `git status` must show only the notebook and `manifest.csv` (plus README/CLAUDE.md edits if any).
-   Never stage PDFs, datasets, `*.zip`, credentials, checkpoints or experiment outputs
-   (see `.gitignore`).
-3. `git add <topic_folder>/<notebook>.ipynb manifest.csv`
-4. `git commit -m "Add <Method> <Task> notebook for <FirstAuthor> <Year> (QC-xxx)"`
-5. `git push origin main`
-6. Verify before claiming publication: `git fetch origin` then
-   `git log --oneline origin/main -3` must show the new commit, and
-   `git status` must say `up to date with 'origin/main'`.
-7. Do not rewrite history, force-push, change branch permissions, or overwrite files that exist on
+1. Execute the notebook with `tools/execute_notebook.py` until it passes; check the metrics
+   against the paper; confirm the validation list above.
+2. `git status` must show only the notebook (plus manifest/log). Never stage PDFs, datasets,
+   `*.zip`, credentials, checkpoints or experiment outputs (see `.gitignore`).
+3. Run `tools/publish_notebook.py` (it adds, commits, pushes and verifies). Publication is
+   claimed only when the script reports `verified on origin/main`.
+4. Do not rewrite history, force-push, change branch permissions, or overwrite files that exist on
    origin with different content. If any of these would be needed, stop and ask the user.
+5. Several notebooks may be written in parallel (one agent per paper, each in its own topic
+   folder), but execution-validation and publishing run one at a time from this checkout.
 
 ## Tooling notes (as of 2026-10-17)
 

@@ -1,16 +1,28 @@
 # Reproduction queue
 
-State file for resuming the factory after an interruption. `manifest.csv` (columns
-`Notebook path`, `Reproduction status`, ...) and `REPRODUCTION_LOG.md` hold the published record;
-this file holds what is in flight and what comes next. Update it whenever a paper starts or finishes.
+State file for resuming the factory after an interruption. `manifest.csv` (column
+`Reproduction status`) is the persistent queue: every row with an empty status is unprocessed and
+papers are taken in QC-ID order (`tools/next_papers.py --status`). `REPRODUCTION_LOG.md` holds the
+published record. This file lists what is in flight so a resumed session can check for half-built
+notebooks before re-dispatching.
 
-## In progress (notebook being written / validated, not yet published)
+## Policy
 
-| QC-ID | Paper | Notebook (planned path) | Owner | Started |
-|---|---|---|---|---|
-| QC-216 | de Abreu 2025, QuantumNetSec (completing the existing root notebook) | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | agent | 2026-10-17 |
-| QC-034 | 2024, Quantum-Neural Network model for platform independent DDoS classification | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | agent | 2026-10-17 |
-| QC-087 | 2026, Leveraging quantum kernel methods for enhanced intrusion detection | 01_Network_Intrusion_Detection/QSVM_IntrusionDetection_<Author>2026.ipynb | agent | 2026-10-17 |
+- One agent per paper, briefed with `tools/AGENT_BRIEF.md`; about three agents at a time.
+- Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
+  unvalidated, or blocked (reason in the manifest Notes).
+- The dispatcher re-verifies each notebook (no error outputs, all code cells executed, figures,
+  size) and publishes with `tools/publish_notebook.py`; blocked papers are recorded with
+  `--no-notebook`.
+
+## In progress
+
+| QC-ID | Paper | Notebook (planned path) | Started |
+|---|---|---|---|
+| QC-216 | de Abreu 2025, QuantumNetSec (completing the existing root notebook) | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | 2026-10-17 |
+| QC-034 | Kucukkara 2024, QNN platform-independent DDoS classification | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | 2026-10-17 |
+| QC-001 | Akter 2024, Quantum FGSM adversarial attacks | 05_Malware_Detection/... | 2026-10-17 |
+| QC-002 | Tehrani 2024, quantum-enhanced SIEM with Hoeffding trees (botnet) | 04_Botnet_DGA_Detection/... | 2026-10-17 |
 
 ## Published
 
@@ -18,24 +30,11 @@ this file holds what is in flight and what comes next. Update it whenever a pape
 |---|---|---|---|
 | QC-033 | 03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb | partially reproduced | 721b84d |
 | QC-182 | 08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb | partially reproduced | e2972aa |
+| QC-087 | 01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb | partially reproduced | 41fa446 |
 
-## Next batch (public dataset + Qiskit/PennyLane method, no survey)
+## Notes
 
-| QC-ID | Paper | Why feasible |
-|---|---|---|
-| QC-041 | 2026, Lightweight hybrid QNN for binary intrusion detection | PennyLane hybrid QNN on NSL-KDD / UNSW-NB15 / CIC-IDS2017 |
-| QC-076 | 2026, How quantum is the advantage? Benchmark of QML for NIDS | public code github.com/Orqly-AI/quantum-ids, 4-8 qubits |
-| QC-285 | 2023, Can feature engineering help QML for malware detection? | Drebin-215 (public), Qiskit VQC/QSVM, XGBoost feature selection |
-| QC-018 | 2024, QML-IDS (conference version of QC-216) | share code with the QC-216 notebook; separate notebook on UNSW-NB15 |
-| QC-199 | 2025, Eze et al., QSVM/QCNN vs SVM/CNN for malicious URLs | Qiskit; needs the Mendeley "Malicious and Benign Webpages" dataset (1.2 M rows) |
-| QC-053 | 2026, Hridi et al., batch-wise QSVM vs SVM for email phishing | Qiskit ZZFeatureMap, 6 qubits; needs CEAS_08 + webpage dataset (Kaggle) |
-
-## Selection notes
-
-- Feasibility index (datasets, frameworks, models, metric snippets per paper) is rebuilt with
-  `tools/paper_index.py --cache <scratch>/paper_text --out <scratch>/paper_index.csv`
-  (45 PDFs yield almost no text and need OCR or manual reading).
-- Dataset frequency across the corpus: MNIST 112, KDD99 44, UNSW-NB15 43, NSL-KDD 43,
-  CIC-IDS2017 36, CICDDoS2019 18, TON_IoT 15, CICIoT2023 14, Bot-IoT 14, IoT-23 14.
-- Frameworks: PennyLane 138 papers, Qiskit 137, TensorFlow Quantum 28, D-Wave 33.
-- Surveys/reviews (incl. the 12 PDFs in `_Topic_assignment_unresolved`) are not reproduction targets.
+- `paper_index.csv` (repo root) is the feasibility index built by `tools/paper_index.py`
+  (datasets, frameworks, models, metric snippets per paper); 45 PDFs yield almost no text.
+- Out-of-order picks so far (QC-182, QC-087, QC-216, QC-034) were chosen for public data and
+  clear methods; from here the queue runs in QC-ID order.

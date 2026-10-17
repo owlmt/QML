@@ -23,7 +23,8 @@ LOG = REPO / "REPRODUCTION_LOG.md"
 REMOTE_WEB = "https://github.com/owlmt/QML"
 NEW_COLUMNS = ["Notebook path", "Reproduction status", "Paper metric(s)",
                "Notebook metric(s)", "Validated on", "Notes"]
-STATUSES = {"not started", "in progress", "reproduced", "partially reproduced", "not reproducible"}
+STATUSES = {"not started", "in progress", "reproduced", "partially reproduced",
+            "implemented but unvalidated", "blocked", "not reproducible"}
 
 
 def git(*args, check=True):
@@ -67,7 +68,9 @@ def update_manifest(qc, nb_rel, status, paper_m, nb_m, notes, today):
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--qc", required=True)
-    ap.add_argument("--notebook", required=True, help="repo-relative notebook path")
+    ap.add_argument("--notebook", default="", help="repo-relative notebook path (omit with --no-notebook)")
+    ap.add_argument("--no-notebook", action="store_true",
+                    help="record a status (e.g. blocked) in the manifest without a notebook")
     ap.add_argument("--status", required=True, choices=sorted(STATUSES))
     ap.add_argument("--paper-metrics", default="")
     ap.add_argument("--notebook-metrics", default="")
@@ -78,12 +81,18 @@ def main() -> int:
     args = ap.parse_args()
 
     nb_rel = args.notebook.replace("\\", "/")
-    nb_abs = REPO / nb_rel
-    if not nb_abs.is_file():
-        raise SystemExit(f"notebook not found: {nb_abs}")
-    size_mb = nb_abs.stat().st_size / 1e6
-    if size_mb > 8:
-        raise SystemExit(f"notebook is {size_mb:.1f} MB; clear large outputs first")
+    if args.no_notebook:
+        if nb_rel:
+            raise SystemExit("--no-notebook cannot be combined with --notebook")
+    else:
+        if not nb_rel:
+            raise SystemExit("--notebook is required unless --no-notebook is given")
+        nb_abs = REPO / nb_rel
+        if not nb_abs.is_file():
+            raise SystemExit(f"notebook not found: {nb_abs}")
+        size_mb = nb_abs.stat().st_size / 1e6
+        if size_mb > 8:
+            raise SystemExit(f"notebook is {size_mb:.1f} MB; clear large outputs first")
 
     today = dt.date.today().isoformat()
     row = update_manifest(args.qc, nb_rel, args.status, args.paper_metrics,
@@ -92,14 +101,15 @@ def main() -> int:
 
     if not LOG.exists():
         LOG.write_text("# Reproduction log\n\nOne line per published notebook (newest last).\n\n", encoding="utf-8")
+    link = f"[{nb_rel}]({nb_rel})" if nb_rel else "(no notebook)"
     with LOG.open("a", encoding="utf-8") as f:
-        f.write(f"- {today} | {args.qc} | {args.status} | [{nb_rel}]({nb_rel}) | {title} | "
+        f.write(f"- {today} | {args.qc} | {args.status} | {link} | {title} | "
                 f"paper: {args.paper_metrics} | notebook: {args.notebook_metrics} | {args.notes}\n")
     print(f"manifest row {args.qc} updated; log appended")
     if args.dry_run:
         return 0
 
-    paths = [nb_rel, "manifest.csv", "REPRODUCTION_LOG.md", *args.extra]
+    paths = ([nb_rel] if nb_rel else []) + ["manifest.csv", "REPRODUCTION_LOG.md", *args.extra]
     for p in paths:
         r = subprocess.run(["git", "check-ignore", "-q", p], cwd=REPO)
         if r.returncode == 0:
@@ -109,8 +119,9 @@ def main() -> int:
     unexpected = [s for s in staged if s not in paths]
     if unexpected:
         raise SystemExit(f"unexpected staged files: {unexpected}")
-    msg = (f"Add {Path(nb_rel).stem} notebook for {args.qc} ({args.status})\n\n"
-           f"{title}\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>\n")
+    head = (f"Add {Path(nb_rel).stem} notebook for {args.qc} ({args.status})" if nb_rel
+            else f"Record {args.qc} as {args.status}")
+    msg = f"{head}\n\n{title}\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>\n"
     git("commit", "-q", "-m", msg)
     sha = git("rev-parse", "HEAD")
     print(f"committed {sha[:10]}")
@@ -123,8 +134,9 @@ def main() -> int:
         raise SystemExit(f"push verification failed: HEAD {sha} vs origin/main {remote_sha}")
     contains = git("branch", "-r", "--contains", sha)
     print(f"verified on origin/main: {sha}")
-    print(f"github : {REMOTE_WEB}/blob/main/{nb_rel}")
-    print(f"colab  : https://colab.research.google.com/github/owlmt/QML/blob/main/{nb_rel}")
+    if nb_rel:
+        print(f"github : {REMOTE_WEB}/blob/main/{nb_rel}")
+        print(f"colab  : https://colab.research.google.com/github/owlmt/QML/blob/main/{nb_rel}")
     print(f"remote branches containing commit: {contains}")
     return 0
 

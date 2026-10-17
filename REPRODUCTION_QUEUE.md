@@ -8,21 +8,21 @@ this file holds what is in flight and what comes next. Update it whenever a pape
 
 | QC-ID | Paper | Notebook (planned path) | Owner | Started |
 |---|---|---|---|---|
-| QC-182 | Shahriyar 2025, PhishVQC | 08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb | agent | 2026-10-17 |
 | QC-216 | de Abreu 2025, QuantumNetSec (completing the existing root notebook) | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | agent | 2026-10-17 |
-| QC-034 | 2024, Quantum-Neural Network model for platform independent DDoS classification | 01_Network_Intrusion_Detection/QNN_DDoS_<Author>2024.ipynb | agent | 2026-10-17 |
+| QC-034 | 2024, Quantum-Neural Network model for platform independent DDoS classification | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | agent | 2026-10-17 |
+| QC-087 | 2026, Leveraging quantum kernel methods for enhanced intrusion detection | 01_Network_Intrusion_Detection/QSVM_IntrusionDetection_<Author>2026.ipynb | agent | 2026-10-17 |
 
 ## Published
 
 | QC-ID | Notebook | Status | Commit |
 |---|---|---|---|
 | QC-033 | 03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb | partially reproduced | 721b84d |
+| QC-182 | 08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb | partially reproduced | e2972aa |
 
 ## Next batch (public dataset + Qiskit/PennyLane method, no survey)
 
 | QC-ID | Paper | Why feasible |
 |---|---|---|
-| QC-087 | 2026, Leveraging quantum kernel methods for enhanced intrusion detection | PennyLane quantum kernels on NSL-KDD / UNSW-NB15, 4-16 qubits |
 | QC-041 | 2026, Lightweight hybrid QNN for binary intrusion detection | PennyLane hybrid QNN on NSL-KDD / UNSW-NB15 / CIC-IDS2017 |
 | QC-076 | 2026, How quantum is the advantage? Benchmark of QML for NIDS | public code github.com/Orqly-AI/quantum-ids, 4-8 qubits |
 | QC-285 | 2023, Can feature engineering help QML for malware detection? | Drebin-215 (public), Qiskit VQC/QSVM, XGBoost feature selection |

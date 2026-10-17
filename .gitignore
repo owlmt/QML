@@ -1,0 +1,83 @@
+# QML x Cybersecurity Colab Reproduction Factory
+# Only notebooks (*.ipynb), manifest.csv, docs and small helper code are committed.
+
+# --- Paper PDFs: 431 files (~860 MB) live in the topic folders, never committed ---
+*.pdf
+*.PDF
+
+# --- Archives ---
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# --- Datasets and large data (manifest.csv is the one CSV we keep) ---
+*.csv
+!manifest.csv
+*.parquet
+*.pcap
+*.pcapng
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.arff
+data/
+datasets/
+cicids2017/
+CICDDoS2019/
+CIC-IDS2017/
+UNSW-NB15/
+NSL-KDD/
+
+# --- Credentials and secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.token
+secrets/
+credentials*
+ibm_token*
+qiskit-ibm.json
+.qiskit/
+
+# --- Jupyter / Python temporary files ---
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# --- Experiment outputs, checkpoints, model weights ---
+outputs/
+results/
+runs/
+checkpoints/
+wandb/
+mlruns/
+*.ckpt
+*.pt
+*.pth
+*.keras
+*.onnx
+*.log
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- Claude Code local settings ---
+.claude/settings.local.json

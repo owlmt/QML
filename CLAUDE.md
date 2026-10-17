@@ -49,12 +49,18 @@ Columns: `QC-ID`, `Full paper title`, `Year`, `DOI/arXiv URL`,
 `Assigned cybersecurity topic folder(s)` (semicolon-separated when more than one),
 `PDF filename`, `Download source`, `Download status`.
 
-When the first notebook is published, add these columns (keep existing ones unchanged):
-`Notebook path` (repo-relative), `Reproduction status`
-(`not started` / `in progress` / `reproduced` / `partially reproduced` / `not reproducible`),
-`Paper metric(s)`, `Notebook metric(s)`, `Validated on` (ISO date), `Notes` (deviations, data
-substitutions, open issues). Use `_Topic_assignment_unresolved` only for papers whose row says so;
-surveys and reviews there are not reproduction targets unless the user says otherwise.
+Reproduction columns (added by `tools/publish_notebook.py`): `Notebook path` (repo-relative),
+`Reproduction status`, `Paper metric(s)`, `Notebook metric(s)`, `Validated on` (ISO date),
+`Notes` (deviations, data substitutions, open issues). Final statuses, one per paper:
+- `reproduced`: notebook executes end to end and every checkable claim is within tolerance.
+- `partially reproduced`: executes end to end; some claims not reached / exceeded / uncheckable.
+- `implemented but unvalidated`: complete Colab-ready notebook that could not be executed here.
+- `blocked`: no notebook (survey/review, no public data or substitute, hardware-only, unreadable
+  PDF); the reason is in `Notes`, recorded with `publish_notebook.py --no-notebook`.
+An empty status means unprocessed. The queue is the manifest in QC-ID order
+(`tools/next_papers.py`); `REPRODUCTION_QUEUE.md` lists what is in flight. Papers in
+`_Topic_assignment_unresolved` are mostly surveys and end up `blocked` unless they contain a
+rerunnable experiment.
 
 ## Filing rule for every notebook
 
@@ -182,8 +188,13 @@ Colab metadata) and follow the same structure. Match it.
    claimed only when the script reports `verified on origin/main`.
 4. Do not rewrite history, force-push, change branch permissions, or overwrite files that exist on
    origin with different content. If any of these would be needed, stop and ask the user.
-5. Several notebooks may be written in parallel (one agent per paper, each in its own topic
-   folder), but execution-validation and publishing run one at a time from this checkout.
+5. Several notebooks may be written in parallel (one agent per paper, briefed with
+   `tools/AGENT_BRIEF.md`; about three at a time on this machine), but publishing runs one at a
+   time from this checkout. The dispatcher re-verifies every notebook (no error outputs, all code
+   cells executed, figures present, size) before publishing.
+6. Resume after an interruption: `tools/next_papers.py --status` shows counts and the next
+   unprocessed QC-IDs; `REPRODUCTION_QUEUE.md` shows which papers were in flight (check whether
+   their notebook files exist and re-validate them before publishing).
 
 ## Tooling notes (as of 2026-10-17)
 

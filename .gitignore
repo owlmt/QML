@@ -16,6 +16,7 @@
 # --- Datasets and large data (manifest.csv is the one CSV we keep) ---
 *.csv
 !manifest.csv
+!paper_index.csv
 *.parquet
 *.pcap
 *.pcapng

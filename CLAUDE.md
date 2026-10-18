@@ -57,8 +57,12 @@ Reproduction columns (added by `tools/publish_notebook.py`): `Notebook path` (re
 - `implemented but unvalidated`: complete Colab-ready notebook that could not be executed here.
 - `blocked`: no notebook (survey/review, no public data or substitute, hardware-only, unreadable
   PDF); the reason is in `Notes`, recorded with `publish_notebook.py --no-notebook`.
-An empty status means unprocessed. The queue is the manifest in QC-ID order
-(`tools/next_papers.py`); `REPRODUCTION_QUEUE.md` lists what is in flight. Papers in
+An empty status means unprocessed. Queue order (user decision, 2026-10-18): coverage first,
+i.e. every topic folder gets at least two implemented notebooks (one where the folder holds a
+single paper) before the rest are filled in QC-ID order. `tools/next_papers.py --coverage 2
+--index paper_index.csv` lists the folders still short and their best candidates (readable text,
+known framework and dataset, not a survey); `tools/next_papers.py` without flags gives QC-ID
+order. `REPRODUCTION_QUEUE.md` lists what is in flight. Papers in
 `_Topic_assignment_unresolved` are mostly surveys and end up `blocked` unless they contain a
 rerunnable experiment.
 

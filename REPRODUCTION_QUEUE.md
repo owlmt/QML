@@ -8,7 +8,11 @@ notebooks before re-dispatching.
 
 ## Policy
 
-- One agent per paper, briefed with `tools/AGENT_BRIEF.md`; about four agents at a time.
+- One agent per paper, briefed with `tools/AGENT_BRIEF.md`; four to five agents at a time.
+- Order (user decision 2026-10-18): coverage first. Every topic folder gets at least two
+  implemented notebooks (one where the folder has a single paper) before the remaining papers are
+  filled in QC-ID order. Pick with `tools/next_papers.py --coverage 2 --index paper_index.csv`,
+  topics with 0 notebooks first.
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
   unvalidated, or blocked (reason in the manifest Notes).
 - The dispatcher re-verifies each notebook with `tools/verify_notebook.py` and publishes with

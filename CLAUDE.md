@@ -212,6 +212,17 @@ Colab metadata) and follow the same structure. Match it.
 - On this machine the Git Bash tool may fail to fork; prefer PowerShell for commands. Use
   `python -X utf8` when printing notebook text (console is cp1252).
 
+## Cost policy (user decision, 2026-10-18)
+
+- The user runs on a fixed subscription allowance: never enable pay-as-you-go, buy credits or
+  upgrade. If a model's limit is hit, switch new work to an included model or pause until the
+  allowance resets; running notebook executions keep going and are picked up on resume.
+- Notebook-writing agents run on the cheapest suitable model (`sonnet`); pure feasibility checks
+  (likely surveys) on `haiku`. The dispatcher (Fable) only verifies, publishes, dispatches and
+  decides genuinely hard scientific questions.
+- Checks are deterministic code (`tools/verify_notebook.py`, `tools/next_papers.py`), not extra
+  model calls. Never re-run or regenerate a notebook that already has a final status.
+
 ## Hard rules
 
 - Do not touch `C:\Users\madji\Downloads\postq` or any other repository.

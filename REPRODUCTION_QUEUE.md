@@ -2,8 +2,8 @@
 
 State file for resuming the factory after an interruption. `manifest.csv` (column
 `Reproduction status`) is the persistent queue: every row with an empty status is unprocessed.
-`REPRODUCTION_LOG.md` holds the published record. This file lists what is in flight so a resumed
-session can check for half-built notebooks before re-dispatching.
+`REPRODUCTION_LOG.md` holds the published record (one line per paper, with metrics and notes).
+This file lists what is in flight so a resumed session can check for half-built notebooks.
 
 ## Policy
 
@@ -14,51 +14,38 @@ session can check for half-built notebooks before re-dispatching.
   implemented notebooks (one where the folder has a single paper) before the remaining papers are
   filled in QC-ID order. Pick with `tools/next_papers.py --coverage 2 --index paper_index.csv`,
   topics with 0 notebooks first. Multi-topic papers may be filed in a later, uncovered folder
-  (coverage exception in CLAUDE.md).
+  (coverage exception in CLAUDE.md); the dispatcher names the target folder in the brief and
+  moves/patches the badge if an agent files elsewhere.
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
   unvalidated, or blocked (reason in the manifest Notes, recorded with `--no-notebook`).
-- Resume after an interruption: check each in-flight paper's notebook file and
+- Resume after an interruption: for each in-flight paper check the notebook file and
   `<scratch>\build_<QC-ID>\*.log`; if a full run finished (`RESULT : all code cells executed
-  without error`), verify and publish directly from the notebook outputs; otherwise re-dispatch
-  the paper telling the new agent to reuse `<scratch>\build_<QC-ID>` and `run_<QC-ID>`.
+  without error`), verify and publish straight from the notebook outputs
+  (`tools/notebook_summary.py`); otherwise re-dispatch, telling the new agent to reuse
+  `<scratch>\build_<QC-ID>` and `run_<QC-ID>`.
 
-## In progress
+## In progress (2026-10-18)
 
-| QC-ID | Paper | Target folder | Started |
-|---|---|---|---|
-| QC-108 | QCBM zero-day intrusion detection (2026) | 02_Zero_Day_Attack_Detection | 2026-10-18 |
-| QC-092 | Noise-aware hybrid QSVM Android malware (2026) | 06_Android_Malware_Detection | 2026-10-18 |
-| QC-035 | Ransomware detection with QNNs (2024) | 07_Ransomware_Detection | 2026-10-18 |
-| QC-199 | Eze 2025, QSVM/QCNN malicious URL detection | 09_Malicious_URL_Detection | 2026-10-18 |
-| QC-032 | Quant-Jack cryptojacking in IIoT (2024) | 12_Cryptojacking_Detection | 2026-10-18 |
-| QC-070 | Encrypted traffic analysis with QML (2026) | 13_Encrypted_Malicious_Traffic_Detection | 2026-10-18 |
+| QC-ID | Paper | Target folder |
+|---|---|---|
+| QC-119 | QUPID partitioned QNN smart grid (2026) | 15_Smart_Grid_Power_System_Attacks |
+| QC-238 | Quantum hybrid SVM for cyber-physical anomaly detection (2024) | 16_ICS_SCADA_Cyber_Physical_Attacks |
+| QC-328 | Hybrid QNN in-vehicle cyberattack detection (2021) | 17_Vehicle_CAN_Bus_Attacks |
+| QC-194 | Quantum autoencoders for anomaly detection (2025) | 18_Cloud_Virtual_Environment_Threats |
+| QC-259 | Quantum DNN Ethereum attack vectors (2024) | 20_Blockchain_Attack_Detection |
+| QC-220 | Resisting QKD attacks with QML (2025) | 21_QKD_Attack_Detection |
 
-## Final statuses so far (details in REPRODUCTION_LOG.md)
+## Final statuses: 22 papers (see REPRODUCTION_LOG.md and `tools/next_papers.py --status`)
 
-| QC-ID | Notebook | Status | Commit |
-|---|---|---|---|
-| QC-033 | 03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb | partially reproduced | 721b84d |
-| QC-182 | 08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb | partially reproduced | e2972aa |
-| QC-087 | 01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb | partially reproduced | 41fa446 |
-| QC-034 | 01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb | partially reproduced | 1aa2479 |
-| QC-216 | 01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb | partially reproduced | 1e8722c |
-| QC-001 | 05_Malware_Detection/HybridQNN_QFGSM_Akter2024.ipynb | partially reproduced | 7965b59 |
-| QC-003 | 01_Network_Intrusion_Detection/QAE_AnomalyDetection_Hdaib2024.ipynb | partially reproduced | b10b3be |
-| QC-004 | 19_Cybersecurity_Anomaly_Detection/QRBM_AnomalyDetection_Moro2023.ipynb | partially reproduced | d751092 |
-| QC-005 | (none) | blocked: perspective paper, no experiment | 2c43aa8 |
-| QC-002 | 04_Botnet_DGA_Detection/QHTC_BotnetDGA_Tehrani2024.ipynb | partially reproduced | 2e0b2cd |
-| QC-008 | 11_Vulnerability_Software_Supply_Chain_Attacks/QKMeans_CISAVulnerabilities_ElMaouaki2024.ipynb | partially reproduced | 4147bdf |
-| QC-007 | 08_Phishing_Detection/QNN_PhishingURL_Bangroo2023.ipynb | partially reproduced | 802e3d3 |
-| QC-009 | 05_Malware_Detection/QNN_SupplyChainClaMP_Akter2022.ipynb | partially reproduced | dc5ac3a |
-| QC-006 | 03_DDoS_DoS_Detection/QAE_DDoSHivePlots_Rivas2024.ipynb | partially reproduced | 8f9af86 |
+21 partially reproduced (QC-001, 002, 003, 004, 006, 007, 008, 009, 032, 033, 034, 035, 070,
+087, 092, 108, 151, 171, 182, 199, 216) and 1 blocked (QC-005).
 
 ## Coverage (implemented notebooks per folder)
 
-01: 4 | 03: 2 | 05: 2 | 08: 2 | 04, 11, 19: 1 | all other folders: 0 (agents above target 02, 06,
-07, 09, 12, 13). Next empty folders to dispatch: 10 (QC-151, coverage exception), 14 (QC-105 or
-QC-171), 15 (QC-119), 16 (QC-238), 17 (QC-328), 18 (QC-194), 20 (QC-259), 21 (QC-220), 22
-(QC-219), 23 (QC-234), 24 (QC-014), 25 (QC-300), 26 (QC-150), 27 (QC-197), 28 (QC-121), 29
-(QC-117), 30 (QC-077).
+01: 4 | 03, 05, 08: 2 | 02, 04, 06, 07, 09, 10, 11, 12, 13, 14, 19: 1 | 15-18, 20-30: 0 (agents
+above target 15, 16, 17, 18, 20, 21). Next empty folders: 22 (QC-219 audio deepfake QSVM),
+23 (QC-234), 24 (QC-014), 25 (QC-300), 26 (QC-150), 27 (QC-197), 28 (QC-121), 29 (QC-117),
+30 (QC-077). Then second notebooks for folders with 1.
 
 ## Notes
 

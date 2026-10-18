@@ -70,6 +70,9 @@ rerunnable experiment.
 
 - One notebook per paper, saved in the paper's **existing** topic folder. For a paper with several
   topics, file it in the **first** folder listed in its manifest row; never duplicate a notebook.
+  Coverage exception (2026-10-18): while a later folder in the row still has fewer than two
+  implemented notebooks and the first folder already has two or more, file it in that later
+  folder (the dispatcher states the target folder in the agent brief).
 - File name: `<Method>_<Task>_<FirstAuthorYear>.ipynb`, e.g. `QSVM_DDoS_Said2023.ipynb`,
   `VQC_IntrusionDetection_deAbreu2025.ipynb`. ASCII only, no spaces.
 - Update the paper's `manifest.csv` row (notebook path, status, metrics, date, notes) in the

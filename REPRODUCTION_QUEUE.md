@@ -19,33 +19,34 @@ This file lists what is in flight so a resumed session can check for half-built 
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
   unvalidated, or blocked (reason in the manifest Notes, recorded with `--no-notebook`).
 - Resume after an interruption: for each in-flight paper check the notebook file and
-  `<scratch>\build_<QC-ID>\*.log`; if a full run finished (`RESULT : all code cells executed
-  without error`), verify and publish straight from the notebook outputs
-  (`tools/notebook_summary.py`); otherwise re-dispatch, telling the new agent to reuse
-  `<scratch>\build_<QC-ID>` and `run_<QC-ID>`.
+  `<scratch>\build_<QC-ID>\*.log` or `run_<QC-ID>\*.log`; if a full run finished (`RESULT : all
+  code cells executed without error`), verify and publish straight from the notebook outputs
+  (`tools/notebook_summary.py`); otherwise message the agent to resume (SendMessage) or re-dispatch
+  telling the new agent to reuse the scratch folders.
 
-## In progress (2026-10-18)
+## In progress (2026-10-19)
 
-| QC-ID | Paper | Target folder |
-|---|---|---|
-| QC-119 | QUPID partitioned QNN smart grid (2026) | 15_Smart_Grid_Power_System_Attacks |
-| QC-238 | Quantum hybrid SVM for cyber-physical anomaly detection (2024) | 16_ICS_SCADA_Cyber_Physical_Attacks |
-| QC-328 | Hybrid QNN in-vehicle cyberattack detection (2021) | 17_Vehicle_CAN_Bus_Attacks |
-| QC-194 | Quantum autoencoders for anomaly detection (2025) | 18_Cloud_Virtual_Environment_Threats |
-| QC-259 | Quantum DNN Ethereum attack vectors (2024) | 20_Blockchain_Attack_Detection |
-| QC-220 | Resisting QKD attacks with QML (2025) | 21_QKD_Attack_Detection |
+| QC-ID | Paper | Target folder | State |
+|---|---|---|---|
+| QC-121 | SecQML security aspects (2026) | 28_QML_Hardware_Side_Channel_Crosstalk_Attacks | FAST passed, full run to relaunch |
+| QC-150 | CopyQNN extraction under noise (2025) | 26_QML_Model_Extraction_Theft | notebook drafted, experiments logged |
+| QC-024 | Hybrid quantum-classical DL botnet DGA (2022) | 04_Botnet_DGA_Detection (2nd) | FAST passed, full run to relaunch |
+| QC-316 | Quantum computing in mobile malware detection (2022) | 06_Android_Malware_Detection (2nd) | FAST passed, full run pending |
+| QC-021 | Quantum exploration in ransomware detection (2024) | 07_Ransomware_Detection (2nd) | started |
+| QC-026 | Reyes-Dorta 2024, malicious URL VQC | 09_Malicious_URL_Detection (2nd) | started |
 
-## Final statuses: 22 papers (see REPRODUCTION_LOG.md and `tools/next_papers.py --status`)
+## Final statuses: 36 papers (see REPRODUCTION_LOG.md; `tools/next_papers.py --status`)
 
-21 partially reproduced (QC-001, 002, 003, 004, 006, 007, 008, 009, 032, 033, 034, 035, 070,
-087, 092, 108, 151, 171, 182, 199, 216) and 1 blocked (QC-005).
+35 partially reproduced, 1 blocked (QC-005).
 
 ## Coverage (implemented notebooks per folder)
 
-01: 4 | 03, 05, 08: 2 | 02, 04, 06, 07, 09, 10, 11, 12, 13, 14, 19: 1 | 15-18, 20-30: 0 (agents
-above target 15, 16, 17, 18, 20, 21). Next empty folders: 22 (QC-219 audio deepfake QSVM),
-23 (QC-234), 24 (QC-014), 25 (QC-300), 26 (QC-150), 27 (QC-197), 28 (QC-121), 29 (QC-117),
-30 (QC-077). Then second notebooks for folders with 1.
+01: 4 | 02, 03, 05, 08: 2 | 04, 06, 07, 09-25, 27, 29, 30: 1 | 26, 28: 0 (agents resumed) |
+19: 1 (its only paper). Second-notebook picks after the current batch: 10 (none left: single
+paper), 11 (QC-143/QC-168), 12 (none: single paper), 13 (QC-198), 14 (QC-105), 15 (QC-183),
+16 (QC-202), 17 (QC-320), 18 (QC-012), 20 (none: single paper), 21 (QC-093), 22 (QC-235),
+23 (QC-305), 24 (QC-015), 25 (QC-213), 26 (QC-164), 27 (QC-214), 28 (QC-099), 29 (QC-095),
+30 (QC-078). Then fill in QC-ID order from QC-010.
 
 ## Notes
 

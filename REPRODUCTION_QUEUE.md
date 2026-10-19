@@ -18,6 +18,12 @@ This file lists what is in flight so a resumed session can check for half-built 
   moves/patches the badge if an agent files elsewhere.
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
   unvalidated, or blocked (reason in the manifest Notes, recorded with `--no-notebook`).
+- Since 2026-10-19 every notebook must contain the executed sections "Dataset Exploration and
+  Visualisation" and "Quantum Circuit Architecture" (CLAUDE.md "Mandatory sections");
+  `tools/verify_notebook.py` reports their status and the publisher records the five QA
+  columns. Notebooks published before that date carry PENDING and are corrected in the
+  retrospective audit that runs after the 327-paper queue is complete (add the missing sections,
+  execute them, keep results, sync duplicate copies, update manifest/log, commit and push).
 - Resume after an interruption: for each in-flight paper check the notebook file and
   `<scratch>\build_<QC-ID>\*.log` or `run_<QC-ID>\*.log`; if a full run finished (`RESULT : all
   code cells executed without error`), verify and publish straight from the notebook outputs

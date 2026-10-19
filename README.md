@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-48 of 327 papers have a final status: 47 partially reproduced, 1 blocked; 279 still to process. 47 notebooks are published across 30 of the 30 topic folders.
+49 of 327 papers have a final status: 48 partially reproduced, 1 blocked; 278 still to process. 48 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -156,11 +156,12 @@ live in the topic folders.
 | QC-105 | [Quantum-driven enhanced machine learning algorithm for intrusion detection in Internet of things environment](https://doi.org/10.1140/epjqt/s40507-026-00463-5) | 2026 | [HybridQNN_IoTIntrusion_Bharathi2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) | partially reproduced |
 | QC-171 | [Intrusion Detection in IoT Networks using a Hybrid Quantum-Classical Graph Neural Network](https://doi.org/10.1109/VCRIS68011.2025.11250552) | 2025 | [HybridQNN_IoTIntrusion_Hoang2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) | partially reproduced |
 
-### 15 Smart Grid Power System Attacks  (1 of 12 papers)
+### 15 Smart Grid Power System Attacks  (2 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-119 | [QUPID: A Partitioned Quantum Neural Network for Anomaly Detection in Smart Grid](https://arxiv.org/abs/2601.11500) | 2026 | [QUPID_SmartGridAnomaly_Ngo2026](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QUPID_SmartGridAnomaly_Ngo2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QUPID_SmartGridAnomaly_Ngo2026.ipynb) | partially reproduced |
+| QC-183 | [Power Theft Detection in Smart Grids Using Quantum Machine Learning](https://doi.org/10.1109/ACCESS.2025.3558143) | 2025 | [HybridQNN_PowerTheft_Blazakis2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) | partially reproduced |
 
 ### 16 ICS SCADA Cyber Physical Attacks  (2 of 4 papers)
 

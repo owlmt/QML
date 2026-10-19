@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-67 of 327 papers have a final status: 64 partially reproduced, 3 blocked; 260 still to process. 64 notebooks are published across 30 of the 30 topic folders.
+68 of 327 papers have a final status: 65 partially reproduced, 3 blocked; 259 still to process. 65 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -154,11 +154,12 @@ live in the topic folders.
 | QC-070 | [Encrypted network traffic analysis using quantum machine learning](https://doi.org/10.1140/epjqt/s40507-025-00459-7) | 2026 | [HybridQML_EncryptedTraffic_Sodar2026](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) | partially reproduced |
 | QC-198 | [Quantum deep learning for encrypted malicious traffic detection: a hybrid approach for secure network analysis](https://doi.org/10.31705/ADScAI.2025.56) | 2025 | [HybridQNN_EncryptedTraffic_Hariharan2025](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) | partially reproduced |
 
-### 14 IoT IIoT Attack Detection  (3 of 32 papers)
+### 14 IoT IIoT Attack Detection  (4 of 32 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-023 | [Securing smart cities: Unraveling quantum as a service](https://doi.org/10.1145/3617570.3617865) | 2023 | [QBoost_VQC_PegasosQSVC_SmartCityIDS_Caivano2023](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QBoost_VQC_PegasosQSVC_SmartCityIDS_Caivano2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QBoost_VQC_PegasosQSVC_SmartCityIDS_Caivano2023.ipynb) | partially reproduced |
+| QC-031 | [Hybrid quantum architecture for smart city security](https://doi.org/10.1016/j.jss.2024.112161) | 2024 | [QBoost_SmartCitySIEM_CICIoT2023_Barletta2024](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QBoost_SmartCitySIEM_CICIoT2023_Barletta2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QBoost_SmartCitySIEM_CICIoT2023_Barletta2024.ipynb) | partially reproduced |
 | QC-105 | [Quantum-driven enhanced machine learning algorithm for intrusion detection in Internet of things environment](https://doi.org/10.1140/epjqt/s40507-026-00463-5) | 2026 | [HybridQNN_IoTIntrusion_Bharathi2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) | partially reproduced |
 | QC-171 | [Intrusion Detection in IoT Networks using a Hybrid Quantum-Classical Graph Neural Network](https://doi.org/10.1109/VCRIS68011.2025.11250552) | 2025 | [HybridQNN_IoTIntrusion_Hoang2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) | partially reproduced |
 

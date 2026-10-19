@@ -41,8 +41,11 @@ The user provides a Hugging Face token on this machine so that gated datasets ca
 substitute or block a paper whose data is available on Hugging Face behind a gate. Rules:
 - Never ask for the token, never print it, never write it into a notebook, builder script, log,
   manifest or any file inside the repo. Never pass it on a command line.
-- Locally it is available as the `HF_TOKEN` environment variable and/or the Hugging Face CLI
-  cache (`huggingface_hub` picks both up automatically). Download code in the notebook must
+- Locally it is stored as a user-level `HF_TOKEN` environment variable. Shells started by this
+  session may not have inherited it; `tools/execute_notebook.py` loads it into the kernel's
+  environment automatically, and for your own scratch scripts run
+  `$env:HF_TOKEN = [Environment]::GetEnvironmentVariable("HF_TOKEN","User")` first in the same
+  PowerShell command (never echo it). Download code in the notebook must
   therefore call `huggingface_hub` / `datasets` with `token=os.environ.get("HF_TOKEN") or True`
   style defaults and never a literal.
 - In the notebook, resolve the token like this and nowhere else:

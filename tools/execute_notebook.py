@@ -42,6 +42,16 @@ def main() -> int:
     print(f"timeout  : {args.timeout}s per cell")
 
     os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+    # Hugging Face token for gated datasets: processes started before `setx` do not inherit the
+    # user-level variable, so read it from the Windows user environment when missing. The value
+    # is only placed in this process's environment (inherited by the kernel), never printed.
+    if not os.environ.get("HF_TOKEN") and os.name == "nt":
+        try:
+            import winreg
+            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as key:
+                os.environ["HF_TOKEN"] = winreg.QueryValueEx(key, "HF_TOKEN")[0]
+        except OSError:
+            pass
     # Do not set MPLBACKEND: ipykernel's inline backend must stay active so figures are
     # captured as image/png outputs (Agg would silently drop every plt.show()).
     os.environ.pop("MPLBACKEND", None)

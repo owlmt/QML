@@ -39,6 +39,9 @@ def main() -> int:
         problems.append(f"size {size_mb:.2f} MB > 4 MB")
     if no_id:
         problems.append(f"{len(no_id)} cells without id")
+    raw_text = path.read_text(encoding="utf-8")
+    if re.search(r"hf_[A-Za-z0-9]{20,}", raw_text) or re.search(r"ghp_[A-Za-z0-9]{20,}", raw_text):
+        problems.append("a string that looks like an access token is present in the notebook")
     # Mandatory sections (2026-10-19): heading present, and executed figure outputs beneath it,
     # or an explicit NOT_APPLICABLE / BLOCKED line.
     sections = {

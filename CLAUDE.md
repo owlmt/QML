@@ -276,6 +276,16 @@ executable circuit), never assumed from the presence of a plot.
 - Checks are deterministic code (`tools/verify_notebook.py`, `tools/next_papers.py`), not extra
   model calls. Never re-run or regenerate a notebook that already has a final status.
 
+## Gated datasets (user decision, 2026-10-19)
+
+The user supplies a Hugging Face token on this machine (environment variable `HF_TOKEN` and/or
+the Hugging Face CLI cache) so gated datasets can be used instead of substituted or blocked. The
+token is never requested in chat, printed, logged, passed on a command line, or written into any
+file in the repo. Notebooks resolve it only from `os.environ["HF_TOKEN"]` or Colab Secrets
+(`google.colab.userdata.get("HF_TOKEN")`), as shown in `tools/AGENT_BRIEF.md`;
+`tools/verify_notebook.py` rejects any notebook containing a token-like string. The user will
+rotate the token after the project.
+
 ## Hard rules
 
 - Do not touch `C:\Users\madji\Downloads\postq` or any other repository.

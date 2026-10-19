@@ -35,6 +35,33 @@ Factory" in the git repo `C:\Users\madji\Desktop\QML`. The dispatcher gives you 
   `08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb`,
   `01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb`.
 
+## Gated datasets and the user's Hugging Face token (2026-10-19)
+
+The user provides a Hugging Face token on this machine so that gated datasets can be used; do not
+substitute or block a paper whose data is available on Hugging Face behind a gate. Rules:
+- Never ask for the token, never print it, never write it into a notebook, builder script, log,
+  manifest or any file inside the repo. Never pass it on a command line.
+- Locally it is available as the `HF_TOKEN` environment variable and/or the Hugging Face CLI
+  cache (`huggingface_hub` picks both up automatically). Download code in the notebook must
+  therefore call `huggingface_hub` / `datasets` with `token=os.environ.get("HF_TOKEN") or True`
+  style defaults and never a literal.
+- In the notebook, resolve the token like this and nowhere else:
+  ```python
+  import os
+  HF_TOKEN = os.environ.get("HF_TOKEN")
+  if HF_TOKEN is None:
+      try:
+          from google.colab import userdata          # Colab: Settings > Secrets > HF_TOKEN
+          HF_TOKEN = userdata.get("HF_TOKEN")
+      except Exception:
+          HF_TOKEN = None
+  ```
+  and explain in markdown that a gated dataset needs the reader's own token in Colab Secrets.
+- If a download still fails with the token (terms not accepted), report the paper as blocked
+  with the exact dataset id so the user can accept the terms, instead of substituting.
+- The verifier rejects any notebook containing a string that looks like a token (`hf_` followed
+  by 20+ characters).
+
 ## Step 1: feasibility decision (report "blocked" instead of building when true)
 
 - Survey, review, taxonomy, position or purely theoretical paper with no experiment to rerun.

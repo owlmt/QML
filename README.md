@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-58 of 327 papers have a final status: 57 partially reproduced, 1 blocked; 269 still to process. 57 notebooks are published across 30 of the 30 topic folders.
+59 of 327 papers have a final status: 58 partially reproduced, 1 blocked; 268 still to process. 58 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -259,11 +259,12 @@ live in the topic folders.
 |---|---|---|---|---|
 | QC-117 | [Quantum Patches: Enhancing Robustness of Quantum Machine Learning Models](https://doi.org/10.48550/arxiv.2604.08827) | 2026 | [QNN_AdversarialRobustness_Tran2026](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialRobustness_Tran2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialRobustness_Tran2026.ipynb) | partially reproduced |
 
-### 30 QML Defences Against ML Attacks  (1 of 7 papers)
+### 30 QML Defences Against ML Attacks  (2 of 7 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-077 | [HQMSGAN: Enhancing Adversarial Robustness Using Hybrid Quantum-Classical Multi-Scale Generative Adversarial Network](https://doi.org/10.3390/e28101089) | 2026 | [QGAN_AdversarialPurification_Stanly2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QGAN_AdversarialPurification_Stanly2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QGAN_AdversarialPurification_Stanly2026.ipynb) | partially reproduced |
+| QC-078 | [HQSU: Hybrid Quantum Selective Unlearning for Backdoor Mitigation in Federated Learning](https://doi.org/10.1109/qcnc69040.2026.00128) | 2026 | [HybridQNN_BackdoorUnlearning_Don2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) | partially reproduced |
 
 ### Topic assignment unresolved  (0 of 12 papers)
 

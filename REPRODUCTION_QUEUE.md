@@ -30,25 +30,26 @@ This file lists what is in flight so a resumed session can check for half-built 
   (`tools/notebook_summary.py`); otherwise message the agent to resume (SendMessage) or re-dispatch
   telling the new agent to reuse the scratch folders.
 
-## In progress (2026-10-19, after QC-002 revision)
+## In progress (2026-10-19, after QC-036)
 
 | QC-ID | Paper | Target folder | State |
 |---|---|---|---|
-| QC-036 | QNN cyber threat detection, VMI | 18_Cloud_Virtual_Environment_Threats | agent running (HybridQNN_VMIThreatDetection_Tripathi2023.ipynb drafted) |
 | QC-037 | Accuracy and robustness in QML | 23_Adversarial_Attacks_Against_QML | agent running |
-| QC-039 | Hybrid quantum framework, ultra-secure communication | 01_Network_Intrusion_Detection | agent running |
 | QC-040 | Hybrid QNN for CV-QKD hacking detection | 21_QKD_Attack_Detection | agent running |
 | QC-041 | Lightweight hybrid QNN binary IDS | 01_Network_Intrusion_Detection | agent running |
 | QC-042 | Metaheuristic-enhanced quantum-classical NN | 14_IoT_IIoT_Attack_Detection | agent running |
 | QC-043 | Zhao 2026, quantum state backdoor attack on QNNs | 25_Backdoor_Trojan_Attacks_Against_QML | agent running |
 | QC-044 | Adversarial attack detection in FL with QRNN | 30_QML_Defences_Against_ML_Attacks | agent running |
 | QC-045 | Mauner 2026, adversarial robustness in fake quantum simulators | 23_Adversarial_Attacks_Against_QML | agent running |
+| QC-049 | Vyas 2026, adversarially robust quantum-classical NN for malware | 05_Malware_Detection | agent running |
+| QC-050 | Brugmann 2026, kill-chain attack on QNNs (simulator path) | 23_Adversarial_Attacks_Against_QML | agent running |
 
-Full runs still pending after FAST publication: QC-023, QC-031, QC-164, QC-183 (retrospective audit).
+Next to dispatch when a builder slot frees: QC-051 (quantum SVR anomaly detection), then QC-053 onward per `tools/next_papers.py`.
+Full runs still pending after FAST publication: QC-023, QC-031, QC-036, QC-164, QC-183 (retrospective audit).
 
-## Final statuses: 75 papers (see REPRODUCTION_LOG.md; `tools/next_papers.py --status`)
+## Final statuses: 80 papers (see REPRODUCTION_LOG.md; `tools/next_papers.py --status`)
 
-71 partially reproduced, 4 blocked (QC-005, QC-019, QC-027, QC-029). 252 unprocessed; queue runs in QC-ID order (coverage goal met). QC-002 revised 2026-10-19 (commit 491f98b) with the authors' azure code and the corrected QHTC repository.
+73 partially reproduced, 7 blocked (QC-005, QC-019, QC-027, QC-029, QC-046, QC-048, QC-052). 247 unprocessed; queue runs in QC-ID order (coverage goal met). QC-002 revised 2026-10-19 (commit 491f98b) with the authors' azure code and the corrected QHTC repository.
 ## Coverage (implemented notebooks per folder)
 
 01: 4 | 02, 03, 05, 08: 2 | 04, 06, 07, 09-25, 27, 29, 30: 1 | 26, 28: 0 (agents resumed) |

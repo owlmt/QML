@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-20)
-87 of 327 papers have a final status: 80 partially reproduced, 7 blocked; 240 still to process. 80 notebooks are published across 30 of the 30 topic folders.
+88 of 327 papers have a final status: 81 partially reproduced, 7 blocked; 239 still to process. 81 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -96,7 +96,7 @@ live in the topic folders.
 | QC-002 | [Stabilized quantum-enhanced SIEM architecture and speed-up through Hoeffding tree algorithms enable quantum cybersecurity analytics in botnet detection](https://doi.org/10.1038/s41598-024-51941-8) | 2024 | [QHTC_BotnetDGA_Tehrani2024](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QHTC_BotnetDGA_Tehrani2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QHTC_BotnetDGA_Tehrani2024.ipynb) | partially reproduced |
 | QC-024 | [Evaluating hybrid quantum-classical deep learning for cybersecurity botnet DGA detection](https://doi.org/10.1016/j.procs.2021.12.135) | 2022 | [HybridQNN_BotnetDGA_Suryotrisongko2022](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) | partially reproduced |
 
-### 05 Malware Detection  (5 of 16 papers)
+### 05 Malware Detection  (6 of 16 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -105,6 +105,7 @@ live in the topic folders.
 | QC-010 | [Exploring the vulnerabilities of machine learning and quantum machine learning to adversarial attacks using a malware dataset: a comparative analysis](https://doi.org/10.1109/SSE60056.2023.00037) | 2023 | [HybridQNN_AdversarialNoise_Akter2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/HybridQNN_AdversarialNoise_Akter2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/HybridQNN_AdversarialNoise_Akter2023.ipynb) | partially reproduced |
 | QC-011 | [Quantum Convolutional Neural Network-based Online Malware File Detection for Smart Grid Devices](https://doi.org/10.1109/DMC58182.2023.10412597) | 2023 | [QCNN_MalwareImageDTL_Akash2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareImageDTL_Akash2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareImageDTL_Akash2023.ipynb) | partially reproduced |
 | QC-013 | [Towards an In-Depth Detection of Malware Using Multi-QCNN](https://doi.org/10.1007/978-3-031-63778-0_29) | 2024 | [QCNN_MalwareMultiSection_Quertier2024](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareMultiSection_Quertier2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareMultiSection_Quertier2024.ipynb) | partially reproduced |
+| QC-049 | [Adversarially Robust Quantum-Classical Neural Network for Malware Detection](https://doi.org/10.1145/3807501.3808237) | 2026 | [HybridQNN_MalwareAdversarial_Vyas2026](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/HybridQNN_MalwareAdversarial_Vyas2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/HybridQNN_MalwareAdversarial_Vyas2026.ipynb) | partially reproduced |
 
 ### 06 Android Malware Detection  (3 of 7 papers)
 

@@ -54,11 +54,11 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-74 of 327 papers have a final status: 70 partially reproduced, 4 blocked; 253 still to process. 70 notebooks are published across 30 of the 30 topic folders.
+75 of 327 papers have a final status: 71 partially reproduced, 4 blocked; 252 still to process. 71 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (8 of 79 papers)
+### 01 Network Intrusion Detection  (9 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -66,6 +66,7 @@ live in the topic folders.
 | QC-016 | [Network attack detection scheme based on variational quantum neural network](https://doi.org/10.1007/s11227-022-04542-z) | 2022 | [VQNN_NetworkAttack_Gong2022](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNN_NetworkAttack_Gong2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNN_NetworkAttack_Gong2022.ipynb) | partially reproduced |
 | QC-017 | [Security intrusion detection using quantum machine learning techniques](https://doi.org/10.1007/s11416-022-00435-0) | 2023 | [QSVM_QCNN_StreamIDS_Kalinin2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_QCNN_StreamIDS_Kalinin2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_QCNN_StreamIDS_Kalinin2023.ipynb) | partially reproduced |
 | QC-018 | [QML-IDS: Quantum Machine Learning Intrusion Detection System](https://doi.org/10.1109/ISCC61673.2024.10733655) | 2024 | [VQC_IntrusionDetectionUNSW_deAbreu2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetectionUNSW_deAbreu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetectionUNSW_deAbreu2024.ipynb) | partially reproduced |
+| QC-020 | [An In-Depth Comparative Study of Quantum-Classical Encoding Methods for Network Intrusion Detection](https://doi.org/10.1109/OJCOMS.2025.3537957) | 2025 | [HybridQNN_EncodingComparison_Kadi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQNN_EncodingComparison_Kadi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQNN_EncodingComparison_Kadi2025.ipynb) | partially reproduced |
 | QC-022 | [Fine-tuned Variational Quantum Classifiers for Cyber Attacks Detection based on Parameterized Quantum Circuits and Optimizers](https://doi.org/10.1109/COMPSAC61105.2024.00144) | 2024 | [VQC_IntrusionDetection_Rahman2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_Rahman2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_Rahman2024.ipynb) | partially reproduced |
 | QC-034 | [Quantum-Neural Network Model for Platform Independent Ddos Attack Classification in Cyber Security](https://doi.org/10.1002/qute.202400084) | 2024 | [QNN_DDoS_Kucukkara2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_DDoS_Kucukkara2024.ipynb) | partially reproduced |
 | QC-087 | [Leveraging Quantum Kernel Methods for Enhanced Intrusion Detection](https://doi.org/10.1109/COMSNETS67989.2026.11418222) | 2026 | [QSVM_IntrusionDetection_Tiwari2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) | partially reproduced |

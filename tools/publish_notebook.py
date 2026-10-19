@@ -130,7 +130,9 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    paths = ([nb_rel] if nb_rel else []) + ["manifest.csv", "REPRODUCTION_LOG.md", *args.extra]
+    # keep the repository front page current
+    subprocess.run([sys.executable, "-X", "utf8", str(REPO / "tools" / "update_readme.py")], cwd=REPO, check=True)
+    paths = ([nb_rel] if nb_rel else []) + ["manifest.csv", "REPRODUCTION_LOG.md", "README.md", *args.extra]
     for p in paths:
         r = subprocess.run(["git", "check-ignore", "-q", p], cwd=REPO)
         if r.returncode == 0:

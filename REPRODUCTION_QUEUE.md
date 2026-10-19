@@ -30,21 +30,25 @@ This file lists what is in flight so a resumed session can check for half-built 
   (`tools/notebook_summary.py`); otherwise message the agent to resume (SendMessage) or re-dispatch
   telling the new agent to reuse the scratch folders.
 
-## In progress (2026-10-19)
+## In progress (2026-10-19, after QC-025)
 
 | QC-ID | Paper | Target folder | State |
 |---|---|---|---|
-| QC-121 | SecQML security aspects (2026) | 28_QML_Hardware_Side_Channel_Crosstalk_Attacks | FAST passed, full run to relaunch |
-| QC-150 | CopyQNN extraction under noise (2025) | 26_QML_Model_Extraction_Theft | notebook drafted, experiments logged |
-| QC-024 | Hybrid quantum-classical DL botnet DGA (2022) | 04_Botnet_DGA_Detection (2nd) | FAST passed, full run to relaunch |
-| QC-316 | Quantum computing in mobile malware detection (2022) | 06_Android_Malware_Detection (2nd) | FAST passed, full run pending |
-| QC-021 | Quantum exploration in ransomware detection (2024) | 07_Ransomware_Detection (2nd) | started |
-| QC-026 | Reyes-Dorta 2024, malicious URL VQC | 09_Malicious_URL_Detection (2nd) | started |
+| QC-020 | Kadi 2025, encoding comparison hybrid QNN | 01_Network_Intrusion_Detection | notebook drafted (HybridQNN_EncodingComparison_Kadi2025.ipynb), executing |
+| QC-030 | QML security assessment in the IoT | 03_DDoS_DoS_Detection | agent running (HybridQNN_IoMTSecurity_Rajawat2023.ipynb drafted) |
+| QC-036 | QNN cyber threat detection, VMI | 18_Cloud_Virtual_Environment_Threats | agent running (HybridQNN_VMIThreatDetection_Tripathi2023.ipynb drafted) |
+| QC-037 | Accuracy and robustness in QML | 23_Adversarial_Attacks_Against_QML | agent running |
+| QC-039 | Hybrid quantum framework, ultra-secure communication | 01_Network_Intrusion_Detection | agent running |
+| QC-040 | Hybrid QNN for CV-QKD hacking detection | 21_QKD_Attack_Detection | agent running |
+| QC-041 | Lightweight hybrid QNN binary IDS | 01_Network_Intrusion_Detection | agent running |
+| QC-042 | Metaheuristic-enhanced quantum-classical NN | 14_IoT_IIoT_Attack_Detection | agent running |
+| QC-002 | Tehrani 2024 QHTC (revision with authors' azure code and corrected QHTC repo) | 04_Botnet_DGA_Detection | revision agent running, republish on same path |
 
-## Final statuses: 36 papers (see REPRODUCTION_LOG.md; `tools/next_papers.py --status`)
+Full runs still pending after FAST publication: QC-023, QC-031, QC-164, QC-183 (retrospective audit).
 
-35 partially reproduced, 1 blocked (QC-005).
+## Final statuses: 73 papers (see REPRODUCTION_LOG.md; `tools/next_papers.py --status`)
 
+69 partially reproduced, 4 blocked (QC-005, QC-019, QC-027, QC-029). 254 unprocessed; queue runs in QC-ID order (coverage goal met).
 ## Coverage (implemented notebooks per folder)
 
 01: 4 | 02, 03, 05, 08: 2 | 04, 06, 07, 09-25, 27, 29, 30: 1 | 26, 28: 0 (agents resumed) |

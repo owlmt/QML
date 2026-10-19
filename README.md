@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-52 of 327 papers have a final status: 51 partially reproduced, 1 blocked; 275 still to process. 51 notebooks are published across 30 of the 30 topic folders.
+53 of 327 papers have a final status: 52 partially reproduced, 1 blocked; 274 still to process. 52 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -222,10 +222,11 @@ live in the topic folders.
 |---|---|---|---|---|
 | QC-014 | [Adversarial poisoning attack on quantum machine learning models](https://arxiv.org/abs/2411.14412) | 2024 | [HybridQNN_LabelPoisoning_Kundu2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) | partially reproduced |
 
-### 25 Backdoor Trojan Attacks Against QML  (1 of 19 papers)
+### 25 Backdoor Trojan Attacks Against QML  (2 of 19 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-213 | [Quantum Properties Trojans (QuPTs) for Attacking Quantum Neural Networks](https://doi.org/10.1109/isvlsi65124.2025.11130199) | 2025 | [HybridQNN_QuPTTrojan_Bhowmik2025](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 
 ### 26 QML Model Extraction Theft  (1 of 14 papers)

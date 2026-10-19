@@ -152,6 +152,56 @@ Colab metadata) and follow the same structure. Match it.
   "reproduced" / "not reached here" / "cannot be checked", followed by a markdown "Reading the
   paper critically" section and student exercises.
 
+## Mandatory sections (user decision, 2026-10-19; apply to every notebook, old and new)
+
+**A. "Dataset Exploration and Visualisation"** (markdown heading with exactly this title, then
+code cells whose outputs are kept). For every dataset the notebook actually uses:
+- print dataset shape, feature names and the original label values / class counts;
+- plot the distribution of the real classes (bar chart);
+- a 2-D scatter plot in which every point is a real observation coloured by its ground-truth
+  label, modelled on "Training flows, first two angles" in
+  `QuantumNetSec_VQC_DDoS_CICIDS2017.ipynb`: first the raw PCA coordinates (fitted on the
+  training split), then, where the model uses angle encoding, the same coordinates scaled to
+  [0, π];
+- keep multiclass attack labels when the data has them (colour by attack family, not just
+  binary);
+- for images, audio, graphs or time series use a labelled 2-D projection of the real samples
+  (PCA/t-SNE of pixels or embeddings, spectrogram-feature PCA, node/edge feature PCA, window
+  feature PCA);
+- never fabricated data, invented labels or an unrelated dataset.
+If the dataset is inaccessible, the section states the blocker (status BLOCKED). For papers with
+no dataset at all (theory), the section contains the single line `NOT_APPLICABLE: <reason>`.
+
+**B. "Quantum Circuit Architecture"** (markdown heading with exactly this title). For every
+gate-based quantum model that the notebook trains or evaluates:
+- draw the circuit object that is actually executed (Qiskit: `circuit.draw("mpl")` or
+  `decompose().draw("mpl")` of the executed circuit; PennyLane: `qml.draw_mpl(qnode)(...)` of
+  the real QNode; other simulators: a drawing produced from the same gate list the simulator
+  runs, with a cell asserting equivalence), showing encoding, parametrised gates, entanglement
+  and measurements;
+- print qubit count, circuit depth and trainable-parameter count;
+- one drawing per distinct architecture when several are compared;
+- document every assumption where the paper omits circuit details.
+No generic or illustrative circuits. For non-circuit quantum methods (annealing/QUBO, quantum
+Boltzmann machines on exact Gibbs states, kernels computed in closed form without a circuit) the
+section contains `NOT_APPLICABLE: <reason>`.
+
+Both sections must be executed (outputs present) before a notebook is published; the
+verifier (`tools/verify_notebook.py`) checks for the headings and for figure outputs beneath
+them. Notebooks lacking real dataset visualisations or actual circuit diagrams are rejected.
+
+**Tracking.** `tools/publish_notebook.py` writes five manifest columns, each PASS / FAIL /
+PENDING / BLOCKED / NOT_APPLICABLE: `dataset_visualisation_status`, `class_scatter_status`,
+`quantum_circuit_visualisation_status`, `visualisation_validation_status` (PASS only with
+execution evidence) and `retrospective_audit_status`. Notebooks published before 2026-10-19
+carry PENDING until the retrospective audit (below) upgrades them.
+
+**Retrospective audit.** After the 327-paper queue is complete, every earlier notebook is
+inspected: missing sections are added, the new cells executed, previous results and methodology
+preserved, identical copies across folders synchronised, manifest/log updated, and the correction
+committed and pushed. Compliance is verified by content (real observations, ground-truth labels,
+executable circuit), never assumed from the presence of a plot.
+
 ## Scientific validation requirements (a notebook is "validated" only when all hold)
 
 1. Executes top to bottom from a clean Colab CPU session (Runtime -> Run all) without errors;

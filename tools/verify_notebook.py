@@ -39,8 +39,46 @@ def main() -> int:
         problems.append(f"size {size_mb:.2f} MB > 4 MB")
     if no_id:
         problems.append(f"{len(no_id)} cells without id")
+    # Mandatory sections (2026-10-19): heading present, and executed figure outputs beneath it,
+    # or an explicit NOT_APPLICABLE / BLOCKED line.
+    sections = {
+        "Dataset Exploration and Visualisation": "dataset_visualisation_status",
+        "Quantum Circuit Architecture": "quantum_circuit_visualisation_status",
+    }
+    section_status = {}
+    for title, key in sections.items():
+        start = next((i for i, c in enumerate(cells) if c["cell_type"] == "markdown"
+                      and title.lower() in "".join(c["source"]).lower()
+                      and "".join(c["source"]).lstrip().startswith("#")), None)
+        if start is None:
+            section_status[key] = "FAIL"
+            problems.append(f'missing section "{title}"')
+            continue
+        # section runs until the next top/second-level heading
+        body = []
+        for c in cells[start + 1:]:
+            src = "".join(c["source"])
+            if c["cell_type"] == "markdown" and re.match(r"^\s*#{1,2}\s", src):
+                break
+            body.append(c)
+        head_text = "".join(cells[start]["source"]) + "".join(
+            "".join(c["source"]) for c in body if c["cell_type"] == "markdown")
+        if "NOT_APPLICABLE" in head_text:
+            section_status[key] = "NOT_APPLICABLE"
+        elif "BLOCKED" in head_text:
+            section_status[key] = "BLOCKED"
+        else:
+            figs = sum(1 for c in body if c["cell_type"] == "code"
+                       for o in c.get("outputs", []) if "image/png" in o.get("data", {}))
+            ran = all(c.get("execution_count") is not None for c in body if c["cell_type"] == "code")
+            if figs and ran:
+                section_status[key] = "PASS"
+            else:
+                section_status[key] = "FAIL"
+                problems.append(f'section "{title}" has no executed figure output')
     print(f"{rel}: {len(cells)} cells ({len(code)} code), {png} figures, {size_mb:.2f} MB, "
           f"FAST_MODE={fast[0] if fast else '?'}, badge={'ok' if badge_ok else 'BAD'}")
+    print("SECTIONS: " + ", ".join(f"{k}={v}" for k, v in section_status.items()))
     for p in problems:
         print("PROBLEM:", p)
     print("VERIFY OK" if not problems else "VERIFY FAILED")

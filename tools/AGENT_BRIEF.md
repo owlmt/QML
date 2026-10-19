@@ -68,6 +68,18 @@ else gets a notebook. A public substitute dataset is allowed and must be documen
   with the gap, "cannot be checked" when unverifiable); "Reading the paper critically"; 5 exercises.
 - `FAST_MODE=True` must finish in under 10 minutes locally; `FAST_MODE=False` follows the paper's
   budgets as far as a CPU simulator allows (state the budgets).
+- MANDATORY (2026-10-19), see CLAUDE.md "Mandatory sections": a markdown heading
+  `## Dataset Exploration and Visualisation` followed by code that prints shape / feature names /
+  original labels and class counts, plots the real class distribution, and draws a 2-D scatter of
+  real observations coloured by ground-truth label (raw PCA coordinates fitted on the training
+  split, then the [0, π]-scaled angles when angle encoding is used; keep multiclass attack labels;
+  labelled projections for images/audio/graphs/time series); and a markdown heading
+  `## Quantum Circuit Architecture` followed by a drawing of the circuit actually executed
+  (`circuit.draw("mpl")` in Qiskit, `qml.draw_mpl(qnode)` in PennyLane, or a drawing generated
+  from the simulator's own gate list with an equivalence assertion), one per distinct
+  architecture, plus printed qubit count, depth and trainable-parameter count. Where a section
+  does not apply, put the single line `NOT_APPLICABLE: <reason>` under the heading. Both sections
+  must have executed outputs; the dispatcher rejects notebooks without them.
 
 ## Step 3: execute and validate
 
@@ -94,5 +106,6 @@ PAPER METRICS: <numbers with table/figure refs>
 NOTEBOOK METRICS: <numbers>
 VERDICTS: <per claim>
 DEVIATIONS: <choices and problems>
+VISUALISATION: dataset section <PASS|BLOCKED|NOT_APPLICABLE>, class scatter <PASS|...>, circuit section <PASS|NOT_APPLICABLE> (with the figure counts)
 ```
 The dispatcher verifies the file and publishes it; you never commit.

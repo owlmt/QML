@@ -21,8 +21,12 @@ REPO = Path(__file__).resolve().parents[1]
 MANIFEST = REPO / "manifest.csv"
 LOG = REPO / "REPRODUCTION_LOG.md"
 REMOTE_WEB = "https://github.com/owlmt/QML"
+QA_COLUMNS = ["dataset_visualisation_status", "class_scatter_status",
+              "quantum_circuit_visualisation_status", "visualisation_validation_status",
+              "retrospective_audit_status"]
 NEW_COLUMNS = ["Notebook path", "Reproduction status", "Paper metric(s)",
-               "Notebook metric(s)", "Validated on", "Notes"]
+               "Notebook metric(s)", "Validated on", "Notes", *QA_COLUMNS]
+QA_VALUES = {"PASS", "FAIL", "PENDING", "BLOCKED", "NOT_APPLICABLE"}
 STATUSES = {"not started", "in progress", "reproduced", "partially reproduced",
             "implemented but unvalidated", "blocked", "not reproducible"}
 
@@ -34,7 +38,7 @@ def git(*args, check=True):
     return r.stdout.strip()
 
 
-def update_manifest(qc, nb_rel, status, paper_m, nb_m, notes, today):
+def update_manifest(qc, nb_rel, status, paper_m, nb_m, notes, today, qa=None):
     raw = MANIFEST.read_bytes()
     newline = "\r\n" if b"\r\n" in raw else "\n"
     with MANIFEST.open("r", encoding="utf-8", newline="") as f:
@@ -58,6 +62,8 @@ def update_manifest(qc, nb_rel, status, paper_m, nb_m, notes, today):
     hit["Notebook metric(s)"] = nb_m
     hit["Validated on"] = today
     hit["Notes"] = notes
+    for col, val in (qa or {}).items():
+        hit[col] = val
     with MANIFEST.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator=newline)
         w.writeheader()
@@ -76,6 +82,13 @@ def main() -> int:
     ap.add_argument("--notebook-metrics", default="")
     ap.add_argument("--notes", default="")
     ap.add_argument("--extra", nargs="*", default=[], help="additional repo-relative paths to commit")
+    ap.add_argument("--viz", default=None, choices=sorted(QA_VALUES),
+                    help="dataset_visualisation_status (default: NOT_APPLICABLE for blocked papers, else PENDING)")
+    ap.add_argument("--scatter", default=None, choices=sorted(QA_VALUES), help="class_scatter_status")
+    ap.add_argument("--circuit", default=None, choices=sorted(QA_VALUES), help="quantum_circuit_visualisation_status")
+    ap.add_argument("--viz-validated", default=None, choices=sorted(QA_VALUES),
+                    help="visualisation_validation_status (PASS only with execution evidence)")
+    ap.add_argument("--audit", default=None, choices=sorted(QA_VALUES), help="retrospective_audit_status")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--dry-run", action="store_true", help="update manifest/log only, no git")
     args = ap.parse_args()
@@ -95,8 +108,16 @@ def main() -> int:
             raise SystemExit(f"notebook is {size_mb:.1f} MB; clear large outputs first")
 
     today = dt.date.today().isoformat()
+    default_qa = "NOT_APPLICABLE" if args.status == "blocked" else "PENDING"
+    qa = {
+        "dataset_visualisation_status": args.viz or default_qa,
+        "class_scatter_status": args.scatter or default_qa,
+        "quantum_circuit_visualisation_status": args.circuit or default_qa,
+        "visualisation_validation_status": args.viz_validated or default_qa,
+        "retrospective_audit_status": args.audit or ("NOT_APPLICABLE" if args.status == "blocked" else "PENDING"),
+    }
     row = update_manifest(args.qc, nb_rel, args.status, args.paper_metrics,
-                          args.notebook_metrics, args.notes, today)
+                          args.notebook_metrics, args.notes, today, qa)
     title = row["Full paper title"]
 
     if not LOG.exists():

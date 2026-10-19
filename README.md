@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-55 of 327 papers have a final status: 54 partially reproduced, 1 blocked; 272 still to process. 54 notebooks are published across 30 of the 30 topic folders.
+56 of 327 papers have a final status: 55 partially reproduced, 1 blocked; 271 still to process. 55 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -244,10 +244,11 @@ live in the topic folders.
 | QC-197 | [Quantum Data Breach: Reusing Training Dataset by Untrusted Quantum Clouds](https://doi.org/10.1109/ISQED65160.2025.11014467) | 2025 | [QNN_DataBreach_Upadhyay2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_DataBreach_Upadhyay2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_DataBreach_Upadhyay2025.ipynb) | partially reproduced |
 | QC-214 | [Quantum Quandaries: Unraveling Encoding Vulnerabilities in Quantum Neural Networks](https://arxiv.org/abs/2502.01486) | 2025 | [QNN_EncodingLeakage_Upadhyay2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_EncodingLeakage_Upadhyay2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_EncodingLeakage_Upadhyay2025.ipynb) | partially reproduced |
 
-### 28 QML Hardware Side Channel Crosstalk Attacks  (1 of 2 papers)
+### 28 QML Hardware Side Channel Crosstalk Attacks  (2 of 2 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-099 | [QML-PipeGuard: Drift-Aware Behavioral Fingerprinting for Quantum Machine Learning Pipeline Integrity](https://doi.org/10.48550/arxiv.2605.25066) | 2026 | [QSVM_PipelineIntegrity_Yeniaras2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) | partially reproduced |
 | QC-121 | [Security Aspects of Quantum Machine Learning (SecQML)](https://doi.org/10.24406/h-508719) | 2026 | [QNN_CrosstalkAttacks_Franco2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) | partially reproduced |
 
 ### 29 Adversarial Robustness Defences for QML  (1 of 72 papers)

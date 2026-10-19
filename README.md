@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-59 of 327 papers have a final status: 58 partially reproduced, 1 blocked; 268 still to process. 58 notebooks are published across 30 of the 30 topic folders.
+60 of 327 papers have a final status: 58 partially reproduced, 2 blocked; 267 still to process. 58 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -275,6 +275,7 @@ _No notebook yet._
 | QC-ID | Paper | Reason |
 |---|---|---|
 | QC-005 | Quantum Machine Learning: Perspectives in Cybersecurity | Perspective/position paper (SAFECOMP 2024 workshop, 9 pp.): overview of classical-shadow QGAN training [arXiv:2309.08426] and an Ising-machine learning scheme [ |
+| QC-019 | Quantum machine learning in intrusion detection systems: a systematic mapping study | Systematic mapping review of 21 primary studies (4 databases, Petersen et al. protocol): no dataset, no model trained, no metric of the authors' own; Table 7 co |
 
 ## Rules for adding a notebook
 

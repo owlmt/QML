@@ -53,8 +53,8 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 (`QSVM_DDoS_Said2023.ipynb`, `QuantumNetSec_VQC_DDoS_CICIDS2017.ipynb`); their reproductions
 live in the topic folders.
 
-## Progress (2026-10-19)
-83 of 327 papers have a final status: 76 partially reproduced, 7 blocked; 244 still to process. 76 notebooks are published across 30 of the 30 topic folders.
+## Progress (2026-10-20)
+84 of 327 papers have a final status: 77 partially reproduced, 7 blocked; 243 still to process. 77 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -277,10 +277,11 @@ live in the topic folders.
 | QC-095 | [PQ-IDPS: Adversarially Robust Intrusion Detection for Post-Quantum Encrypted Traffic with Hybrid Classical-Quantum Machine Learning](https://doi.org/10.36227/techrxiv.176836457.72974723/v1) | 2026 | [HybridQNN_AdversarialRobustIDS_Anaedevha2026](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/HybridQNN_AdversarialRobustIDS_Anaedevha2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/HybridQNN_AdversarialRobustIDS_Anaedevha2026.ipynb) | partially reproduced |
 | QC-117 | [Quantum Patches: Enhancing Robustness of Quantum Machine Learning Models](https://doi.org/10.48550/arxiv.2604.08827) | 2026 | [QNN_AdversarialRobustness_Tran2026](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialRobustness_Tran2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialRobustness_Tran2026.ipynb) | partially reproduced |
 
-### 30 QML Defences Against ML Attacks  (2 of 7 papers)
+### 30 QML Defences Against ML Attacks  (3 of 7 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-044 | [Adversarial Attack Detection in Federated Learning Using Quantum Recurrent Neural Network](https://doi.org/10.1155/acis/1176614) | 2026 | [QRNN_AdversarialAttackFL_Venkat2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QRNN_AdversarialAttackFL_Venkat2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QRNN_AdversarialAttackFL_Venkat2026.ipynb) | partially reproduced |
 | QC-077 | [HQMSGAN: Enhancing Adversarial Robustness Using Hybrid Quantum-Classical Multi-Scale Generative Adversarial Network](https://doi.org/10.3390/e28101089) | 2026 | [QGAN_AdversarialPurification_Stanly2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QGAN_AdversarialPurification_Stanly2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QGAN_AdversarialPurification_Stanly2026.ipynb) | partially reproduced |
 | QC-078 | [HQSU: Hybrid Quantum Selective Unlearning for Backdoor Mitigation in Federated Learning](https://doi.org/10.1109/qcnc69040.2026.00128) | 2026 | [HybridQNN_BackdoorUnlearning_Don2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) | partially reproduced |
 

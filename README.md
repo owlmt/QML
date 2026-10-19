@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-54 of 327 papers have a final status: 53 partially reproduced, 1 blocked; 273 still to process. 53 notebooks are published across 30 of the 30 topic folders.
+55 of 327 papers have a final status: 54 partially reproduced, 1 blocked; 272 still to process. 54 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -203,11 +203,12 @@ live in the topic folders.
 | QC-093 | [Noise-Resistant Feature-Aware Attack Detection Using Quantum Machine Learning](https://arxiv.org/abs/2601.06762) | 2026 | [QSVM_CVQKDAttackDetection_Ding2026](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) | partially reproduced |
 | QC-220 | [Resisting Quantum Key Distribution Attacks Using Quantum Machine Learning](https://arxiv.org/abs/2509.14282) | 2025 | [QLSTM_QKDAttack_AlKuwari2025](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) | partially reproduced |
 
-### 22 Deepfake Spoofing Detection  (1 of 4 papers)
+### 22 Deepfake Spoofing Detection  (2 of 4 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-219 | [Reliable Audio Deepfake Detection in Variable Conditions via Quantum-Kernel SVMs](https://arxiv.org/abs/2512.18797) | 2025 | [QSVM_AudioDeepfake_Amin2025](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) | partially reproduced |
+| QC-235 | [A Hybrid Quantum-Classical AI-Based Detection Strategy for Generative Adversarial Network-Based Deepfake Attacks on an Autonomous Vehicle Traffic Sign Classification System](https://arxiv.org/abs/2409.17311) | 2024 | [HybridQNN_DeepfakeTrafficSign_Salek2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) | partially reproduced |
 
 ### 23 Adversarial Attacks Against QML  (2 of 44 papers)
 

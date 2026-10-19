@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-72 of 327 papers have a final status: 68 partially reproduced, 4 blocked; 255 still to process. 68 notebooks are published across 30 of the 30 topic folders.
+73 of 327 papers have a final status: 69 partially reproduced, 4 blocked; 254 still to process. 69 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -102,10 +102,11 @@ live in the topic folders.
 | QC-011 | [Quantum Convolutional Neural Network-based Online Malware File Detection for Smart Grid Devices](https://doi.org/10.1109/DMC58182.2023.10412597) | 2023 | [QCNN_MalwareImageDTL_Akash2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareImageDTL_Akash2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareImageDTL_Akash2023.ipynb) | partially reproduced |
 | QC-013 | [Towards an In-Depth Detection of Malware Using Multi-QCNN](https://doi.org/10.1007/978-3-031-63778-0_29) | 2024 | [QCNN_MalwareMultiSection_Quertier2024](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareMultiSection_Quertier2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QCNN_MalwareMultiSection_Quertier2024.ipynb) | partially reproduced |
 
-### 06 Android Malware Detection  (2 of 7 papers)
+### 06 Android Malware Detection  (3 of 7 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-025 | [Optimizing quantum machine learning for proactive cybersecurity](https://doi.org/10.1007/s11081-024-09934-z) | 2024 | [VQC_PhishingMalwareSpam_RosaRemedios2024](https://github.com/owlmt/QML/blob/main/06_Android_Malware_Detection/VQC_PhishingMalwareSpam_RosaRemedios2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/06_Android_Malware_Detection/VQC_PhishingMalwareSpam_RosaRemedios2024.ipynb) | partially reproduced |
 | QC-092 | [Noise-Aware Hybrid Classical-Quantum Framework for Android Malware Detection](https://doi.org/10.1109/ICESIC67389.2026.11496523) | 2026 | [QSVM_AndroidMalware_Mohandass2026](https://github.com/owlmt/QML/blob/main/06_Android_Malware_Detection/QSVM_AndroidMalware_Mohandass2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/06_Android_Malware_Detection/QSVM_AndroidMalware_Mohandass2026.ipynb) | partially reproduced |
 | QC-316 | [Introducing Quantum Computing in Mobile Malware Detection](https://doi.org/10.1145/3538969.3543816) | 2022 | [HybridQCNN_AndroidMalwareImages_Ciaramella2022](https://github.com/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_AndroidMalwareImages_Ciaramella2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_AndroidMalwareImages_Ciaramella2022.ipynb) | partially reproduced |
 

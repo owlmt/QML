@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-78 of 327 papers have a final status: 72 partially reproduced, 6 blocked; 249 still to process. 72 notebooks are published across 30 of the 30 topic folders.
+79 of 327 papers have a final status: 72 partially reproduced, 7 blocked; 248 still to process. 72 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -294,6 +294,7 @@ _No notebook yet._
 | QC-029 | Quantum Machine Learning for Anomaly Detection in Consumer Electronics | Survey/overview paper (Bhowmik & Thapliyal, ISVLSI 2024, arXiv:2409.00294): generic QML anomaly-detection framework and five case studies summarised from other  |
 | QC-046 | Adversarial Robustness in Quantum Machine Learning: A Scoping Review | Scoping review (PRISMA-ScR) of 53 published studies on adversarial robustness in QML; sections are Introduction, Methodology (search, screening, data extraction |
 | QC-048 | Adversarially Robust Federated Quantum Machine Learning for Healthcare | PDF is a one-page extended abstract (NYSDS 2026, AI for Science track): title and abstract only, 3,042 characters, no methods, dataset source, sample sizes, cir |
+| QC-052 | Backdoor Threats in Variational Quantum Circuits: Taxonomy, Attacks, and Defenses | Survey/taxonomy of backdoor attacks on VQCs (GLSVLSI 2026): sections Introduction, Preliminaries, Backdoors on VQCs (classical-like, compilation-enabled, quantu |
 
 ## Rules for adding a notebook
 

@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-19)
-79 of 327 papers have a final status: 72 partially reproduced, 7 blocked; 248 still to process. 72 notebooks are published across 30 of the 30 topic folders.
+80 of 327 papers have a final status: 73 partially reproduced, 7 blocked; 247 still to process. 73 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -191,11 +191,12 @@ live in the topic folders.
 | QC-320 | [Quantum optimization for fast CAN bus intrusion detection](https://doi.org/10.1145/3549036.3562058) | 2022 | [QBoost_CANBusIntrusion_Caivano2022](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) | partially reproduced |
 | QC-328 | [Hybrid Quantum-Classical Neural Network for Cloud-supported In-Vehicle Cyberattack Detection](https://arxiv.org/abs/2110.07467) | 2021 | [HybridQNN_CANAttack_Islam2021](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) | partially reproduced |
 
-### 18 Cloud Virtual Environment Threats  (2 of 4 papers)
+### 18 Cloud Virtual Environment Threats  (3 of 4 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-012 | [A Quantum LSTM-based approach to cyber threat detection in virtual environment](https://doi.org/10.1007/s11227-024-06615-7) | 2025 | [QLSTM_SyscallThreat_Tripathi2025](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QLSTM_SyscallThreat_Tripathi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QLSTM_SyscallThreat_Tripathi2025.ipynb) | partially reproduced |
+| QC-036 | [Quantum Neural Network Classification-Based Cyber Threat Detection in Virtual Environment](https://doi.org/10.1109/CSCI62032.2023.00070) | 2023 | [HybridQNN_VMIThreatDetection_Tripathi2023](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/HybridQNN_VMIThreatDetection_Tripathi2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/HybridQNN_VMIThreatDetection_Tripathi2023.ipynb) | partially reproduced |
 | QC-194 | [Quantum Autoencoders for Anomaly Detection in Cybersecurity](https://arxiv.org/abs/2510.21837) | 2025 | [QAE_AnomalyDetection_Senthil2025](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) | partially reproduced |
 
 ### 19 Cybersecurity Anomaly Detection  (1 of 1 papers)

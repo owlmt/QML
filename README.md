@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-20)
-99 of 327 papers have a final status: 91 partially reproduced, 8 blocked; 228 still to process. 91 notebooks are published across 30 of the 30 topic folders.
+100 of 327 papers have a final status: 92 partially reproduced, 8 blocked; 227 still to process. 92 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -123,12 +123,13 @@ live in the topic folders.
 | QC-021 | [Quantum Exploration in Ransomware Detection with Conventional Machine Learning Approaches](https://doi.org/10.1109/InC460750.2024.10649082) | 2024 | [QSVM_RansomwareDetection_Kaur2024](https://github.com/owlmt/QML/blob/main/07_Ransomware_Detection/QSVM_RansomwareDetection_Kaur2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/07_Ransomware_Detection/QSVM_RansomwareDetection_Kaur2024.ipynb) | partially reproduced |
 | QC-035 | [Ransomware Detection Using Quantum Neural Networks](https://doi.org/10.1109/ICSCAN62807.2024.10894015) | 2024 | [QNN_Ransomware_Varalakshmi2024](https://github.com/owlmt/QML/blob/main/07_Ransomware_Detection/QNN_Ransomware_Varalakshmi2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/07_Ransomware_Detection/QNN_Ransomware_Varalakshmi2024.ipynb) | partially reproduced |
 
-### 08 Phishing Detection  (3 of 12 papers)
+### 08 Phishing Detection  (4 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-007 | [Zérosdetect: Phishing URL Detection with Quantum-Driven Zero-shot Learning](https://doi.org/10.1109/ICSC60394.2023.10440725) | 2023 | [QNN_PhishingURL_Bangroo2023](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/QNN_PhishingURL_Bangroo2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/QNN_PhishingURL_Bangroo2023.ipynb) | partially reproduced |
 | QC-053 | [Batch-Wise Ensemble Evaluation of Classical SVM and Quantum SVM for Email Phishing Detection](https://doi.org/10.1109/QPAIN69676.2026.11546403) | 2026 | [QSVM_EmailPhishing_Hridi2026](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/QSVM_EmailPhishing_Hridi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/QSVM_EmailPhishing_Hridi2026.ipynb) | partially reproduced |
+| QC-066 | [Detecting Phishing in Ethereum Networks using Quantum Machine Learning](https://arxiv.org/abs/2607.12828) | 2026 | [QRAC_EthereumPhishing_Guddanti2026](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/QRAC_EthereumPhishing_Guddanti2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/QRAC_EthereumPhishing_Guddanti2026.ipynb) | partially reproduced |
 | QC-182 | [PhishVQC: Optimizing Phishing URL Detection with Correlation Based Feature Selection and Variational Quantum Classifier](https://doi.org/10.1109/ISACC65211.2025.10969366) | 2025 | [VQC_PhishingURL_Shahriyar2025](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/VQC_PhishingURL_Shahriyar2025.ipynb) | partially reproduced |
 
 ### 09 Malicious URL Detection  (2 of 5 papers)

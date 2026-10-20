@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-20)
-94 of 327 papers have a final status: 86 partially reproduced, 8 blocked; 233 still to process. 86 notebooks are published across 30 of the 30 topic folders.
+95 of 327 papers have a final status: 87 partially reproduced, 8 blocked; 232 still to process. 87 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -215,10 +215,11 @@ live in the topic folders.
 |---|---|---|---|---|
 | QC-259 | [Quantum Deep Neural Network Based Classification of Attack Vectors on the Ethereum Blockchain](https://doi.org/10.4108/eetsis.5572) | 2024 | [QRBM_EthereumAttack_Rajawat2024](https://github.com/owlmt/QML/blob/main/20_Blockchain_Attack_Detection/QRBM_EthereumAttack_Rajawat2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/20_Blockchain_Attack_Detection/QRBM_EthereumAttack_Rajawat2024.ipynb) | partially reproduced |
 
-### 21 QKD Attack Detection  (2 of 3 papers)
+### 21 QKD Attack Detection  (3 of 3 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-040 | [A Hybrid Quantum–Classical Neural Network Framework for the Detection of Quantum Hacking Attacks in CVQKD](https://doi.org/10.3390/app16062793) | 2026 | [HybridQNN_CVQKDAttackDetection_He2026](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/HybridQNN_CVQKDAttackDetection_He2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/HybridQNN_CVQKDAttackDetection_He2026.ipynb) | partially reproduced |
 | QC-093 | [Noise-Resistant Feature-Aware Attack Detection Using Quantum Machine Learning](https://arxiv.org/abs/2601.06762) | 2026 | [QSVM_CVQKDAttackDetection_Ding2026](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) | partially reproduced |
 | QC-220 | [Resisting Quantum Key Distribution Attacks Using Quantum Machine Learning](https://arxiv.org/abs/2509.14282) | 2025 | [QLSTM_QKDAttack_AlKuwari2025](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) | partially reproduced |
 

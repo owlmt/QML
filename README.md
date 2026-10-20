@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-20)
-90 of 327 papers have a final status: 82 partially reproduced, 8 blocked; 237 still to process. 82 notebooks are published across 30 of the 30 topic folders.
+91 of 327 papers have a final status: 83 partially reproduced, 8 blocked; 236 still to process. 83 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -229,13 +229,14 @@ live in the topic folders.
 | QC-219 | [Reliable Audio Deepfake Detection in Variable Conditions via Quantum-Kernel SVMs](https://arxiv.org/abs/2512.18797) | 2025 | [QSVM_AudioDeepfake_Amin2025](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) | partially reproduced |
 | QC-235 | [A Hybrid Quantum-Classical AI-Based Detection Strategy for Generative Adversarial Network-Based Deepfake Attacks on an Autonomous Vehicle Traffic Sign Classification System](https://arxiv.org/abs/2409.17311) | 2024 | [HybridQNN_DeepfakeTrafficSign_Salek2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) | partially reproduced |
 
-### 23 Adversarial Attacks Against QML  (5 of 44 papers)
+### 23 Adversarial Attacks Against QML  (6 of 44 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-037 | [A Comprehensive Analysis of Accuracy and Robustness in Quantum Neural Networks](https://doi.org/10.48550/arxiv.2604.26110) | 2026 | [HybridQNN_AccuracyRobustness_Tran2026](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AccuracyRobustness_Tran2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AccuracyRobustness_Tran2026.ipynb) | partially reproduced |
 | QC-045 | [Adversarial Robustness in Fake Quantum Simulators](https://doi.org/10.48550/arxiv.2610.01574) | 2026 | [QNN_AdversarialRobustness_Maussner2026](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maussner2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maussner2026.ipynb) | partially reproduced |
 | QC-050 | [An End-to-End Multi-Stage Kill-Chain Attack on Quantum Neural Networks: Demonstration on Trapped-Ion Hardware](https://arxiv.org/abs/2607.03337) | 2026 | [QNN_KillChainAttack_Brugmann2026](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_KillChainAttack_Brugmann2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_KillChainAttack_Brugmann2026.ipynb) | partially reproduced |
+| QC-051 | [Anomaly Detection with Quantum SVR in the NISQ Era: Limits of Robustness to Noise and Adversarial Attacks](https://doi.org/10.5220/0014218600004052) | 2026 | [QSVR_AnomalyDetection_Tscharke2026](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2026.ipynb) | partially reproduced |
 | QC-234 | [A Comparative Analysis of Adversarial Robustness for Quantum and Classical Machine Learning Models](https://arxiv.org/abs/2404.16154) | 2024 | [QNN_AdversarialRobustness_Wendlinger2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) | partially reproduced |
 | QC-305 | [Quantum Neural Networks under Depolarization Noise: Exploring White-Box Attacks and Defenses](https://arxiv.org/abs/2311.17458) | 2023 | [QNN_DepolarizationNoiseRobustness_Winderl2023](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) | partially reproduced |
 

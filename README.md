@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-145 of 327 papers have a final status: 132 partially reproduced, 13 blocked; 182 still to process. 132 notebooks are published across 30 of the 30 topic folders.
+146 of 327 papers have a final status: 133 partially reproduced, 13 blocked; 181 still to process. 133 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (28 of 79 papers)
+### 01 Network Intrusion Detection  (29 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -131,6 +131,7 @@ this repository.
 | QC-107 | [Quantum-Enhanced Hybrid Variational Neural Network for IoT Intrusion Detection](https://doi.org/10.1109/ICBDML68582.2026.11544431) | 2026 | [HybridVQNN_IoTIntrusionDetection_Shrivastava2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridVQNN_IoTIntrusionDetection_Shrivastava2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridVQNN_IoTIntrusionDetection_Shrivastava2026.ipynb) | partially reproduced |
 | QC-109 | [Quantum-Enhanced Network Intrusion Detection Using Variational Quantum Machine Learning](https://doi.org/10.1109/TQCEBT67648.2026.11681255) | 2026 | [VQC_IntrusionDetection_Keerthna2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_Keerthna2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_Keerthna2026.ipynb) | partially reproduced |
 | QC-113 | [Quantum Machine Learning for Anomaly Detection in 5G and beyond Mobile Networks](https://doi.org/10.1109/GIIS69881.2026.11585757) | 2026 | [QSVM_AnomalyDetection5G_Alalyan2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_AnomalyDetection5G_Alalyan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_AnomalyDetection5G_Alalyan2026.ipynb) | partially reproduced |
+| QC-125 | [TinyQL: A Quantum Machine Learning Framework at Edge for Resource-Constrained IoT Devices](https://doi.org/10.1109/ISQED69900.2026.11534709) | 2026 | [QAE_TinyQL_IoTAnomalyDetection_Ngouen2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QAE_TinyQL_IoTAnomalyDetection_Ngouen2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QAE_TinyQL_IoTAnomalyDetection_Ngouen2026.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

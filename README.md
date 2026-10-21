@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-176 of 327 papers have a final status: 161 partially reproduced, 15 blocked; 151 still to process. 161 notebooks are published across 30 of the 30 topic folders.
+177 of 327 papers have a final status: 162 partially reproduced, 15 blocked; 150 still to process. 162 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -365,7 +365,7 @@ this repository.
 | QC-150 | [CopyQNN: Quantum Neural Network Extraction Attack under Varying Quantum Noise](https://arxiv.org/abs/2504.00366) | 2025 | [QNN_ModelExtraction_Fu2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) | partially reproduced |
 | QC-164 | [Guardians of the Quantum GAN](https://doi.org/10.1109/isqed65160.2025.11014340) | 2025 | [QGAN_HardwareWatermark_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) | partially reproduced |
 
-### 27 QML Privacy Data Leakage  (8 of 20 papers)
+### 27 QML Privacy Data Leakage  (9 of 20 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -373,6 +373,7 @@ this repository.
 | QC-074 | [From Membership-Privacy Leakage to Quantum Machine Unlearning](https://doi.org/10.1103/PhysRevApplied.25.044056) | 2026 | [QNN_MembershipUnlearning_Su2026](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_MembershipUnlearning_Su2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_MembershipUnlearning_Su2026.ipynb) | partially reproduced |
 | QC-123 | [SQU: Sensitivity-Guided Quantum Machine Unlearning for Privacy-Preserving ML](https://doi.org/10.1109/qpain69676.2026.11546660) | 2026 | [VQC_Unlearning_Masud2026](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_Unlearning_Masud2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_Unlearning_Masud2026.ipynb) | partially reproduced |
 | QC-135 | [A hybrid quantum neural network for split learning](https://doi.org/10.1007/s42484-025-00295-z) | 2025 | [HybridQNN_SplitLearning_Cowlessur2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/HybridQNN_SplitLearning_Cowlessur2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/HybridQNN_SplitLearning_Cowlessur2025.ipynb) | partially reproduced |
+| QC-137 | [A Numerical Gradient Inversion Attack in Variational Quantum Neural-Networks](https://doi.org/10.48550/arxiv.2504.12806) | 2025 | [VQNN_GradientInversion_Papadopoulos2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQNN_GradientInversion_Papadopoulos2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQNN_GradientInversion_Papadopoulos2025.ipynb) | partially reproduced |
 | QC-146 | [Characterizing privacy in quantum machine learning](https://doi.org/10.1038/s41534-025-01022-z) | 2025 | [VQC_PrivacySnapshotInversion_Heredge2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_PrivacySnapshotInversion_Heredge2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_PrivacySnapshotInversion_Heredge2025.ipynb) | partially reproduced |
 | QC-155 | [Enhancing Gradient Variance and Differential Privacy in Quantum Federated Learning](https://doi.org/10.36227/techrxiv.175756490.02861176/v1) | 2025 | [QNN_FederatedDPGradientVariance_Thien2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_FederatedDPGradientVariance_Thien2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_FederatedDPGradientVariance_Thien2025.ipynb) | partially reproduced |
 | QC-197 | [Quantum Data Breach: Reusing Training Dataset by Untrusted Quantum Clouds](https://doi.org/10.1109/ISQED65160.2025.11014467) | 2025 | [QNN_DataBreach_Upadhyay2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_DataBreach_Upadhyay2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_DataBreach_Upadhyay2025.ipynb) | partially reproduced |

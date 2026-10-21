@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-179 of 327 papers have a final status: 164 partially reproduced, 15 blocked; 148 still to process. 164 notebooks are published across 30 of the 30 topic folders.
+180 of 327 papers have a final status: 164 partially reproduced, 16 blocked; 147 still to process. 164 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -437,6 +437,7 @@ _No notebook yet._
 | QC-114 | Quantum Machine Learning for Cyber Threat Intelligence: A Scoping Review of Current Capabilities and Future Directions | Scoping review (PRISMA-ScR, Rezaei et al. 2026) of 24 QML cyber-threat-intelligence studies; contains no original experiment, only results quoted from other pap |
 | QC-140 | Adversarial Threats in Quantum Machine Learning: A Survey of Attacks and Defenses | Survey/book chapter (Ghosh et al. 2025, arXiv 2506.21842) with no original experiment; its quantitative results summarise cited works (HVIP/HA VIP, QuMoS, qGAN  |
 | QC-157 | Entangled Threats: A Unified Kill Chain Model for Quantum Machine Learning Security | Conceptual kill-chain taxonomy and literature survey (Debus et al. 2025, arXiv 2507.08623); no original experiment, dataset or reported numbers to reproduce. |
+| QC-178 | Next-Generation Quantum Neural Networks: Enhancing Efficiency, Security, and Privacy | Synthesis/position paper (Innan et al., IOLTS 2025, arXiv 2507.20537): all figures and Table I are reproduced from cited prior work (Kashif 2024, Marchisio, Ahm |
 
 ## Rules for adding a notebook
 

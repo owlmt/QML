@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-165 of 327 papers have a final status: 150 partially reproduced, 15 blocked; 162 still to process. 150 notebooks are published across 30 of the 30 topic folders.
+166 of 327 papers have a final status: 151 partially reproduced, 15 blocked; 161 still to process. 151 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -350,10 +350,11 @@ this repository.
 | QC-213 | [Quantum Properties Trojans (QuPTs) for Attacking Quantum Neural Networks](https://doi.org/10.1109/isvlsi65124.2025.11130199) | 2025 | [HybridQNN_QuPTTrojan_Bhowmik2025](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 
-### 26 QML Model Extraction Theft  (2 of 14 papers)
+### 26 QML Model Extraction Theft  (3 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-141 | [AI-Driven Reverse Engineering of QML Models](https://doi.org/10.1109/isqed65160.2025.11014316) | 2025 | [AE_ReverseEngineering_QMLCircuits_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/AE_ReverseEngineering_QMLCircuits_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/AE_ReverseEngineering_QMLCircuits_Ghosh2025.ipynb) | partially reproduced |
 | QC-150 | [CopyQNN: Quantum Neural Network Extraction Attack under Varying Quantum Noise](https://arxiv.org/abs/2504.00366) | 2025 | [QNN_ModelExtraction_Fu2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) | partially reproduced |
 | QC-164 | [Guardians of the Quantum GAN](https://doi.org/10.1109/isqed65160.2025.11014340) | 2025 | [QGAN_HardwareWatermark_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) | partially reproduced |
 

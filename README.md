@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-148 of 327 papers have a final status: 135 partially reproduced, 13 blocked; 179 still to process. 135 notebooks are published across 30 of the 30 topic folders.
+149 of 327 papers have a final status: 136 partially reproduced, 13 blocked; 178 still to process. 136 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -319,12 +319,13 @@ this repository.
 | QC-234 | [A Comparative Analysis of Adversarial Robustness for Quantum and Classical Machine Learning Models](https://arxiv.org/abs/2404.16154) | 2024 | [QNN_AdversarialRobustness_Wendlinger2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) | partially reproduced |
 | QC-305 | [Quantum Neural Networks under Depolarization Noise: Exploring White-Box Attacks and Defenses](https://arxiv.org/abs/2311.17458) | 2023 | [QNN_DepolarizationNoiseRobustness_Winderl2023](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) | partially reproduced |
 
-### 24 Poisoning Attacks Against QML  (2 of 12 papers)
+### 24 Poisoning Attacks Against QML  (3 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-014 | [Adversarial poisoning attack on quantum machine learning models](https://arxiv.org/abs/2411.14412) | 2024 | [HybridQNN_LabelPoisoning_Kundu2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) | partially reproduced |
 | QC-015 | [Quantum error propagation](https://arxiv.org/abs/2410.05145) | 2024 | [QSVM_ErrorPropagationPoisoning_Sultanow2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QSVM_ErrorPropagationPoisoning_Sultanow2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QSVM_ErrorPropagationPoisoning_Sultanow2024.ipynb) | partially reproduced |
+| QC-124 | [Superior resilience to poisoning and amenability to unlearning in quantum machine learning](https://doi.org/10.1038/s41467-026-70420-4) | 2026 | [QNN_PoisoningUnlearning_Chen2026](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) | partially reproduced |
 
 ### 25 Backdoor Trojan Attacks Against QML  (8 of 19 papers)
 

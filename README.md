@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-21)
-123 of 327 papers have a final status: 113 partially reproduced, 10 blocked; 204 still to process. 113 notebooks are published across 30 of the 30 topic folders.
+124 of 327 papers have a final status: 113 partially reproduced, 11 blocked; 203 still to process. 113 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -339,6 +339,7 @@ _No notebook yet._
 | QC-060 | Comparative Analysis of Classical and Quantum Machine Learning Approaches for Anomaly Detection in IoT Security | Literature review (Turkish): the abstract states it reviews recent IoT intrusion-detection literature; Section IV describes the reviewed studies' methods and Ta |
 | QC-081 | Hybrid Quantum-Classical Machine Learning for Cybersecurity Threat Detection and Intrusion Prediction: a Systematic Review | Systematic review (PRISMA 2020, 87 primary studies, pooled estimates): the acknowledgment states that no original quantum experiments were conducted and all emp |
 | QC-086 | Intrusion Detection System based on Quantum Generative Adversarial Network and Blockchain-based Federated Learning | Short architecture paper (ICNC 2026, 4 pages): no dataset named, no numeric results (only a qualitative convergence plot, Fig. 4); the QGAN IDS experiment and i |
+| QC-102 | Quantum adversarial machine learning: from classical adaptations to quantum-native methods | Survey/review (Razavi-Far et al. 2026, arXiv 2605.18821): reports no original experiments; all tables summarise prior work; no rerunnable experiment. |
 
 ## Rules for adding a notebook
 

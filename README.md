@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-131 of 327 papers have a final status: 119 partially reproduced, 12 blocked; 196 still to process. 119 notebooks are published across 30 of the 30 topic folders.
+132 of 327 papers have a final status: 119 partially reproduced, 13 blocked; 195 still to process. 119 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -389,6 +389,7 @@ _No notebook yet._
 | QC-086 | Intrusion Detection System based on Quantum Generative Adversarial Network and Blockchain-based Federated Learning | Short architecture paper (ICNC 2026, 4 pages): no dataset named, no numeric results (only a qualitative convergence plot, Fig. 4); the QGAN IDS experiment and i |
 | QC-102 | Quantum adversarial machine learning: from classical adaptations to quantum-native methods | Survey/review (Razavi-Far et al. 2026, arXiv 2605.18821): reports no original experiments; all tables summarise prior work; no rerunnable experiment. |
 | QC-106 | Quantum-Enhanced Adversarial Robustness in Artificial Intelligence | Book chapter / overview (Sen 2026) of adversarial ML and quantum ML with conceptual frameworks and tables only; no original experiment, dataset or reported resu |
+| QC-114 | Quantum Machine Learning for Cyber Threat Intelligence: A Scoping Review of Current Capabilities and Future Directions | Scoping review (PRISMA-ScR, Rezaei et al. 2026) of 24 QML cyber-threat-intelligence studies; contains no original experiment, only results quoted from other pap |
 
 ## Rules for adding a notebook
 

@@ -54,11 +54,11 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-21)
-115 of 327 papers have a final status: 105 partially reproduced, 10 blocked; 212 still to process. 105 notebooks are published across 30 of the 30 topic folders.
+116 of 327 papers have a final status: 106 partially reproduced, 10 blocked; 211 still to process. 106 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (18 of 79 papers)
+### 01 Network Intrusion Detection  (19 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -78,6 +78,7 @@ live in the topic folders.
 | QC-073 | [Federated Variational Quantum Neural Networks for Privacy-Preserving Anomaly Detection in IoT](https://doi.org/10.1109/SMARTCOMP-Companion70724.2026.00033) | 2026 | [FedVQC_IoTAnomalyDetection_Delhibabu2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/FedVQC_IoTAnomalyDetection_Delhibabu2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/FedVQC_IoTAnomalyDetection_Delhibabu2026.ipynb) | partially reproduced |
 | QC-076 | [How Quantum Is the Advantage? A Fair, Calibration- and Noise-Aware Benchmark and Attribution Audit of Quantum Machine Learning for Network Intrusion Detection](https://arxiv.org/abs/2608.18155) | 2026 | [HybridQNN_IntrusionAudit_Gillani2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQNN_IntrusionAudit_Gillani2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQNN_IntrusionAudit_Gillani2026.ipynb) | partially reproduced |
 | QC-080 | [Hybrid Quantum-Classical Intrusion Detection with Quantum Feature Representations under NISQ Constraints](https://doi.org/10.5753/sbccq.2026.23307) | 2026 | [QPCA_IntrusionDetection_Salem2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QPCA_IntrusionDetection_Salem2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QPCA_IntrusionDetection_Salem2026.ipynb) | partially reproduced |
+| QC-083 | [Hybrid Quantum Kernel Support Vector Machine for Network Intrusion Detection Using NISQ-Compatible Quantum Circuits](https://doi.org/10.1002/qute.70481) | 2026 | [QSVM_IntrusionDetection_Khan2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Khan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Khan2026.ipynb) | partially reproduced |
 | QC-087 | [Leveraging Quantum Kernel Methods for Enhanced Intrusion Detection](https://doi.org/10.1109/COMSNETS67989.2026.11418222) | 2026 | [QSVM_IntrusionDetection_Tiwari2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 

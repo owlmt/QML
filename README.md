@@ -54,7 +54,7 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-21)
-122 of 327 papers have a final status: 112 partially reproduced, 10 blocked; 205 still to process. 112 notebooks are published across 30 of the 30 topic folders.
+123 of 327 papers have a final status: 113 partially reproduced, 10 blocked; 204 still to process. 113 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -267,7 +267,7 @@ live in the topic folders.
 | QC-014 | [Adversarial poisoning attack on quantum machine learning models](https://arxiv.org/abs/2411.14412) | 2024 | [HybridQNN_LabelPoisoning_Kundu2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/HybridQNN_LabelPoisoning_Kundu2024.ipynb) | partially reproduced |
 | QC-015 | [Quantum error propagation](https://arxiv.org/abs/2410.05145) | 2024 | [QSVM_ErrorPropagationPoisoning_Sultanow2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QSVM_ErrorPropagationPoisoning_Sultanow2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QSVM_ErrorPropagationPoisoning_Sultanow2024.ipynb) | partially reproduced |
 
-### 25 Backdoor Trojan Attacks Against QML  (6 of 19 papers)
+### 25 Backdoor Trojan Attacks Against QML  (7 of 19 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -275,6 +275,7 @@ live in the topic folders.
 | QC-056 | [Black-box backdoor detection in quantum neural networks via dose-response Monte Carlo testing](https://doi.org/10.1088/2058-9565/ae7b80) | 2026 | [QNN_BackdoorDetection_Zhang2026](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_BackdoorDetection_Zhang2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_BackdoorDetection_Zhang2026.ipynb) | partially reproduced |
 | QC-057 | [Can Quantum Federated Learning Withstand Circuit-Level Backdoors?](https://doi.org/10.24963/ijcai.2026/518) | 2026 | [QFL_CircuitBackdoor_Mathur2026](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QFL_CircuitBackdoor_Mathur2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QFL_CircuitBackdoor_Mathur2026.ipynb) | partially reproduced |
 | QC-075 | [HarmQ: Harmonic Backdoor Attacks Against Quantum Neural Networks](https://arxiv.org/abs/2607.12055) | 2026 | [QNN_HarmonicBackdoor_Zhang2026](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_HarmonicBackdoor_Zhang2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_HarmonicBackdoor_Zhang2026.ipynb) | partially reproduced |
+| QC-085 | [Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks](https://arxiv.org/abs/2607.11843) | 2026 | [QNN_InputAwareBackdoor_Zhang2026](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_InputAwareBackdoor_Zhang2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_InputAwareBackdoor_Zhang2026.ipynb) | partially reproduced |
 | QC-213 | [Quantum Properties Trojans (QuPTs) for Attacking Quantum Neural Networks](https://doi.org/10.1109/isvlsi65124.2025.11130199) | 2025 | [HybridQNN_QuPTTrojan_Bhowmik2025](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_QuPTTrojan_Bhowmik2025.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 

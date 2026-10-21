@@ -54,11 +54,11 @@ Paper PDFs are not distributed. Two early reference notebooks remain at the repo
 live in the topic folders.
 
 ## Progress (2026-10-21)
-120 of 327 papers have a final status: 110 partially reproduced, 10 blocked; 207 still to process. 110 notebooks are published across 30 of the 30 topic folders.
+121 of 327 papers have a final status: 111 partially reproduced, 10 blocked; 206 still to process. 111 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (20 of 79 papers)
+### 01 Network Intrusion Detection  (21 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -81,6 +81,7 @@ live in the topic folders.
 | QC-083 | [Hybrid Quantum Kernel Support Vector Machine for Network Intrusion Detection Using NISQ-Compatible Quantum Circuits](https://doi.org/10.1002/qute.70481) | 2026 | [QSVM_IntrusionDetection_Khan2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Khan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Khan2026.ipynb) | partially reproduced |
 | QC-084 | [Hybrid Quantum Machine Learning for Intrusion Detection: A Comparative Study of QNN and QSVM Models](https://doi.org/10.1109/ACCESS.2026.3693627) | 2026 | [QNNvsQSVM_IntrusionDetection_Kerkatou2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNNvsQSVM_IntrusionDetection_Kerkatou2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNNvsQSVM_IntrusionDetection_Kerkatou2026.ipynb) | partially reproduced |
 | QC-087 | [Leveraging Quantum Kernel Methods for Enhanced Intrusion Detection](https://doi.org/10.1109/COMSNETS67989.2026.11418222) | 2026 | [QSVM_IntrusionDetection_Tiwari2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Tiwari2026.ipynb) | partially reproduced |
+| QC-088 | [Meta-Quantum Ensemble Framework for Robust Network Intrusion Detection](https://arxiv.org/abs/2605.28879) | 2026 | [MQE_IntrusionDetection_Bhatnagar2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/MQE_IntrusionDetection_Bhatnagar2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/MQE_IntrusionDetection_Bhatnagar2026.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

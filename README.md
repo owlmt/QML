@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-152 of 327 papers have a final status: 139 partially reproduced, 13 blocked; 175 still to process. 139 notebooks are published across 30 of the 30 topic folders.
+153 of 327 papers have a final status: 139 partially reproduced, 14 blocked; 174 still to process. 139 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -410,6 +410,7 @@ _No notebook yet._
 | QC-102 | Quantum adversarial machine learning: from classical adaptations to quantum-native methods | Survey/review (Razavi-Far et al. 2026, arXiv 2605.18821): reports no original experiments; all tables summarise prior work; no rerunnable experiment. |
 | QC-106 | Quantum-Enhanced Adversarial Robustness in Artificial Intelligence | Book chapter / overview (Sen 2026) of adversarial ML and quantum ML with conceptual frameworks and tables only; no original experiment, dataset or reported resu |
 | QC-114 | Quantum Machine Learning for Cyber Threat Intelligence: A Scoping Review of Current Capabilities and Future Directions | Scoping review (PRISMA-ScR, Rezaei et al. 2026) of 24 QML cyber-threat-intelligence studies; contains no original experiment, only results quoted from other pap |
+| QC-140 | Adversarial Threats in Quantum Machine Learning: A Survey of Attacks and Defenses | Survey/book chapter (Ghosh et al. 2025, arXiv 2506.21842) with no original experiment; its quantitative results summarise cited works (HVIP/HA VIP, QuMoS, qGAN  |
 
 ## Rules for adding a notebook
 

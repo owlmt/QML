@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use these notebooks, the dataset atlas or the manifest, please cite this repository."
+title: "QML x Cybersecurity: reproducible notebooks of quantum machine learning papers and a cybersecurity dataset atlas"
+type: software
+authors:
+  - family-names: Tehrani
+    given-names: Madjid G.
+    affiliation: "Edinburgh Napier University"
+repository-code: "https://github.com/owlmt/QML"
+url: "https://github.com/owlmt/QML"
+abstract: >-
+  One Google Colab notebook per published quantum-machine-learning (QML) cybersecurity paper,
+  filed into 30 cybersecurity topic folders, each executed end to end with a classical baseline on
+  identical inputs and a claim-by-claim comparison with the paper; plus a dataset atlas (folder
+  00_Cybersecurity_Dataset_Atlas) that documents, visualises and maps to use cases every dataset the
+  reproductions rely on.
+keywords:
+  - quantum machine learning
+  - cybersecurity
+  - intrusion detection
+  - malware detection
+  - phishing detection
+  - reproducibility
+  - datasets
+date-released: "2026-10-21"
+version: "2026.10"
+preferred-citation:
+  type: software
+  title: "QML x Cybersecurity: reproducible notebooks of quantum machine learning papers and a cybersecurity dataset atlas"
+  authors:
+    - family-names: Tehrani
+      given-names: Madjid G.
+      affiliation: "Edinburgh Napier University"
+  year: 2026
+  url: "https://github.com/owlmt/QML"
+  notes: "Cite the dataset atlas as folder 00_Cybersecurity_Dataset_Atlas and an implemented paper as its notebook path, together with the original paper."

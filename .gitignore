@@ -17,6 +17,8 @@
 *.csv
 !manifest.csv
 !paper_index.csv
+!00_Cybersecurity_Dataset_Atlas/atlas_usage.csv
+!00_Cybersecurity_Dataset_Atlas/atlas_inventory.csv
 *.parquet
 *.pcap
 *.pcapng

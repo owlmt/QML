@@ -43,6 +43,19 @@ bibliography; do not extract it into the repo.
 | 09_Malicious_URL_Detection | 19_Cybersecurity_Anomaly_Detection | 29_Adversarial_Robustness_Defences_for_QML |
 | 10_Spam_Detection | 20_Blockchain_Attack_Detection | 30_QML_Defences_Against_ML_Attacks |
 
+### Folder 00: Cybersecurity Dataset Atlas (user decision, 2026-10-21)
+
+`00_Cybersecurity_Dataset_Atlas/` is not a topic folder and holds no paper reproductions. It
+contains `QML_Cybersecurity_Dataset_Atlas.ipynb` (one executed card per dataset: real
+observations coloured by ground-truth label, class distribution, feature table, reference,
+licence, verified access status and the use cases, i.e. topic folders and QC-IDs that use it),
+`atlas_usage.csv` (dataset -> notebook map, regenerated with `tools/atlas_usage.py` after new
+notebooks are published) and `atlas_inventory.csv` (written by the notebook). Datasets that need a
+registration form or an API key are listed with status `NEEDS_USER_FILE`; the user supplies those
+files, they are never faked or substituted. `CITATION.cff` and the README "How to cite" section
+give the citation (Madjid G. Tehrani, Edinburgh Napier University) for the repository, the atlas
+and the implemented papers. The "never create new topic folders" rule still applies to 01-30.
+
 ### manifest.csv
 
 Columns: `QC-ID`, `Full paper title`, `Year`, `DOI/arXiv URL`,

@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-137 of 327 papers have a final status: 124 partially reproduced, 13 blocked; 190 still to process. 124 notebooks are published across 30 of the 30 topic folders.
+138 of 327 papers have a final status: 125 partially reproduced, 13 blocked; 189 still to process. 125 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -139,7 +139,7 @@ this repository.
 | QC-108 | [Quantum-Enhanced Intrusion Detection Using Quantum Circuit Born Machines for Zero-Day Attack Detection](https://doi.org/10.32604/cmc.2026.075326) | 2026 | [QCBM_ZeroDay_AlMalwi2026](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) | partially reproduced |
 | QC-136 | [A Non-Monotonic Relationship: An Empirical Analysis of Hybrid Quantum Classifiers for Unseen Ransomware Detection](https://arxiv.org/abs/2509.07924) | 2025 | [HybridVQC_UnseenRansomware_Le2025](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) | partially reproduced |
 
-### 03 DDoS DoS Detection  (5 of 14 papers)
+### 03 DDoS DoS Detection  (6 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -148,6 +148,7 @@ this repository.
 | QC-033 | [Quantum computing and machine learning for cybersecurity: Distributed denial of service (DDoS) attack detection on smart micro-grid](https://doi.org/10.3390/en16083572) | 2023 | [QSVM_DDoS_Said2023](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Said2023.ipynb) | partially reproduced |
 | QC-068 | [Early Detection of Distributed Denial of Service in Cloud Computing Using Quantum-Enhanced Knowledge Distillation Framework](https://doi.org/10.3390/electronics15112327) | 2026 | [QNN_KnowledgeDistillationDDoS_Krishnamurthy2026](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QNN_KnowledgeDistillationDDoS_Krishnamurthy2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QNN_KnowledgeDistillationDDoS_Krishnamurthy2026.ipynb) | partially reproduced |
 | QC-090 | [Mitigating vanishing similarity in quantum kernels for DDoS attack detection](https://doi.org/10.1007/s42484-026-00412-6) | 2026 | [QSVM_VanishingSimilarityDDoS_RodriguezAlmazan2026](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_VanishingSimilarityDDoS_RodriguezAlmazan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_VanishingSimilarityDDoS_RodriguezAlmazan2026.ipynb) | partially reproduced |
+| QC-118 | [Quantum Support Vector Machine for Detecting DDoS Cyber-Attacks](https://doi.org/10.1007/978-3-032-05748-8_21) | 2026 | [QSVM_DDoS_Alonso2026](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Alonso2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Alonso2026.ipynb) | partially reproduced |
 
 ### 04 Botnet DGA Detection  (3 of 4 papers)
 

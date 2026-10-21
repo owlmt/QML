@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-144 of 327 papers have a final status: 131 partially reproduced, 13 blocked; 183 still to process. 131 notebooks are published across 30 of the 30 topic folders.
+145 of 327 papers have a final status: 132 partially reproduced, 13 blocked; 182 still to process. 132 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -229,7 +229,7 @@ this repository.
 | QC-070 | [Encrypted network traffic analysis using quantum machine learning](https://doi.org/10.1140/epjqt/s40507-025-00459-7) | 2026 | [HybridQML_EncryptedTraffic_Sodar2026](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) | partially reproduced |
 | QC-198 | [Quantum deep learning for encrypted malicious traffic detection: a hybrid approach for secure network analysis](https://doi.org/10.31705/ADScAI.2025.56) | 2025 | [HybridQNN_EncryptedTraffic_Hariharan2025](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) | partially reproduced |
 
-### 14 IoT IIoT Attack Detection  (7 of 32 papers)
+### 14 IoT IIoT Attack Detection  (8 of 32 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -239,6 +239,7 @@ this repository.
 | QC-091 | [Modeling Quantum Federated Autoencoder for Anomaly Detection in IoT Networks](https://doi.org/10.1109/ICOIN68469.2026.11480492) | 2026 | [QAE_FederatedAnomalyDetection_Chaudhary2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QAE_FederatedAnomalyDetection_Chaudhary2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QAE_FederatedAnomalyDetection_Chaudhary2026.ipynb) | partially reproduced |
 | QC-105 | [Quantum-driven enhanced machine learning algorithm for intrusion detection in Internet of things environment](https://doi.org/10.1140/epjqt/s40507-026-00463-5) | 2026 | [HybridQNN_IoTIntrusion_Bharathi2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Bharathi2026.ipynb) | partially reproduced |
 | QC-110 | [Quantum-Enhanced Security for Edge-IIoT: Robust Intrusion Detection with a Novel Quantum-Classical Neural Network](https://doi.org/10.32604/cmc.2026.083381) | 2026 | [RHQCNN_IntrusionDetection_Mazroa2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/RHQCNN_IntrusionDetection_Mazroa2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/RHQCNN_IntrusionDetection_Mazroa2026.ipynb) | partially reproduced |
+| QC-131 | [A Human-Centered Quantum Machine Learning Framework for Attack Detection in IoT-Based Healthcare Industry 5.0](https://doi.org/10.1109/JIOT.2025.3565687) | 2025 | [QRF_HealthcareIoT_AlHawawreh2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QRF_HealthcareIoT_AlHawawreh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QRF_HealthcareIoT_AlHawawreh2025.ipynb) | partially reproduced |
 | QC-171 | [Intrusion Detection in IoT Networks using a Hybrid Quantum-Classical Graph Neural Network](https://doi.org/10.1109/VCRIS68011.2025.11250552) | 2025 | [HybridQNN_IoTIntrusion_Hoang2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) | partially reproduced |
 
 ### 15 Smart Grid Power System Attacks  (5 of 12 papers)

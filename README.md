@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-21)
-128 of 327 papers have a final status: 116 partially reproduced, 12 blocked; 199 still to process. 116 notebooks are published across 30 of the 30 topic folders.
+129 of 327 papers have a final status: 117 partially reproduced, 12 blocked; 198 still to process. 117 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (23 of 79 papers)
+### 01 Network Intrusion Detection  (24 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -126,6 +126,7 @@ this repository.
 | QC-088 | [Meta-Quantum Ensemble Framework for Robust Network Intrusion Detection](https://arxiv.org/abs/2605.28879) | 2026 | [MQE_IntrusionDetection_Bhatnagar2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/MQE_IntrusionDetection_Bhatnagar2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/MQE_IntrusionDetection_Bhatnagar2026.ipynb) | partially reproduced |
 | QC-094 | [Novel Quantum Ensemble Machine Learning Models for IoT Intrusion Detection](https://doi.org/10.1109/DCAS69364.2026.11544356) | 2026 | [QVE_QWE_IoTIntrusionDetection_Okekeogbu2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QVE_QWE_IoTIntrusionDetection_Okekeogbu2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QVE_QWE_IoTIntrusionDetection_Okekeogbu2026.ipynb) | partially reproduced |
 | QC-103 | [Quantum AI for Cybersecurity: A hybrid Quantum-Classical models for attack path analysis](https://arxiv.org/abs/2601.02237) | 2026 | [HybridQEmbedSVM_IntrusionDetection_Sciammarelli2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQEmbedSVM_IntrusionDetection_Sciammarelli2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQEmbedSVM_IntrusionDetection_Sciammarelli2026.ipynb) | partially reproduced |
+| QC-107 | [Quantum-Enhanced Hybrid Variational Neural Network for IoT Intrusion Detection](https://doi.org/10.1109/ICBDML68582.2026.11544431) | 2026 | [HybridVQNN_IoTIntrusionDetection_Shrivastava2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridVQNN_IoTIntrusionDetection_Shrivastava2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridVQNN_IoTIntrusionDetection_Shrivastava2026.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

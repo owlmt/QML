@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-218 of 327 papers have a final status: 195 partially reproduced, 23 blocked; 109 still to process. 195 notebooks are published across 30 of the 30 topic folders.
+219 of 327 papers have a final status: 196 partially reproduced, 23 blocked; 108 still to process. 196 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (49 of 79 papers)
+### 01 Network Intrusion Detection  (50 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -153,6 +153,7 @@ this repository.
 | QC-201 | [Quantum Generative Adversarial Networks for Intrusion Detection: An Experimentation on Real Quantum Devices](https://doi.org/10.1109/QAI63978.2025.00065) | 2025 | [QGAN_RealDeviceIntrusionDetection_Cirillo2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_RealDeviceIntrusionDetection_Cirillo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_RealDeviceIntrusionDetection_Cirillo2025.ipynb) | partially reproduced |
 | QC-210 | [Quantum Machine Learning for UAV Swarm Intrusion Detection](https://doi.org/10.1109/GCWKSHPS68340.2025.11590964) | 2025 | [QML_UAVSwarmIntrusion_Chen2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QML_UAVSwarmIntrusion_Chen2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QML_UAVSwarmIntrusion_Chen2025.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
+| QC-226 | [Towards Practical Quantum Kernels for Network Intrusion Detection](https://doi.org/10.1609/aaaiss.v7i1.36903) | 2025 | [QSVM_IntrusionDetection_Cotrupi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

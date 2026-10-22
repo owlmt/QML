@@ -95,12 +95,12 @@ When citing a single reproduction, add the notebook path (for example
 dataset shown in the atlas, cite the dataset's own reference given on its atlas card in addition to
 this repository.
 
-## Progress (2026-10-22)
-252 of 327 papers have a final status: 225 partially reproduced, 27 blocked; 75 still to process. 225 notebooks are published across 30 of the 30 topic folders.
+## Progress (2026-10-23)
+253 of 327 papers have a final status: 226 partially reproduced, 27 blocked; 74 still to process. 226 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (55 of 79 papers)
+### 01 Network Intrusion Detection  (56 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -159,6 +159,7 @@ this repository.
 | QC-226 | [Towards Practical Quantum Kernels for Network Intrusion Detection](https://doi.org/10.1609/aaaiss.v7i1.36903) | 2025 | [QSVM_IntrusionDetection_Cotrupi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) | partially reproduced |
 | QC-228 | [Towards Quantum-Enhanced Intrusion Detection in Industrial Control Systems: A Proof-of-Concept Using Variational Quantum Classifiers](https://doi.org/10.1109/ISNCC66965.2025.11250507) | 2025 | [VQC_ICSIntrusionDetection_Dilek2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_ICSIntrusionDetection_Dilek2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_ICSIntrusionDetection_Dilek2025.ipynb) | partially reproduced |
 | QC-250 | [Network intrusion detection based on variational quantum convolution neural network](https://doi.org/10.1007/s11227-024-05919-y) | 2024 | [VQNNQCNN_IntrusionDetection_Gong2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) | partially reproduced |
+| QC-256 | [Quantum-Assisted Activation for Supervised Learning in Healthcare-Based Intrusion Detection Systems](https://doi.org/10.1109/TAI.2022.3187676) | 2024 | [QNN_QuantumActivation_IDS_Laxminarayana2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

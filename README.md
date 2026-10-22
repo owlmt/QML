@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-186 of 327 papers have a final status: 170 partially reproduced, 16 blocked; 141 still to process. 170 notebooks are published across 30 of the 30 topic folders.
+187 of 327 papers have a final status: 171 partially reproduced, 16 blocked; 140 still to process. 171 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (38 of 79 papers)
+### 01 Network Intrusion Detection  (39 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -141,6 +141,7 @@ this repository.
 | QC-162 | [Federated Quantum Generative Adversarial Network for Intrusion Detection](https://doi.org/10.1109/ICDCSW63273.2025.00018) | 2025 | [QGAN_FederatedIntrusionDetection_Cirillo2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_FederatedIntrusionDetection_Cirillo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_FederatedIntrusionDetection_Cirillo2025.ipynb) | partially reproduced |
 | QC-166 | [Hybrid Quantum-Classical Autoencoders for Unsupervised Network Intrusion Detection](https://arxiv.org/abs/2512.05069) | 2025 | [HQCAE_UnsupervisedIDS_Rasyidi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HQCAE_UnsupervisedIDS_Rasyidi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HQCAE_UnsupervisedIDS_Rasyidi2025.ipynb) | partially reproduced |
 | QC-172 | [Intrusion Detection of Power Systems with Quantum Neural Networks](https://doi.org/10.1109/SMC58881.2025.11342482) | 2025 | [QNN_PowerSystemIDS_Peng2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_PowerSystemIDS_Peng2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_PowerSystemIDS_Peng2025.ipynb) | partially reproduced |
+| QC-176 | [Modeling Wavelet Transformed Quantum Support Vector for Network Intrusion Detection](https://arxiv.org/abs/2512.01365) | 2025 | [QSVM_WaveletIntrusionDetection_Kumari2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_WaveletIntrusionDetection_Kumari2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_WaveletIntrusionDetection_Kumari2025.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

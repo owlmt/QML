@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-182 of 327 papers have a final status: 166 partially reproduced, 16 blocked; 145 still to process. 166 notebooks are published across 30 of the 30 topic folders.
+183 of 327 papers have a final status: 167 partially reproduced, 16 blocked; 144 still to process. 167 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (37 of 79 papers)
+### 01 Network Intrusion Detection  (38 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -138,6 +138,7 @@ this repository.
 | QC-142 | [An Intrusion Detection Model Integrating Federated Learning and Quantum Convolutional Neural Networks](https://doi.org/10.7544/issn1000-1239.202550413) | 2025 | [QCNN_FederatedIDS_Dongfen2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QCNN_FederatedIDS_Dongfen2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QCNN_FederatedIDS_Dongfen2025.ipynb) | partially reproduced |
 | QC-156 | [Enhancing Network Anomaly Detection with Quantum GANs and Successive Data Injection for Multivariate Time Series](https://doi.org/10.1109/IWCMC65282.2025.11059562) | 2025 | [QGAN_NetworkAnomaly_Hammami2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_NetworkAnomaly_Hammami2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_NetworkAnomaly_Hammami2025.ipynb) | partially reproduced |
 | QC-158 | [Evaluating the Potential of Quantum Machine Learning in Cybersecurity: A Case-Study on PCA-based Intrusion Detection Systems](https://doi.org/10.1016/j.cose.2025.104341) | 2025 | [SQLearn_PCA_IntrusionDetection_Bellante2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/SQLearn_PCA_IntrusionDetection_Bellante2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/SQLearn_PCA_IntrusionDetection_Bellante2025.ipynb) | partially reproduced |
+| QC-162 | [Federated Quantum Generative Adversarial Network for Intrusion Detection](https://doi.org/10.1109/ICDCSW63273.2025.00018) | 2025 | [QGAN_FederatedIntrusionDetection_Cirillo2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_FederatedIntrusionDetection_Cirillo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_FederatedIntrusionDetection_Cirillo2025.ipynb) | partially reproduced |
 | QC-166 | [Hybrid Quantum-Classical Autoencoders for Unsupervised Network Intrusion Detection](https://arxiv.org/abs/2512.05069) | 2025 | [HQCAE_UnsupervisedIDS_Rasyidi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HQCAE_UnsupervisedIDS_Rasyidi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HQCAE_UnsupervisedIDS_Rasyidi2025.ipynb) | partially reproduced |
 | QC-172 | [Intrusion Detection of Power Systems with Quantum Neural Networks](https://doi.org/10.1109/SMC58881.2025.11342482) | 2025 | [QNN_PowerSystemIDS_Peng2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_PowerSystemIDS_Peng2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_PowerSystemIDS_Peng2025.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |

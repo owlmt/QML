@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-187 of 327 papers have a final status: 171 partially reproduced, 16 blocked; 140 still to process. 171 notebooks are published across 30 of the 30 topic folders.
+188 of 327 papers have a final status: 172 partially reproduced, 16 blocked; 139 still to process. 172 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -257,7 +257,7 @@ this repository.
 | QC-134 | [A Hybrid Post Quantum Cryptography and Quantum Machine Learning Framework for Secure IoT Anomaly Detection](https://doi.org/10.21203/rs.3.rs-7538381/v1) | 2025 | [QSVM_PQC_IoTAnomalyDetection_Lokesh2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QSVM_PQC_IoTAnomalyDetection_Lokesh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QSVM_PQC_IoTAnomalyDetection_Lokesh2025.ipynb) | partially reproduced |
 | QC-171 | [Intrusion Detection in IoT Networks using a Hybrid Quantum-Classical Graph Neural Network](https://doi.org/10.1109/VCRIS68011.2025.11250552) | 2025 | [HybridQNN_IoTIntrusion_Hoang2025](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_IoTIntrusion_Hoang2025.ipynb) | partially reproduced |
 
-### 15 Smart Grid Power System Attacks  (6 of 12 papers)
+### 15 Smart Grid Power System Attacks  (7 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -266,6 +266,7 @@ this repository.
 | QC-104 | [Quantum Diffusion with Attentive Twin-Stream Sparse Spatiotemporal for Cyberattack Detection in Smart Grids](https://doi.org/10.21203/rs.3.rs-10334218/v1) | 2026 | [QSTQD_SmartGridAttack_Adhikari2026](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QSTQD_SmartGridAttack_Adhikari2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QSTQD_SmartGridAttack_Adhikari2026.ipynb) | partially reproduced |
 | QC-119 | [QUPID: A Partitioned Quantum Neural Network for Anomaly Detection in Smart Grid](https://arxiv.org/abs/2601.11500) | 2026 | [QUPID_SmartGridAnomaly_Ngo2026](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QUPID_SmartGridAnomaly_Ngo2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QUPID_SmartGridAnomaly_Ngo2026.ipynb) | partially reproduced |
 | QC-161 | [Exploring Advanced Quantum Ensemble for Industrial Control Systems Security](https://doi.org/10.1145/3696630.3731620) | 2025 | [Ensemble_ICSPowerSystem_Vasan2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/Ensemble_ICSPowerSystem_Vasan2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/Ensemble_ICSPowerSystem_Vasan2025.ipynb) | partially reproduced |
+| QC-163 | [Federated Quantum Machine Learning for Distributed Cybersecurity in Multi-Agent Energy Systems](https://doi.org/10.3390/en18205418) | 2025 | [FQML_SmartGridAttack_Addo2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/FQML_SmartGridAttack_Addo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/FQML_SmartGridAttack_Addo2025.ipynb) | partially reproduced |
 | QC-183 | [Power Theft Detection in Smart Grids Using Quantum Machine Learning](https://doi.org/10.1109/ACCESS.2025.3558143) | 2025 | [HybridQNN_PowerTheft_Blazakis2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) | partially reproduced |
 
 ### 16 ICS SCADA Cyber Physical Attacks  (2 of 4 papers)

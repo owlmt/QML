@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-202 of 327 papers have a final status: 182 partially reproduced, 20 blocked; 125 still to process. 182 notebooks are published across 30 of the 30 topic folders.
+203 of 327 papers have a final status: 182 partially reproduced, 21 blocked; 124 still to process. 182 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -460,6 +460,7 @@ _No notebook yet._
 | QC-205 | Quantum Machine Learning-Based Intrusion Detection: A Comparative Study on Real Quantum Hardware | Review / comparative literature paper (Nagy et al., SISY 2025) with no own experiment: it summarises four earlier studies (QC-003 Hdaib, QC-018 and QC-216 de Ab |
 | QC-206 | Quantum Machine Learning for 6G Network Intelligence and Adversarial Threats | Vision/survey magazine article (IEEE Commun. Stand. Mag. 2025). Its only experiment (Figs. 4-5: DRL resource allocation with a 4-qubit quantum policy attacked b |
 | QC-208 | Quantum Machine Learning for Cybersecurity: A Taxonomy and Future Directions | Survey/taxonomy of QML for cybersecurity (Sai et al. 2025, arXiv 2512.15286); no original experiment, all reported numbers are from cited works, so there is no  |
+| QC-211 | Quantum Machine Learning in Cybersecurity: A Review of Quantum-Safe and Quantum-Enhanced Approaches | Review/survey of QML for cybersecurity (Rahgozar et al. 2025, ICSPC); reports no original experiment or metrics, only qualitative discussion of others' work, so |
 
 ## Rules for adding a notebook
 

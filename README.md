@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-193 of 327 papers have a final status: 177 partially reproduced, 16 blocked; 134 still to process. 177 notebooks are published across 30 of the 30 topic folders.
+194 of 327 papers have a final status: 178 partially reproduced, 16 blocked; 133 still to process. 178 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (43 of 79 papers)
+### 01 Network Intrusion Detection  (44 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -146,6 +146,7 @@ this repository.
 | QC-174 | [Leveraging Quantum Machine Learning for Intrusion Detection in Software-Defined Networks](https://doi.org/10.1109/ICMLCN64995.2025.11140473) | 2025 | [QML_SDNIntrusionDetection_Lazaro2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QML_SDNIntrusionDetection_Lazaro2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QML_SDNIntrusionDetection_Lazaro2025.ipynb) | partially reproduced |
 | QC-176 | [Modeling Wavelet Transformed Quantum Support Vector for Network Intrusion Detection](https://arxiv.org/abs/2512.01365) | 2025 | [QSVM_WaveletIntrusionDetection_Kumari2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_WaveletIntrusionDetection_Kumari2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_WaveletIntrusionDetection_Kumari2025.ipynb) | partially reproduced |
 | QC-177 | [Network attack traffic detection with hybrid quantum-enhanced convolution neural network](https://doi.org/10.1007/s42484-025-00278-0) | 2025 | [HybridQCNN_5GTrafficDetection_Wang2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQCNN_5GTrafficDetection_Wang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQCNN_5GTrafficDetection_Wang2025.ipynb) | partially reproduced |
+| QC-180 | [Parameterised Quantum SVM with Data-Driven Entanglement for Zero-Day Exploit Detection](https://doi.org/10.3390/computers14080331) | 2025 | [QSVM_ZeroDayDetection_Nhlapo2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_ZeroDayDetection_Nhlapo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_ZeroDayDetection_Nhlapo2025.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-201 of 327 papers have a final status: 181 partially reproduced, 20 blocked; 126 still to process. 181 notebooks are published across 30 of the 30 topic folders.
+202 of 327 papers have a final status: 182 partially reproduced, 20 blocked; 125 still to process. 182 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -285,10 +285,11 @@ this repository.
 | QC-202 | [Quantum-Hybrid Support Vector Machines for Anomaly Detection in Industrial Control Systems](https://arxiv.org/abs/2506.17824) | 2025 | [QSVM_AnomalyDetectionICS_Cultice2025](https://github.com/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetectionICS_Cultice2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetectionICS_Cultice2025.ipynb) | partially reproduced |
 | QC-238 | [Anomaly Detection for Real-World Cyber-Physical Security using Quantum Hybrid Support Vector Machines](https://doi.org/10.1109/ISVLSI61997.2024.00117) | 2024 | [QSVM_AnomalyDetection_Cultice2024](https://github.com/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetection_Cultice2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetection_Cultice2024.ipynb) | partially reproduced |
 
-### 17 Vehicle CAN Bus Attacks  (2 of 6 papers)
+### 17 Vehicle CAN Bus Attacks  (3 of 6 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
+| QC-188 | [QCAE-QOC-SVM: A hybrid quantum machine learning model for DoS and Fuzzy attack detection on autonomous vehicle CAN bus](https://doi.org/10.1016/j.mex.2025.103471) | 2025 | [QCAEQOCSVM_CANBusIDS_R2025](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QCAEQOCSVM_CANBusIDS_R2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QCAEQOCSVM_CANBusIDS_R2025.ipynb) | partially reproduced |
 | QC-320 | [Quantum optimization for fast CAN bus intrusion detection](https://doi.org/10.1145/3549036.3562058) | 2022 | [QBoost_CANBusIntrusion_Caivano2022](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) | partially reproduced |
 | QC-328 | [Hybrid Quantum-Classical Neural Network for Cloud-supported In-Vehicle Cyberattack Detection](https://arxiv.org/abs/2110.07467) | 2021 | [HybridQNN_CANAttack_Islam2021](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) | partially reproduced |
 

@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-199 of 327 papers have a final status: 181 partially reproduced, 18 blocked; 128 still to process. 181 notebooks are published across 30 of the 30 topic folders.
+200 of 327 papers have a final status: 181 partially reproduced, 19 blocked; 127 still to process. 181 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -457,6 +457,7 @@ _No notebook yet._
 | QC-178 | Next-Generation Quantum Neural Networks: Enhancing Efficiency, Security, and Privacy | Synthesis/position paper (Innan et al., IOLTS 2025, arXiv 2507.20537): all figures and Table I are reproduced from cited prior work (Kashif 2024, Marchisio, Ahm |
 | QC-204 | Quantum Machine Learning Approaches for Coordinated Stealth Attack Detection in Distributed Generation Systems | Paper's only dataset (High-Fidelity Distributed Generation Dataset for Coordinated Stealth Attack Detection, IEEE DataPort DOI 10.21227/qggf-5y43) needs an IEEE |
 | QC-205 | Quantum Machine Learning-Based Intrusion Detection: A Comparative Study on Real Quantum Hardware | Review / comparative literature paper (Nagy et al., SISY 2025) with no own experiment: it summarises four earlier studies (QC-003 Hdaib, QC-018 and QC-216 de Ab |
+| QC-206 | Quantum Machine Learning for 6G Network Intelligence and Adversarial Threats | Vision/survey magazine article (IEEE Commun. Stand. Mag. 2025). Its only experiment (Figs. 4-5: DRL resource allocation with a 4-qubit quantum policy attacked b |
 
 ## Rules for adding a notebook
 

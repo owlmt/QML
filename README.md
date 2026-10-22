@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-207 of 327 papers have a final status: 186 partially reproduced, 21 blocked; 120 still to process. 186 notebooks are published across 30 of the 30 topic folders.
+208 of 327 papers have a final status: 187 partially reproduced, 21 blocked; 119 still to process. 187 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -159,7 +159,7 @@ this repository.
 | QC-108 | [Quantum-Enhanced Intrusion Detection Using Quantum Circuit Born Machines for Zero-Day Attack Detection](https://doi.org/10.32604/cmc.2026.075326) | 2026 | [QCBM_ZeroDay_AlMalwi2026](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) | partially reproduced |
 | QC-136 | [A Non-Monotonic Relationship: An Empirical Analysis of Hybrid Quantum Classifiers for Unseen Ransomware Detection](https://arxiv.org/abs/2509.07924) | 2025 | [HybridVQC_UnseenRansomware_Le2025](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) | partially reproduced |
 
-### 03 DDoS DoS Detection  (8 of 14 papers)
+### 03 DDoS DoS Detection  (9 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -171,6 +171,7 @@ this repository.
 | QC-118 | [Quantum Support Vector Machine for Detecting DDoS Cyber-Attacks](https://doi.org/10.1007/978-3-032-05748-8_21) | 2026 | [QSVM_DDoS_Alonso2026](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Alonso2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QSVM_DDoS_Alonso2026.ipynb) | partially reproduced |
 | QC-132 | [A Hybrid Classical-Quantum Neural Network Model for DDoS Attack Detection in Software-Defined Vehicular Networks](https://doi.org/10.3390/info16090722) | 2025 | [HybridQNN_DDoSDetection_Sarvade2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSDetection_Sarvade2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSDetection_Sarvade2025.ipynb) | partially reproduced |
 | QC-184 | [Privacy-Aware Framework of Robust Malware Detection in Indoor Robots: Hybrid Quantum Computing and Deep Neural Networks](https://arxiv.org/abs/2510.13136) | 2025 | [HybridQNN_RobotMalwareDoS_Le2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_RobotMalwareDoS_Le2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_RobotMalwareDoS_Le2025.ipynb) | partially reproduced |
+| QC-203 | [Quantum Long Short-Term Memory-based Identification of Distributed Denial of Service Attacks](https://doi.org/10.1109/ICAIC63015.2025.10849228) | 2025 | [QLSTM_DDoS_Tripathi2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) | partially reproduced |
 
 ### 04 Botnet DGA Detection  (3 of 4 papers)
 

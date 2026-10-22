@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-248 of 327 papers have a final status: 222 partially reproduced, 26 blocked; 79 still to process. 222 notebooks are published across 30 of the 30 topic folders.
+249 of 327 papers have a final status: 223 partially reproduced, 26 blocked; 78 still to process. 223 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -401,7 +401,7 @@ this repository.
 | QC-239 | [Backdoor Attacks against Hybrid Classical-Quantum Neural Networks](https://doi.org/10.1016/j.neunet.2025.107776) | 2024 | [HybridQNN_BackdoorQcolor_Guo2024](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_BackdoorQcolor_Guo2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_BackdoorQcolor_Guo2024.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 
-### 26 QML Model Extraction Theft  (4 of 14 papers)
+### 26 QML Model Extraction Theft  (5 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -409,6 +409,7 @@ this repository.
 | QC-145 | [BVQC: A Backdoor-Style Watermarking Scheme for Variational Quantum Circuits](https://doi.org/10.1109/qce65121.2025.00081) | 2025 | [BVQC_Watermarking_Chu2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BVQC_Watermarking_Chu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BVQC_Watermarking_Chu2025.ipynb) | partially reproduced |
 | QC-150 | [CopyQNN: Quantum Neural Network Extraction Attack under Varying Quantum Noise](https://arxiv.org/abs/2504.00366) | 2025 | [QNN_ModelExtraction_Fu2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) | partially reproduced |
 | QC-164 | [Guardians of the Quantum GAN](https://doi.org/10.1109/isqed65160.2025.11014340) | 2025 | [QGAN_HardwareWatermark_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) | partially reproduced |
+| QC-242 | [Evaluating Efficacy of Model Stealing Attacks and Defenses on Quantum Neural Networks](https://doi.org/10.1145/3649476.3658806) | 2024 | [QNN_ModelStealing_Kundu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelStealing_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelStealing_Kundu2024.ipynb) | partially reproduced |
 
 ### 27 QML Privacy Data Leakage  (12 of 20 papers)
 

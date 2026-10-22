@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-237 of 327 papers have a final status: 212 partially reproduced, 25 blocked; 90 still to process. 212 notebooks are published across 30 of the 30 topic folders.
+238 of 327 papers have a final status: 213 partially reproduced, 25 blocked; 89 still to process. 213 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (53 of 79 papers)
+### 01 Network Intrusion Detection  (54 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -157,6 +157,7 @@ this repository.
 | QC-212 | [Quantum Machine Learning with Enhanced Autoencoders for Intrusion Detection](https://doi.org/10.5753/sscad.2025.16683) | 2025 | [QAE_IntrusionDetection_Souza2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QAE_IntrusionDetection_Souza2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QAE_IntrusionDetection_Souza2025.ipynb) | partially reproduced |
 | QC-216 | [QuantumNetSec: Quantum Machine Learning for Network Security](https://doi.org/10.1002/nem.70018) | 2025 | [VQC_IntrusionDetection_deAbreu2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_IntrusionDetection_deAbreu2025.ipynb) | partially reproduced |
 | QC-226 | [Towards Practical Quantum Kernels for Network Intrusion Detection](https://doi.org/10.1609/aaaiss.v7i1.36903) | 2025 | [QSVM_IntrusionDetection_Cotrupi2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Cotrupi2025.ipynb) | partially reproduced |
+| QC-228 | [Towards Quantum-Enhanced Intrusion Detection in Industrial Control Systems: A Proof-of-Concept Using Variational Quantum Classifiers](https://doi.org/10.1109/ISNCC66965.2025.11250507) | 2025 | [VQC_ICSIntrusionDetection_Dilek2025](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_ICSIntrusionDetection_Dilek2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_ICSIntrusionDetection_Dilek2025.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

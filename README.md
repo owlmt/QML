@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-247 of 327 papers have a final status: 221 partially reproduced, 26 blocked; 80 still to process. 221 notebooks are published across 30 of the 30 topic folders.
+248 of 327 papers have a final status: 222 partially reproduced, 26 blocked; 79 still to process. 222 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -345,7 +345,7 @@ this repository.
 | QC-219 | [Reliable Audio Deepfake Detection in Variable Conditions via Quantum-Kernel SVMs](https://arxiv.org/abs/2512.18797) | 2025 | [QSVM_AudioDeepfake_Amin2025](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QSVM_AudioDeepfake_Amin2025.ipynb) | partially reproduced |
 | QC-235 | [A Hybrid Quantum-Classical AI-Based Detection Strategy for Generative Adversarial Network-Based Deepfake Attacks on an Autonomous Vehicle Traffic Sign Classification System](https://arxiv.org/abs/2409.17311) | 2024 | [HybridQNN_DeepfakeTrafficSign_Salek2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) | partially reproduced |
 
-### 23 Adversarial Attacks Against QML  (22 of 44 papers)
+### 23 Adversarial Attacks Against QML  (23 of 44 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -370,6 +370,7 @@ this repository.
 | QC-222 | [SoK: Critical Evaluation of Quantum Machine Learning for Adversarial Robustness](https://arxiv.org/abs/2511.14989) | 2025 | [QMLP_AdversarialRobustness_Nowmi2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QMLP_AdversarialRobustness_Nowmi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QMLP_AdversarialRobustness_Nowmi2025.ipynb) | partially reproduced |
 | QC-234 | [A Comparative Analysis of Adversarial Robustness for Quantum and Classical Machine Learning Models](https://arxiv.org/abs/2404.16154) | 2024 | [QNN_AdversarialRobustness_Wendlinger2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) | partially reproduced |
 | QC-237 | [AdvQuNN: A Methodology for Analyzing the Adversarial Robustness of Quanvolutional Neural Networks](https://doi.org/10.1109/qsw62656.2024.00033) | 2024 | [QNN_AdversarialRobustness_Maouaki2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maouaki2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maouaki2024.ipynb) | partially reproduced |
+| QC-244 | [Generating Universal Adversarial Perturbations for Quantum Classifiers](https://doi.org/10.1609/aaai.v38i10.28963) | 2024 | [QNN_UniversalAdversarialPerturbation_Anil2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_UniversalAdversarialPerturbation_Anil2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_UniversalAdversarialPerturbation_Anil2024.ipynb) | partially reproduced |
 | QC-305 | [Quantum Neural Networks under Depolarization Noise: Exploring White-Box Attacks and Defenses](https://arxiv.org/abs/2311.17458) | 2023 | [QNN_DepolarizationNoiseRobustness_Winderl2023](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) | partially reproduced |
 
 ### 24 Poisoning Attacks Against QML  (5 of 12 papers)

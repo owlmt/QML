@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-203 of 327 papers have a final status: 182 partially reproduced, 21 blocked; 124 still to process. 182 notebooks are published across 30 of the 30 topic folders.
+204 of 327 papers have a final status: 183 partially reproduced, 21 blocked; 123 still to process. 183 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -404,7 +404,7 @@ this repository.
 | QC-099 | [QML-PipeGuard: Drift-Aware Behavioral Fingerprinting for Quantum Machine Learning Pipeline Integrity](https://doi.org/10.48550/arxiv.2605.25066) | 2026 | [QSVM_PipelineIntegrity_Yeniaras2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) | partially reproduced |
 | QC-121 | [Security Aspects of Quantum Machine Learning (SecQML)](https://doi.org/10.24406/h-508719) | 2026 | [QNN_CrosstalkAttacks_Franco2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) | partially reproduced |
 
-### 29 Adversarial Robustness Defences for QML  (13 of 72 papers)
+### 29 Adversarial Robustness Defences for QML  (14 of 72 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -421,6 +421,7 @@ this repository.
 | QC-149 | [Computable Model-Independent Bounds for Adversarial Quantum Machine Learning](https://doi.org/10.1109/tqe.2025.3569922) | 2025 | [VQC_AdversarialRiskBound_Li2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VQC_AdversarialRiskBound_Li2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VQC_AdversarialRiskBound_Li2025.ipynb) | partially reproduced |
 | QC-167 | [Hybrid Quantum-CNN Framework for Secure, Robust, and Efficient IoT Localization under Adversarial Signal Attacks](https://doi.org/10.23919/pemwn67312.2025.11304017) | 2025 | [HybridQNN_SecureIoTLocalization_Jabberi2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/HybridQNN_SecureIoTLocalization_Jabberi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/HybridQNN_SecureIoTLocalization_Jabberi2025.ipynb) | partially reproduced |
 | QC-179 | [On the Generalization of Adversarially Trained Quantum Classifiers](https://doi.org/10.48550/arxiv.2504.17690) | 2025 | [QNN_AdversarialGeneralization_Georgiou2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialGeneralization_Georgiou2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialGeneralization_Georgiou2025.ipynb) | partially reproduced |
+| QC-187 | [QAFL-ZT: Quantum-Enhanced Adversarial-Aware Federated Learning for Zero-Trust Network Intrusion Detection](https://doi.org/10.32628/ijsrset2513869) | 2025 | [QAFL_ZT_FederatedIDS_Zwayyer2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAFL_ZT_FederatedIDS_Zwayyer2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAFL_ZT_FederatedIDS_Zwayyer2025.ipynb) | partially reproduced |
 
 ### 30 QML Defences Against ML Attacks  (5 of 7 papers)
 

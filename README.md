@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-209 of 327 papers have a final status: 188 partially reproduced, 21 blocked; 118 still to process. 188 notebooks are published across 30 of the 30 topic folders.
+210 of 327 papers have a final status: 189 partially reproduced, 21 blocked; 117 still to process. 189 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -428,7 +428,7 @@ this repository.
 | QC-179 | [On the Generalization of Adversarially Trained Quantum Classifiers](https://doi.org/10.48550/arxiv.2504.17690) | 2025 | [QNN_AdversarialGeneralization_Georgiou2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialGeneralization_Georgiou2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_AdversarialGeneralization_Georgiou2025.ipynb) | partially reproduced |
 | QC-187 | [QAFL-ZT: Quantum-Enhanced Adversarial-Aware Federated Learning for Zero-Trust Network Intrusion Detection](https://doi.org/10.32628/ijsrset2513869) | 2025 | [QAFL_ZT_FederatedIDS_Zwayyer2025](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAFL_ZT_FederatedIDS_Zwayyer2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAFL_ZT_FederatedIDS_Zwayyer2025.ipynb) | partially reproduced |
 
-### 30 QML Defences Against ML Attacks  (5 of 7 papers)
+### 30 QML Defences Against ML Attacks  (6 of 7 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -437,6 +437,7 @@ this repository.
 | QC-078 | [HQSU: Hybrid Quantum Selective Unlearning for Backdoor Mitigation in Federated Learning](https://doi.org/10.1109/qcnc69040.2026.00128) | 2026 | [HybridQNN_BackdoorUnlearning_Don2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_BackdoorUnlearning_Don2026.ipynb) | partially reproduced |
 | QC-100 | [QShield: Securing Neural Networks Against Adversarial Attacks using Quantum Circuits](https://doi.org/10.48550/arxiv.2604.10933) | 2026 | [HybridQNN_AdversarialDefence_Azimi2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_AdversarialDefence_Azimi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/HybridQNN_AdversarialDefence_Azimi2026.ipynb) | partially reproduced |
 | QC-101 | [QuantDoor: A Quantum Randomized AoI Aware Learning Framework for defense against Backdoor Attacks in Wireless Channels](https://doi.org/10.1145/3748522.3779883) | 2026 | [VQC_BackdoorDefence_Khan2026](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/VQC_BackdoorDefence_Khan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/VQC_BackdoorDefence_Khan2026.ipynb) | partially reproduced |
+| QC-185 | [Q-Detection: A Quantum-Classical Hybrid Poisoning Attack Detection Method](https://doi.org/10.24963/ijcai.2025/593) | 2025 | [QUBO_PoisoningDetection_He2025](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QUBO_PoisoningDetection_He2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QUBO_PoisoningDetection_He2025.ipynb) | partially reproduced |
 
 ### Topic assignment unresolved  (0 of 12 papers)
 

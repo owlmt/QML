@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-249 of 327 papers have a final status: 223 partially reproduced, 26 blocked; 78 still to process. 223 notebooks are published across 30 of the 30 topic folders.
+250 of 327 papers have a final status: 223 partially reproduced, 27 blocked; 77 still to process. 223 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -507,6 +507,7 @@ _No notebook yet._
 | QC-247 | HyQ2: A Hybrid Quantum Neural Network for NextG Vulnerability Detection | Experiment data are private srsRAN 5G fuzzing logs from the authors' Stevens fuzzing digital twin (state-transition graphs per log, 14-dimensional fuzzed-layer  |
 | QC-252 | Predominant Aspects on Security for Quantum Machine Learning: Literature Review | Systematic literature review (PRISMA: 4,658 records, 27 included) with no experiment of its own: no trained model, no dataset, no metric tables; every result di |
 | QC-260 | Quantum Machine Learning Based Network IDS for DDoS Attack Detection in IoT: A Novel Approach | Conceptual overview / position paper (Das 2024, NFSU JCSDF): IDS taxonomy, a literature table of nine earlier works and a proposed hybrid classical-quantum fram |
+| QC-269 | SoK Paper: Security Concerns in Quantum Machine Learning as a Service | SoK / survey of security concerns in QML-as-a-Service: sections are background, training and inference pipelines and a threat discussion; no dataset, no trained |
 
 ## Rules for adding a notebook
 

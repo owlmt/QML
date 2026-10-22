@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-253 of 327 papers have a final status: 226 partially reproduced, 27 blocked; 74 still to process. 226 notebooks are published across 30 of the 30 topic folders.
+254 of 327 papers have a final status: 227 partially reproduced, 27 blocked; 73 still to process. 227 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -376,7 +376,7 @@ this repository.
 | QC-254 | [Quantum Adversarial Learning for Kernel Methods](https://arxiv.org/abs/2404.05824) | 2024 | [QSVM_AdversarialTraining_Montalbano2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVM_AdversarialTraining_Montalbano2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVM_AdversarialTraining_Montalbano2024.ipynb) | partially reproduced |
 | QC-305 | [Quantum Neural Networks under Depolarization Noise: Exploring White-Box Attacks and Defenses](https://arxiv.org/abs/2311.17458) | 2023 | [QNN_DepolarizationNoiseRobustness_Winderl2023](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_DepolarizationNoiseRobustness_Winderl2023.ipynb) | partially reproduced |
 
-### 24 Poisoning Attacks Against QML  (5 of 12 papers)
+### 24 Poisoning Attacks Against QML  (6 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -385,6 +385,7 @@ this repository.
 | QC-122 | [Self-revealing poisons: loss-guided forensic detection and quantum unlearning of corrupted training data](https://doi.org/10.1088/1402-4896/ae9810) | 2026 | [QNN_PoisoningUnlearning_Gadani2026](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Gadani2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Gadani2026.ipynb) | partially reproduced |
 | QC-124 | [Superior resilience to poisoning and amenability to unlearning in quantum machine learning](https://doi.org/10.1038/s41467-026-70420-4) | 2026 | [QNN_PoisoningUnlearning_Chen2026](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) | partially reproduced |
 | QC-217 | [RDQKL: Robust Decentralized Quantum Kernel Learning for Noisy and Adversarial Environment](https://doi.org/10.1109/qce65121.2025.00238) | 2025 | [RDQKL_DecentralizedKernelLearning_Ma2025](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/RDQKL_DecentralizedKernelLearning_Ma2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/RDQKL_DecentralizedKernelLearning_Ma2025.ipynb) | partially reproduced |
+| QC-251 | [On the Robustness of Variational Quantum Classifier Against "Label Flipping Attacks" in Federated Learning for Semiconductor Manufacturing](https://doi.org/10.1109/qce60285.2024.00028) | 2024 | [VQC_LabelFlippingFederated_Bhatia2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) | partially reproduced |
 
 ### 25 Backdoor Trojan Attacks Against QML  (13 of 19 papers)
 

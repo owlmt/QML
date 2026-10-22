@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-22)
-244 of 327 papers have a final status: 218 partially reproduced, 26 blocked; 83 still to process. 218 notebooks are published across 30 of the 30 topic folders.
+245 of 327 papers have a final status: 219 partially reproduced, 26 blocked; 82 still to process. 219 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -408,7 +408,7 @@ this repository.
 | QC-150 | [CopyQNN: Quantum Neural Network Extraction Attack under Varying Quantum Noise](https://arxiv.org/abs/2504.00366) | 2025 | [QNN_ModelExtraction_Fu2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_Fu2025.ipynb) | partially reproduced |
 | QC-164 | [Guardians of the Quantum GAN](https://doi.org/10.1109/isqed65160.2025.11014340) | 2025 | [QGAN_HardwareWatermark_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) | partially reproduced |
 
-### 27 QML Privacy Data Leakage  (11 of 20 papers)
+### 27 QML Privacy Data Leakage  (12 of 20 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -423,6 +423,7 @@ this repository.
 | QC-214 | [Quantum Quandaries: Unraveling Encoding Vulnerabilities in Quantum Neural Networks](https://arxiv.org/abs/2502.01486) | 2025 | [QNN_EncodingLeakage_Upadhyay2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_EncodingLeakage_Upadhyay2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_EncodingLeakage_Upadhyay2025.ipynb) | partially reproduced |
 | QC-231 | [Trustworthy Quantum Machine Learning: A Roadmap for Reliability, Robustness, and Security in the NISQ Era](https://arxiv.org/abs/2511.02602) | 2025 | [VQC_TrustworthyQML_Catak2025](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_TrustworthyQML_Catak2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_TrustworthyQML_Catak2025.ipynb) | partially reproduced |
 | QC-245 | [Harnessing Inherent Noises for Privacy Preservation in Quantum Machine Learning](https://doi.org/10.1109/icc51166.2024.10622663) | 2024 | [QNN_InherentNoisePrivacy_Ju2024](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_InherentNoisePrivacy_Ju2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_InherentNoisePrivacy_Ju2024.ipynb) | partially reproduced |
+| QC-253 | [Privacy-preserving quantum federated learning via gradient hiding](https://doi.org/10.1088/2058-9565/ad40cc) | 2024 | [QFL_GradientHiding_Li2024](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_GradientHiding_Li2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_GradientHiding_Li2024.ipynb) | partially reproduced |
 
 ### 28 QML Hardware Side Channel Crosstalk Attacks  (2 of 2 papers)
 

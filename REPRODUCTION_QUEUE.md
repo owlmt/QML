@@ -30,6 +30,21 @@ This file lists what is in flight so a resumed session can check for half-built 
   (`tools/notebook_summary.py`); otherwise message the agent to resume (SendMessage) or re-dispatch
   telling the new agent to reuse the scratch folders.
 
+## In flight 2026-10-23 (current state; the sections below are historical)
+
+283 papers final (256 partially reproduced, 27 blocked), 44 unprocessed, last publication QC-284
+(commit ad7eb2ec). Fifteen Sonnet builders are running, one per paper, in the session scratchpad
+(`build_<QC-ID>` / `run_<QC-ID>`): QC-281, QC-287, QC-288, QC-292, QC-293, QC-295, QC-296,
+QC-299, QC-301, QC-302, QC-303, QC-304, QC-306, QC-307, QC-308. Next unprocessed after these:
+QC-310, QC-311, QC-312, QC-313, QC-314, QC-315, QC-318, QC-319, QC-321, ... (QC-ID order; all
+coverage goals met). Since 2026-10-22 a published notebook must be the untouched output of one
+`tools/execute_notebook.py` run (code cells identical to the executed copy kept in the build
+folder; markdown-only edits allowed), checked by the dispatcher before publishing. Throttle:
+at most 15 builders; pause the newest when C: has under 2 GB free (the Windows page file grows
+to ~46 GB under load and shrinks only as agents finish). After the queue: user-supplied gated
+datasets for the atlas, then a new task the user will describe.
+
+
 ## PAUSED 2026-10-20 (user decision; resume from here)
 
 Pipeline paused on 2026-10-20 after the QC-064 publication (commit 510de620). 104 papers final

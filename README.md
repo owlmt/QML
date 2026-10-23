@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-272 of 327 papers have a final status: 245 partially reproduced, 27 blocked; 55 still to process. 245 notebooks are published across 30 of the 30 topic folders.
+273 of 327 papers have a final status: 246 partially reproduced, 27 blocked; 54 still to process. 246 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -248,13 +248,14 @@ this repository.
 |---|---|---|---|---|
 | QC-151 | [Cyber Threat Detection Enabled by Quantum Computing](https://arxiv.org/abs/2512.18493) | 2025 | [HybridQSVM_SpamIDS_Chen2025](https://github.com/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) | partially reproduced |
 
-### 11 Vulnerability Software Supply Chain Attacks  (4 of 9 papers)
+### 11 Vulnerability Software Supply Chain Attacks  (5 of 9 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-008 | [Quantum clustering for cybersecurity](https://arxiv.org/abs/2408.02314) | 2024 | [QKMeans_CISAVulnerabilities_ElMaouaki2024](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QKMeans_CISAVulnerabilities_ElMaouaki2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QKMeans_CISAVulnerabilities_ElMaouaki2024.ipynb) | partially reproduced |
 | QC-143 | [Ascertaining Susceptibilities in Smart Contracts: A Quantum Machine Learning Approach](https://doi.org/10.3390/e27090933) | 2025 | [QNN_SmartContractVuln_Sridhar2025](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QNN_SmartContractVuln_Sridhar2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QNN_SmartContractVuln_Sridhar2025.ipynb) | partially reproduced |
 | QC-168 | [Hybrid Quantum–Classical Deep Neural Networks Based Smart Contract Vulnerability Detection](https://doi.org/10.3390/app15074037) | 2025 | [HybridQNN_SmartContractVuln_Durgut2025](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/HybridQNN_SmartContractVuln_Durgut2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/HybridQNN_SmartContractVuln_Durgut2025.ipynb) | partially reproduced |
+| QC-267 | [Recurrent quantum embedding neural network and its application in vulnerability detection](https://doi.org/10.1038/s41598-024-63021-y) | 2024 | [RQENN_VulnerabilityDetection_Song2024](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/RQENN_VulnerabilityDetection_Song2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/RQENN_VulnerabilityDetection_Song2024.ipynb) | partially reproduced |
 | QC-275 | [Vulnerability detection in Java source code using a quantum convolutional neural network with self-attentive pooling, deep sequence, and graph-based hybrid feature extraction](https://doi.org/10.1038/s41598-024-56871-z) | 2024 | [QCNN_JavaVulnerability_Hussain2024](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QCNN_JavaVulnerability_Hussain2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QCNN_JavaVulnerability_Hussain2024.ipynb) | partially reproduced |
 
 ### 12 Cryptojacking Detection  (1 of 1 papers)

@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-273 of 327 papers have a final status: 246 partially reproduced, 27 blocked; 54 still to process. 246 notebooks are published across 30 of the 30 topic folders.
+274 of 327 papers have a final status: 247 partially reproduced, 27 blocked; 53 still to process. 247 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (57 of 79 papers)
+### 01 Network Intrusion Detection  (58 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -161,6 +161,7 @@ this repository.
 | QC-249 | [Network Anomaly Detection Using Quantum Neural Networks on Noisy Quantum Computers](https://tqe.ieee.org/2024/01/29/network-anomaly-detection-using-quantum-neural-networks-on-noisy-quantum-computers/) | 2024 | [QNN_NetworkAnomalyDetection_Kukliansky2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_NetworkAnomalyDetection_Kukliansky2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_NetworkAnomalyDetection_Kukliansky2024.ipynb) | partially reproduced |
 | QC-250 | [Network intrusion detection based on variational quantum convolution neural network](https://doi.org/10.1007/s11227-024-05919-y) | 2024 | [VQNNQCNN_IntrusionDetection_Gong2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) | partially reproduced |
 | QC-256 | [Quantum-Assisted Activation for Supervised Learning in Healthcare-Based Intrusion Detection Systems](https://doi.org/10.1109/TAI.2022.3187676) | 2024 | [QNN_QuantumActivation_IDS_Laxminarayana2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) | partially reproduced |
+| QC-279 | [A Quantum Generative Adversarial Network-based Intrusion Detection System](https://doi.org/10.1109/COMPSAC57700.2023.00280) | 2023 | [QGAN_IntrusionDetection_Rahman2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-284 of 327 papers have a final status: 257 partially reproduced, 27 blocked; 43 still to process. 257 notebooks are published across 30 of the 30 topic folders.
+285 of 327 papers have a final status: 257 partially reproduced, 28 blocked; 42 still to process. 257 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -542,6 +542,7 @@ _No notebook yet._
 | QC-252 | Predominant Aspects on Security for Quantum Machine Learning: Literature Review | Systematic literature review (PRISMA: 4,658 records, 27 included) with no experiment of its own: no trained model, no dataset, no metric tables; every result di |
 | QC-260 | Quantum Machine Learning Based Network IDS for DDoS Attack Detection in IoT: A Novel Approach | Conceptual overview / position paper (Das 2024, NFSU JCSDF): IDS taxonomy, a literature table of nine earlier works and a proposed hybrid classical-quantum fram |
 | QC-269 | SoK Paper: Security Concerns in Quantum Machine Learning as a Service | SoK / survey of security concerns in QML-as-a-Service: sections are background, training and inference pipelines and a threat discussion; no dataset, no trained |
+| QC-310 | Towards quantum enhanced adversarial robustness in machine learning | Review article (Nature Machine Intelligence perspective, arXiv 2306.12688) with no experiment of its own: the text states 'In this review' and reports no number |
 
 ## Rules for adding a notebook
 

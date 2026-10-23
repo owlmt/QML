@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-274 of 327 papers have a final status: 247 partially reproduced, 27 blocked; 53 still to process. 247 notebooks are published across 30 of the 30 topic folders.
+275 of 327 papers have a final status: 248 partially reproduced, 27 blocked; 52 still to process. 248 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -193,7 +193,7 @@ this repository.
 | QC-024 | [Evaluating hybrid quantum-classical deep learning for cybersecurity botnet DGA detection](https://doi.org/10.1016/j.procs.2021.12.135) | 2022 | [HybridQNN_BotnetDGA_Suryotrisongko2022](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) | partially reproduced |
 | QC-082 | [Hybrid Quantum Graph Neural Networks for Robust Botnet Detection in Modern IoT Ecosystems](https://doi.org/10.1016/j.future.2026.108650) | 2026 | [HybridQGNN_BotnetDetection_Sammartino2026](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) | partially reproduced |
 
-### 05 Malware Detection  (10 of 16 papers)
+### 05 Malware Detection  (11 of 16 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -207,6 +207,7 @@ this repository.
 | QC-229 | [Towards Quantum Machine Learning for Malicious Code Analysis](https://arxiv.org/abs/2508.19381) | 2025 | [QMLP_QCNN_MalwareClassification_Lopez2025](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QMLP_QCNN_MalwareClassification_Lopez2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QMLP_QCNN_MalwareClassification_Lopez2025.ipynb) | partially reproduced |
 | QC-248 | [Image Based Malware Detection Using Transfer Learning and Hybrid Quantum Machine Learning Models](https://doi.org/10.62441/nano-ntp.vi.1527) | 2024 | [HybridQCNN_MalwareImage_Rani2024](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/HybridQCNN_MalwareImage_Rani2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/HybridQCNN_MalwareImage_Rani2024.ipynb) | partially reproduced |
 | QC-276 | [Windows Malware Detection Using Quantum Long Short Term Memory](https://doi.org/10.22266/ijies2024.1031.73) | 2024 | [QLSTM_WindowsMalware_Rani2024](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QLSTM_WindowsMalware_Rani2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QLSTM_WindowsMalware_Rani2024.ipynb) | partially reproduced |
+| QC-286 | [Case Study-Based Approach of Quantum Machine Learning in Cybersecurity: Quantum Support Vector Machine for Malware Classification and Protection](https://arxiv.org/abs/2306.00284) | 2023 | [QSVM_MalwareClassification_Akter2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QSVM_MalwareClassification_Akter2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QSVM_MalwareClassification_Akter2023.ipynb) | partially reproduced |
 
 ### 06 Android Malware Detection  (4 of 7 papers)
 

@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-277 of 327 papers have a final status: 250 partially reproduced, 27 blocked; 50 still to process. 250 notebooks are published across 30 of the 30 topic folders.
+278 of 327 papers have a final status: 251 partially reproduced, 27 blocked; 49 still to process. 251 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (58 of 79 papers)
+### 01 Network Intrusion Detection  (59 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -162,6 +162,7 @@ this repository.
 | QC-250 | [Network intrusion detection based on variational quantum convolution neural network](https://doi.org/10.1007/s11227-024-05919-y) | 2024 | [VQNNQCNN_IntrusionDetection_Gong2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQNNQCNN_IntrusionDetection_Gong2024.ipynb) | partially reproduced |
 | QC-256 | [Quantum-Assisted Activation for Supervised Learning in Healthcare-Based Intrusion Detection Systems](https://doi.org/10.1109/TAI.2022.3187676) | 2024 | [QNN_QuantumActivation_IDS_Laxminarayana2024](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_QuantumActivation_IDS_Laxminarayana2024.ipynb) | partially reproduced |
 | QC-279 | [A Quantum Generative Adversarial Network-based Intrusion Detection System](https://doi.org/10.1109/COMPSAC57700.2023.00280) | 2023 | [QGAN_IntrusionDetection_Rahman2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) | partially reproduced |
+| QC-294 | [Hybrid Continuous Variational Quantum Neural Networks for Network Intrusion Detection](https://doi.org/10.3233/ATDE230062) | 2023 | [HybridCVQNN_IntrusionDetection_Chao2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridCVQNN_IntrusionDetection_Chao2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridCVQNN_IntrusionDetection_Chao2023.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

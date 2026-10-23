@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-265 of 327 papers have a final status: 238 partially reproduced, 27 blocked; 62 still to process. 238 notebooks are published across 30 of the 30 topic folders.
+266 of 327 papers have a final status: 239 partially reproduced, 27 blocked; 61 still to process. 239 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -448,7 +448,7 @@ this repository.
 | QC-099 | [QML-PipeGuard: Drift-Aware Behavioral Fingerprinting for Quantum Machine Learning Pipeline Integrity](https://doi.org/10.48550/arxiv.2605.25066) | 2026 | [QSVM_PipelineIntegrity_Yeniaras2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) | partially reproduced |
 | QC-121 | [Security Aspects of Quantum Machine Learning (SecQML)](https://doi.org/10.24406/h-508719) | 2026 | [QNN_CrosstalkAttacks_Franco2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) | partially reproduced |
 
-### 29 Adversarial Robustness Defences for QML  (24 of 72 papers)
+### 29 Adversarial Robustness Defences for QML  (25 of 72 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -476,6 +476,7 @@ this repository.
 | QC-255 | [Quantum Adversarial Machine Learning for Robust Power System Stability Assessment](https://doi.org/10.1109/pesgm51994.2024.10688912) | 2024 | [VQC_TransientStability_Yu2024](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VQC_TransientStability_Yu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VQC_TransientStability_Yu2024.ipynb) | partially reproduced |
 | QC-265 | [Quantum Transfer Learning with Adversarial Robustness for Classification of High-Resolution Image Datasets](https://doi.org/10.1002/qute.202400268) | 2024 | [QTL_AdversarialTransferLearning_Khatun2024](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QTL_AdversarialTransferLearning_Khatun2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QTL_AdversarialTransferLearning_Khatun2024.ipynb) | partially reproduced |
 | QC-272 | [Training robust and generalizable quantum models](https://doi.org/10.1103/PhysRevResearch.6.043326) | 2024 | [LipschitzQNN_RobustGeneralisation_Berberich2024](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/LipschitzQNN_RobustGeneralisation_Berberich2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/LipschitzQNN_RobustGeneralisation_Berberich2024.ipynb) | partially reproduced |
+| QC-274 | [VeriQR: A Robustness Verification Tool for Quantum Machine Learning Models](https://doi.org/10.48550/arxiv.2407.13533) | 2024 | [VeriQR_RobustnessVerification_Lin2024](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VeriQR_RobustnessVerification_Lin2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/VeriQR_RobustnessVerification_Lin2024.ipynb) | partially reproduced |
 
 ### 30 QML Defences Against ML Attacks  (6 of 7 papers)
 

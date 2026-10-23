@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-23)
-266 of 327 papers have a final status: 239 partially reproduced, 27 blocked; 61 still to process. 239 notebooks are published across 30 of the 30 topic folders.
+267 of 327 papers have a final status: 240 partially reproduced, 27 blocked; 60 still to process. 240 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -410,7 +410,7 @@ this repository.
 | QC-239 | [Backdoor Attacks against Hybrid Classical-Quantum Neural Networks](https://doi.org/10.1016/j.neunet.2025.107776) | 2024 | [HybridQNN_BackdoorQcolor_Guo2024](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_BackdoorQcolor_Guo2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/HybridQNN_BackdoorQcolor_Guo2024.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 
-### 26 QML Model Extraction Theft  (8 of 14 papers)
+### 26 QML Model Extraction Theft  (9 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -420,6 +420,7 @@ this repository.
 | QC-164 | [Guardians of the Quantum GAN](https://doi.org/10.1109/isqed65160.2025.11014340) | 2025 | [QGAN_HardwareWatermark_Ghosh2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QGAN_HardwareWatermark_Ghosh2025.ipynb) | partially reproduced |
 | QC-233 | [Watermarking Quantum Neural Networks Based on Sample Grouped and Paired Training](https://arxiv.org/abs/2506.12675) | 2025 | [QNN_Watermarking_Zhou2025](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_Watermarking_Zhou2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_Watermarking_Zhou2025.ipynb) | partially reproduced |
 | QC-242 | [Evaluating Efficacy of Model Stealing Attacks and Defenses on Quantum Neural Networks](https://doi.org/10.1145/3649476.3658806) | 2024 | [QNN_ModelStealing_Kundu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelStealing_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelStealing_Kundu2024.ipynb) | partially reproduced |
+| QC-266 | [QuantumLeak: Stealing Quantum Neural Networks from Cloud-based NISQ Machines](https://arxiv.org/abs/2403.10790) | 2024 | [QNN_ModelExtraction_QuantumLeak_Fu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_QuantumLeak_Fu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_QuantumLeak_Fu2024.ipynb) | partially reproduced |
 | QC-270 | [STIQ: Safeguarding Training and Inferencing of Quantum Neural Networks from Untrusted Cloud](https://arxiv.org/abs/2405.18746) | 2024 | [QNN_STIQSplitCloud_Kundu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) | partially reproduced |
 | QC-271 | [The Quantum Imitation Game: Reverse Engineering of Quantum Machine Learning Models](https://doi.org/10.1145/3689939.3695783) | 2024 | [BruteForceRE_TranspiledQNN_Ghosh2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) | partially reproduced |
 

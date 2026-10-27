@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-295 of 327 papers have a final status: 263 partially reproduced, 32 blocked; 32 still to process. 263 notebooks are published across 30 of the 30 topic folders.
+296 of 327 papers have a final status: 264 partially reproduced, 32 blocked; 31 still to process. 264 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -428,7 +428,7 @@ this repository.
 | QC-277 | [A backdoor attack against quantum neural networks with limited information](https://doi.org/10.1088/1674-1056/acd8ab) | 2023 | [QNN_BackdoorLimitedInfo_Huang2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_BackdoorLimitedInfo_Huang2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_BackdoorLimitedInfo_Huang2023.ipynb) | partially reproduced |
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 
-### 26 QML Model Extraction Theft  (10 of 14 papers)
+### 26 QML Model Extraction Theft  (11 of 14 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -442,6 +442,7 @@ this repository.
 | QC-266 | [QuantumLeak: Stealing Quantum Neural Networks from Cloud-based NISQ Machines](https://arxiv.org/abs/2403.10790) | 2024 | [QNN_ModelExtraction_QuantumLeak_Fu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_QuantumLeak_Fu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_ModelExtraction_QuantumLeak_Fu2024.ipynb) | partially reproduced |
 | QC-270 | [STIQ: Safeguarding Training and Inferencing of Quantum Neural Networks from Untrusted Cloud](https://arxiv.org/abs/2405.18746) | 2024 | [QNN_STIQSplitCloud_Kundu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) | partially reproduced |
 | QC-271 | [The Quantum Imitation Game: Reverse Engineering of Quantum Machine Learning Models](https://doi.org/10.1145/3689939.3695783) | 2024 | [BruteForceRE_TranspiledQNN_Ghosh2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) | partially reproduced |
+| QC-307 | [QuMoS: A Framework for Preserving Security of Quantum Machine Learning Model](https://doi.org/10.1109/qce57702.2023.00123) | 2023 | [QuMoS_ModelSecurity_Wang2023](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) | partially reproduced |
 
 ### 27 QML Privacy Data Leakage  (14 of 20 papers)
 

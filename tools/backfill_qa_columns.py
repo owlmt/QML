@@ -32,7 +32,7 @@ for r in rows:
             continue
         if status in IMPLEMENTED:
             r[c] = "PENDING"; changed += 1
-        elif status == "blocked":
+        elif status in ("blocked", "paper without code"):
             r[c] = "NOT_APPLICABLE"; changed += 1
 with MANIFEST.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=fields, lineterminator=newline)

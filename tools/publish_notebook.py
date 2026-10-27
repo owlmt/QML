@@ -28,7 +28,7 @@ NEW_COLUMNS = ["Notebook path", "Reproduction status", "Paper metric(s)",
                "Notebook metric(s)", "Validated on", "Notes", *QA_COLUMNS]
 QA_VALUES = {"PASS", "FAIL", "PENDING", "BLOCKED", "NOT_APPLICABLE"}
 STATUSES = {"not started", "in progress", "reproduced", "partially reproduced",
-            "implemented but unvalidated", "blocked", "not reproducible"}
+            "implemented but unvalidated", "paper without code", "blocked", "not reproducible"}
 
 
 def git(*args, check=True):

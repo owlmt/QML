@@ -6,17 +6,18 @@ folders. Every notebook downloads its own public data, rebuilds the paper's meth
 with plain-language explanations, trains a classical baseline on the same inputs, compares its
 own numbers with the paper's claim by claim, and ends with a critical reading and exercises.
 
-The paper list (327 papers, `manifest.csv`) comes from the bibliography in
-`original_bibliography.md`. Reproductions are produced by an automated pipeline (see
-`CLAUDE.md`), executed end to end on a CPU before publication, and recorded with a truthful
-status:
+The paper catalogue (`manifest.csv`, 333 entries) comes from the bibliography in
+`original_bibliography.md` plus six papers added in October 2026. Reproductions are produced by
+an automated pipeline (see `CLAUDE.md`), executed end to end on a CPU before publication, and
+recorded with a truthful status:
 
 | Status | Meaning |
 |---|---|
-| reproduced | executes end to end and every checkable claim is within tolerance |
+| reproduced | notebook executes end to end and every checkable claim is within tolerance |
 | partially reproduced | executes end to end; some claims not reached, exceeded or uncheckable |
 | implemented but unvalidated | complete Colab-ready notebook that could not be executed locally |
-| blocked | no notebook: survey/review, no public data, hardware-only, or unreadable PDF |
+| paper without code | no notebook: the publication is a survey, review, taxonomy, perspective, extended abstract or architecture-only paper with no rerunnable experiment of its own |
+| blocked | no notebook: the paper has an experiment, but its data or the article itself is inaccessible (reason in the manifest) |
 
 Each notebook also carries a **Dataset Exploration and Visualisation** section (real
 observations coloured by ground-truth label) and a **Quantum Circuit Architecture** section
@@ -42,7 +43,7 @@ matplotlib). The pipeline's own tools are in `tools/` (`execute_notebook.py`,
 manifest.csv                 one row per paper: title, DOI, topic folder(s), notebook path,
                              reproduction status, paper vs notebook metrics, notes, QA columns
 REPRODUCTION_LOG.md          one line per published notebook, newest last
-REPRODUCTION_QUEUE.md        what is in flight and the dispatch policy
+REPRODUCTION_QUEUE.md        dispatch policy and the state of the (completed) queue
 paper_index.csv              feasibility index (datasets, frameworks, models) per paper
 CLAUDE.md                    conventions, validation requirements, publication workflow
 tools/                       execution, verification, publication and queue scripts
@@ -95,12 +96,22 @@ When citing a single reproduction, add the notebook path (for example
 dataset shown in the atlas, cite the dataset's own reference given on its atlas card in addition to
 this repository.
 
-## Progress (2026-10-27)
-333 of 333 papers have a final status: 1 reproduced, 299 partially reproduced, 33 blocked; 0 still to process. 300 notebooks are published across 30 of the 30 topic folders.
+## Collection status (2026-10-27)
+
+Processing of the catalogue is complete: every entry has a final status.
+
+- **333 catalogue entries**, describing 332 distinct publications (QC-215 is another version of QC-051; both entries and their notebooks are kept).
+- **300 papers with code**: one executed notebook each (1 reproduced, 299 partially reproduced), filed across 30 of the 30 topic folders.
+- **29 papers without code**: surveys, reviews, taxonomies, perspectives, extended abstracts or architecture-only papers with no rerunnable experiment (listed with links below).
+- **4 papers blocked** by inaccessible data or an inaccessible article (listed with links below).
+
+Counting rule: every entry is counted once in the totals above. A paper assigned to several topic folders is counted in each folder's catalogue figure below, but its notebook is listed only under the folder that holds it; the other folders cross-reference it. Folder figures therefore add up to more than the totals above.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (68 of 82 papers)
+### 01 Network Intrusion Detection
+
+82 papers catalogued in this topic: 68 notebooks filed here; 7 with the notebook filed in another folder: QC-070 (in 13), QC-095 (in 29), QC-105 (in 14), QC-108 (in 02), QC-151 (in 10), QC-171 (in 14), QC-345 (in 19); 6 papers without code (QC-029, QC-060, QC-081, QC-086, QC-205, QC-225); 1 paper blocked (QC-325).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -173,14 +184,18 @@ this repository.
 | QC-344 | [Quantum Machine Learning for Cybersecurity Applications: Simulation and Hardware Validation](https://arxiv.org/abs/2609.32911) | 2026 | [HybridQSVMVQC_IntrusionSpam_Zhu2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQSVMVQC_IntrusionSpam_Zhu2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQSVMVQC_IntrusionSpam_Zhu2026.ipynb) | partially reproduced |
 | QC-347 | [Quantum Anomaly Detection in network traffic using Variational Quantum Classifiers](https://arxiv.org/abs/2610.34635) | 2026 | [VQC_AnomalyDetection_Ilham2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_AnomalyDetection_Ilham2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_AnomalyDetection_Ilham2026.ipynb) | partially reproduced |
 
-### 02 Zero Day Attack Detection  (2 of 8 papers)
+### 02 Zero Day Attack Detection
+
+8 papers catalogued in this topic: 2 notebooks filed here; 5 with the notebook filed in another folder: QC-020 (in 01), QC-166 (in 01), QC-177 (in 01), QC-180 (in 01), QC-299 (in 01); 1 paper without code (QC-060).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-108 | [Quantum-Enhanced Intrusion Detection Using Quantum Circuit Born Machines for Zero-Day Attack Detection](https://doi.org/10.32604/cmc.2026.075326) | 2026 | [QCBM_ZeroDay_AlMalwi2026](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/QCBM_ZeroDay_AlMalwi2026.ipynb) | partially reproduced |
 | QC-136 | [A Non-Monotonic Relationship: An Empirical Analysis of Hybrid Quantum Classifiers for Unseen Ransomware Detection](https://arxiv.org/abs/2509.07924) | 2025 | [HybridVQC_UnseenRansomware_Le2025](https://github.com/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/02_Zero_Day_Attack_Detection/HybridVQC_UnseenRansomware_Le2025.ipynb) | partially reproduced |
 
-### 03 DDoS DoS Detection  (10 of 14 papers)
+### 03 DDoS DoS Detection
+
+14 papers catalogued in this topic: 10 notebooks filed here; 3 with the notebook filed in another folder: QC-034 (in 01), QC-156 (in 01), QC-289 (in 01); 1 paper without code (QC-260).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -195,7 +210,9 @@ this repository.
 | QC-203 | [Quantum Long Short-Term Memory-based Identification of Distributed Denial of Service Attacks](https://doi.org/10.1109/ICAIC63015.2025.10849228) | 2025 | [QLSTM_DDoS_Tripathi2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) | partially reproduced |
 | QC-232 | [Unified hybrid quantum classical neural network framework for detecting distributed denial of service and Android mobile malware attacks](https://doi.org/10.1140/epjqt/s40507-025-00380-z) | 2025 | [HybridQNN_DDoSAndroidMalware_Sridevi2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSAndroidMalware_Sridevi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSAndroidMalware_Sridevi2025.ipynb) | partially reproduced |
 
-### 04 Botnet DGA Detection  (4 of 5 papers)
+### 04 Botnet DGA Detection
+
+5 papers catalogued in this topic: 4 notebooks filed here; 1 with the notebook filed in another folder: QC-030 (in 03).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -204,7 +221,9 @@ this repository.
 | QC-082 | [Hybrid Quantum Graph Neural Networks for Robust Botnet Detection in Modern IoT Ecosystems](https://doi.org/10.1016/j.future.2026.108650) | 2026 | [HybridQGNN_BotnetDetection_Sammartino2026](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) | partially reproduced |
 | QC-346 | [Pareto-optimal quantum kernel selection for unsupervised anomaly detection on real malware beaconing data](https://arxiv.org/abs/2610.09717) | 2026 | [QOCSVM_MalwareBeaconing_Micah2026](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QOCSVM_MalwareBeaconing_Micah2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QOCSVM_MalwareBeaconing_Micah2026.ipynb) | partially reproduced |
 
-### 05 Malware Detection  (14 of 16 papers)
+### 05 Malware Detection
+
+16 papers catalogued in this topic: 14 notebooks filed here; 2 with the notebook filed in another folder: QC-184 (in 03), QC-192 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -223,7 +242,9 @@ this repository.
 | QC-291 | [Exploring Quantum Machine Learning for Explainable Malware Detection](https://doi.org/10.1109/IJCNN54540.2023.10191964) | 2023 | [HybridQCNN_ExplainableMalware_Ciaramella2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/HybridQCNN_ExplainableMalware_Ciaramella2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/HybridQCNN_ExplainableMalware_Ciaramella2023.ipynb) | partially reproduced |
 | QC-303 | [Quantum Machine Learning for Malware Classification](https://arxiv.org/abs/2305.09674) | 2023 | [QSVM_QNN_MalwareClassification_Barrue2023](https://github.com/owlmt/QML/blob/main/05_Malware_Detection/QSVM_QNN_MalwareClassification_Barrue2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/05_Malware_Detection/QSVM_QNN_MalwareClassification_Barrue2023.ipynb) | partially reproduced |
 
-### 06 Android Malware Detection  (5 of 7 papers)
+### 06 Android Malware Detection
+
+7 papers catalogued in this topic: 5 notebooks filed here; 2 with the notebook filed in another folder: QC-232 (in 03), QC-286 (in 05).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -233,14 +254,18 @@ this repository.
 | QC-316 | [Introducing Quantum Computing in Mobile Malware Detection](https://doi.org/10.1145/3538969.3543816) | 2022 | [HybridQCNN_AndroidMalwareImages_Ciaramella2022](https://github.com/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_AndroidMalwareImages_Ciaramella2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_AndroidMalwareImages_Ciaramella2022.ipynb) | partially reproduced |
 | QC-323 | [Towards Explainable Quantum Machine Learning for Mobile Malware Detection and Classification](https://doi.org/10.3390/app122312025) | 2022 | [HybridQCNN_ExplainableAndroidMalware_Mercaldo2022](https://github.com/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_ExplainableAndroidMalware_Mercaldo2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/06_Android_Malware_Detection/HybridQCNN_ExplainableAndroidMalware_Mercaldo2022.ipynb) | partially reproduced |
 
-### 07 Ransomware Detection  (2 of 4 papers)
+### 07 Ransomware Detection
+
+4 papers catalogued in this topic: 2 notebooks filed here; 2 with the notebook filed in another folder: QC-136 (in 02), QC-180 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-021 | [Quantum Exploration in Ransomware Detection with Conventional Machine Learning Approaches](https://doi.org/10.1109/InC460750.2024.10649082) | 2024 | [QSVM_RansomwareDetection_Kaur2024](https://github.com/owlmt/QML/blob/main/07_Ransomware_Detection/QSVM_RansomwareDetection_Kaur2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/07_Ransomware_Detection/QSVM_RansomwareDetection_Kaur2024.ipynb) | partially reproduced |
 | QC-035 | [Ransomware Detection Using Quantum Neural Networks](https://doi.org/10.1109/ICSCAN62807.2024.10894015) | 2024 | [QNN_Ransomware_Varalakshmi2024](https://github.com/owlmt/QML/blob/main/07_Ransomware_Detection/QNN_Ransomware_Varalakshmi2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/07_Ransomware_Detection/QNN_Ransomware_Varalakshmi2024.ipynb) | partially reproduced |
 
-### 08 Phishing Detection  (9 of 12 papers)
+### 08 Phishing Detection
+
+12 papers catalogued in this topic: 9 notebooks filed here; 3 with the notebook filed in another folder: QC-025 (in 06), QC-026 (in 09), QC-133 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -254,20 +279,26 @@ this repository.
 | QC-295 | [Improving phishing detection in Ethereum transaction network using Quantum Machine Learning](https://doi.org/10.1109/QCE57702.2023.00125) | 2023 | [QRAC_EthereumPhishing_Ray2023](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/QRAC_EthereumPhishing_Ray2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/QRAC_EthereumPhishing_Ray2023.ipynb) | partially reproduced |
 | QC-314 | [Classical ensemble of Quantum-classical ML algorithms for Phishing detection in Ethereum transaction networks](https://arxiv.org/abs/2211.00004) | 2022 | [EnsembleQML_EthereumPhishing_Ray2022](https://github.com/owlmt/QML/blob/main/08_Phishing_Detection/EnsembleQML_EthereumPhishing_Ray2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/08_Phishing_Detection/EnsembleQML_EthereumPhishing_Ray2022.ipynb) | partially reproduced |
 
-### 09 Malicious URL Detection  (2 of 5 papers)
+### 09 Malicious URL Detection
+
+5 papers catalogued in this topic: 2 notebooks filed here; 3 with the notebook filed in another folder: QC-007 (in 08), QC-133 (in 01), QC-182 (in 08).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-026 | [Detection of malicious URLs using machine learning](https://doi.org/10.1007/s11276-024-03700-w) | 2024 | [VQC_MaliciousURL_ReyesDorta2024](https://github.com/owlmt/QML/blob/main/09_Malicious_URL_Detection/VQC_MaliciousURL_ReyesDorta2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/09_Malicious_URL_Detection/VQC_MaliciousURL_ReyesDorta2024.ipynb) | partially reproduced |
 | QC-199 | [Quantum-Enhanced Machine Learning for Cybersecurity: Evaluating Malicious URL Detection](https://doi.org/10.3390/electronics14091827) | 2025 | [QSVM_MaliciousURL_Eze2025](https://github.com/owlmt/QML/blob/main/09_Malicious_URL_Detection/QSVM_MaliciousURL_Eze2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/09_Malicious_URL_Detection/QSVM_MaliciousURL_Eze2025.ipynb) | partially reproduced |
 
-### 10 Spam Detection  (1 of 2 papers)
+### 10 Spam Detection
+
+2 papers catalogued in this topic: 1 notebook filed here; 1 with the notebook filed in another folder: QC-344 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-151 | [Cyber Threat Detection Enabled by Quantum Computing](https://arxiv.org/abs/2512.18493) | 2025 | [HybridQSVM_SpamIDS_Chen2025](https://github.com/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) | partially reproduced |
 
-### 11 Vulnerability Software Supply Chain Attacks  (7 of 9 papers)
+### 11 Vulnerability Software Supply Chain Attacks
+
+9 papers catalogued in this topic: 7 notebooks filed here; 1 with the notebook filed in another folder: QC-009 (in 05); 1 paper blocked (QC-247).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -279,20 +310,26 @@ this repository.
 | QC-283 | [Automated Vulnerability Detection in Source Code Using Quantum Natural Language Processing](https://arxiv.org/abs/2303.07525) | 2023 | [QLSTM_VulnerabilityDetection_Akter2023](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QLSTM_VulnerabilityDetection_Akter2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QLSTM_VulnerabilityDetection_Akter2023.ipynb) | partially reproduced |
 | QC-319 | [Quantum Machine Learning for Software Supply Chain Attacks: How Far Can We Go?](https://doi.org/10.1109/COMPSAC54236.2022.00097) | 2022 | [QSVM_SupplyChainClaMPReVeal_Masum2022](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QSVM_SupplyChainClaMPReVeal_Masum2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QSVM_SupplyChainClaMPReVeal_Masum2022.ipynb) | partially reproduced |
 
-### 12 Cryptojacking Detection  (1 of 1 papers)
+### 12 Cryptojacking Detection
+
+1 paper catalogued in this topic: 1 notebook filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-032 | [Quant-Jack: Quantum Machine Learning to Detect Cryptojacking Attacks in IIoT Networks](https://doi.org/10.1109/ICCWorkshops59551.2024.10615371) | 2024 | [QNN_Cryptojacking_Bhattacharya2024](https://github.com/owlmt/QML/blob/main/12_Cryptojacking_Detection/QNN_Cryptojacking_Bhattacharya2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/12_Cryptojacking_Detection/QNN_Cryptojacking_Bhattacharya2024.ipynb) | partially reproduced |
 
-### 13 Encrypted Malicious Traffic Detection  (2 of 2 papers)
+### 13 Encrypted Malicious Traffic Detection
+
+2 papers catalogued in this topic: 2 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-070 | [Encrypted network traffic analysis using quantum machine learning](https://doi.org/10.1140/epjqt/s40507-025-00459-7) | 2026 | [HybridQML_EncryptedTraffic_Sodar2026](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQML_EncryptedTraffic_Sodar2026.ipynb) | partially reproduced |
 | QC-198 | [Quantum deep learning for encrypted malicious traffic detection: a hybrid approach for secure network analysis](https://doi.org/10.31705/ADScAI.2025.56) | 2025 | [HybridQNN_EncryptedTraffic_Hariharan2025](https://github.com/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/13_Encrypted_Malicious_Traffic_Detection/HybridQNN_EncryptedTraffic_Hariharan2025.ipynb) | partially reproduced |
 
-### 14 IoT IIoT Attack Detection  (12 of 34 papers)
+### 14 IoT IIoT Attack Detection
+
+34 papers catalogued in this topic: 12 notebooks filed here; 20 with the notebook filed in another folder: QC-003 (in 01), QC-030 (in 03), QC-032 (in 12), QC-039 (in 01), QC-055 (in 01), QC-065 (in 01), QC-073 (in 01), QC-082 (in 04), QC-088 (in 01), QC-094 (in 01), QC-107 (in 01), QC-125 (in 01), QC-129 (in 01), QC-142 (in 01), QC-170 (in 01), QC-175 (in 01), QC-176 (in 01), QC-209 (in 01), QC-228 (in 01), QC-306 (in 01); 2 papers without code (QC-060, QC-260).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -309,7 +346,9 @@ this repository.
 | QC-348 | [Conventional and Quantum Feature Selection and Federated Learning Applications for Anomaly Detection in IoT Healthcare Networks](https://doi.org/10.3390/electronics15194469) | 2026 | [QPCA_QFL_IoHTIntrusion_Tokgoz2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QPCA_QFL_IoHTIntrusion_Tokgoz2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/QPCA_QFL_IoHTIntrusion_Tokgoz2026.ipynb) | partially reproduced |
 | QC-349 | [QLFL: quantum-enabled lightweight federated learning-empowered threat detection model for Internet of Medical Things based healthcare](https://doi.org/10.1038/s41598-026-75352-z) | 2026 | [HybridQNN_FederatedIoMT_Baihan2026](https://github.com/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_FederatedIoMT_Baihan2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/14_IoT_IIoT_Attack_Detection/HybridQNN_FederatedIoMT_Baihan2026.ipynb) | partially reproduced |
 
-### 15 Smart Grid Power System Attacks  (8 of 12 papers)
+### 15 Smart Grid Power System Attacks
+
+12 papers catalogued in this topic: 8 notebooks filed here; 3 with the notebook filed in another folder: QC-011 (in 05), QC-033 (in 03), QC-172 (in 01); 1 paper blocked (QC-204).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -322,14 +361,18 @@ this repository.
 | QC-183 | [Power Theft Detection in Smart Grids Using Quantum Machine Learning](https://doi.org/10.1109/ACCESS.2025.3558143) | 2025 | [HybridQNN_PowerTheft_Blazakis2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/HybridQNN_PowerTheft_Blazakis2025.ipynb) | partially reproduced |
 | QC-193 | [Quantum Autoencoder-Based Anomaly Detection for Cyberattacks in Smart Power Systems](https://ceur-ws.org/Vol-4153/short3.pdf) | 2025 | [QAE_SmartGridAnomaly_Cirillo2025](https://github.com/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QAE_SmartGridAnomaly_Cirillo2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/15_Smart_Grid_Power_System_Attacks/QAE_SmartGridAnomaly_Cirillo2025.ipynb) | partially reproduced |
 
-### 16 ICS SCADA Cyber Physical Attacks  (2 of 4 papers)
+### 16 ICS SCADA Cyber Physical Attacks
+
+4 papers catalogued in this topic: 2 notebooks filed here; 2 with the notebook filed in another folder: QC-161 (in 15), QC-200 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-202 | [Quantum-Hybrid Support Vector Machines for Anomaly Detection in Industrial Control Systems](https://arxiv.org/abs/2506.17824) | 2025 | [QSVM_AnomalyDetectionICS_Cultice2025](https://github.com/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetectionICS_Cultice2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetectionICS_Cultice2025.ipynb) | partially reproduced |
 | QC-238 | [Anomaly Detection for Real-World Cyber-Physical Security using Quantum Hybrid Support Vector Machines](https://doi.org/10.1109/ISVLSI61997.2024.00117) | 2024 | [QSVM_AnomalyDetection_Cultice2024](https://github.com/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetection_Cultice2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/16_ICS_SCADA_Cyber_Physical_Attacks/QSVM_AnomalyDetection_Cultice2024.ipynb) | partially reproduced |
 
-### 17 Vehicle CAN Bus Attacks  (5 of 6 papers)
+### 17 Vehicle CAN Bus Attacks
+
+6 papers catalogued in this topic: 5 notebooks filed here; 1 with the notebook filed in another folder: QC-235 (in 22).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -339,7 +382,9 @@ this repository.
 | QC-320 | [Quantum optimization for fast CAN bus intrusion detection](https://doi.org/10.1145/3549036.3562058) | 2022 | [QBoost_CANBusIntrusion_Caivano2022](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/QBoost_CANBusIntrusion_Caivano2022.ipynb) | partially reproduced |
 | QC-328 | [Hybrid Quantum-Classical Neural Network for Cloud-supported In-Vehicle Cyberattack Detection](https://arxiv.org/abs/2110.07467) | 2021 | [HybridQNN_CANAttack_Islam2021](https://github.com/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/17_Vehicle_CAN_Bus_Attacks/HybridQNN_CANAttack_Islam2021.ipynb) | partially reproduced |
 
-### 18 Cloud Virtual Environment Threats  (4 of 4 papers)
+### 18 Cloud Virtual Environment Threats
+
+4 papers catalogued in this topic: 4 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -348,20 +393,26 @@ this repository.
 | QC-194 | [Quantum Autoencoders for Anomaly Detection in Cybersecurity](https://arxiv.org/abs/2510.21837) | 2025 | [QAE_AnomalyDetection_Senthil2025](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) | partially reproduced |
 | QC-243 | [Exploring Unsupervised Anomaly Detection with Quantum Boltzmann Machines in Fraud Detection](https://doi.org/10.5220/0012326100003636) | 2024 | [QBM_AnomalyDetection_Stein2024](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QBM_AnomalyDetection_Stein2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QBM_AnomalyDetection_Stein2024.ipynb) | partially reproduced |
 
-### 19 Cybersecurity Anomaly Detection  (2 of 4 papers)
+### 19 Cybersecurity Anomaly Detection
+
+4 papers catalogued in this topic: 2 notebooks filed here; 2 with the notebook filed in another folder: QC-346 (in 04), QC-347 (in 01).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-004 | [Anomaly detection speed-up by quantum restricted Boltzmann machines](https://doi.org/10.1038/s42005-023-01390-y) | 2023 | [QRBM_AnomalyDetection_Moro2023](https://github.com/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/QRBM_AnomalyDetection_Moro2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/QRBM_AnomalyDetection_Moro2023.ipynb) | partially reproduced |
 | QC-345 | [Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints](https://arxiv.org/abs/2610.05835) | 2026 | [VQC_AdaptiveShotAnomaly_Sudipto2026](https://github.com/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/VQC_AdaptiveShotAnomaly_Sudipto2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/VQC_AdaptiveShotAnomaly_Sudipto2026.ipynb) | reproduced |
 
-### 20 Blockchain Attack Detection  (1 of 1 papers)
+### 20 Blockchain Attack Detection
+
+1 paper catalogued in this topic: 1 notebook filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-259 | [Quantum Deep Neural Network Based Classification of Attack Vectors on the Ethereum Blockchain](https://doi.org/10.4108/eetsis.5572) | 2024 | [QRBM_EthereumAttack_Rajawat2024](https://github.com/owlmt/QML/blob/main/20_Blockchain_Attack_Detection/QRBM_EthereumAttack_Rajawat2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/20_Blockchain_Attack_Detection/QRBM_EthereumAttack_Rajawat2024.ipynb) | partially reproduced |
 
-### 21 QKD Attack Detection  (3 of 3 papers)
+### 21 QKD Attack Detection
+
+3 papers catalogued in this topic: 3 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -369,7 +420,9 @@ this repository.
 | QC-093 | [Noise-Resistant Feature-Aware Attack Detection Using Quantum Machine Learning](https://arxiv.org/abs/2601.06762) | 2026 | [QSVM_CVQKDAttackDetection_Ding2026](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QSVM_CVQKDAttackDetection_Ding2026.ipynb) | partially reproduced |
 | QC-220 | [Resisting Quantum Key Distribution Attacks Using Quantum Machine Learning](https://arxiv.org/abs/2509.14282) | 2025 | [QLSTM_QKDAttack_AlKuwari2025](https://github.com/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/21_QKD_Attack_Detection/QLSTM_QKDAttack_AlKuwari2025.ipynb) | partially reproduced |
 
-### 22 Deepfake Spoofing Detection  (4 of 4 papers)
+### 22 Deepfake Spoofing Detection
+
+4 papers catalogued in this topic: 4 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -378,7 +431,9 @@ this repository.
 | QC-235 | [A Hybrid Quantum-Classical AI-Based Detection Strategy for Generative Adversarial Network-Based Deepfake Attacks on an Autonomous Vehicle Traffic Sign Classification System](https://arxiv.org/abs/2409.17311) | 2024 | [HybridQNN_DeepfakeTrafficSign_Salek2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) | partially reproduced |
 | QC-264 | [Quantum-Trained Convolutional Neural Network for Deepfake Audio Detection](https://arxiv.org/abs/2410.09250) | 2024 | [QTCNN_AudioDeepfake_Lin2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QTCNN_AudioDeepfake_Lin2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QTCNN_AudioDeepfake_Lin2024.ipynb) | partially reproduced |
 
-### 23 Adversarial Attacks Against QML  (38 of 44 papers)
+### 23 Adversarial Attacks Against QML
+
+45 papers catalogued in this topic: 38 notebooks filed here; 3 with the notebook filed in another folder: QC-001 (in 05), QC-010 (in 05), QC-121 (in 28); 4 papers without code (QC-102, QC-106, QC-324, QC-340).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -399,7 +454,7 @@ this repository.
 | QC-160 | [Experimental robustness benchmarking of quantum neural networks on a superconducting quantum processor](https://doi.org/10.1007/s11433-025-2943-6) | 2025 | [QNN_RobustnessBenchmark_Zhang2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_RobustnessBenchmark_Zhang2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_RobustnessBenchmark_Zhang2025.ipynb) | partially reproduced |
 | QC-186 | [Q-Poison: Quantum Adversarial Attacks against QML-driven Interference Classification in O-RAN](https://doi.org/10.1109/icmlcn64995.2025.11140504) | 2025 | [HybridQNN_QPoisonAttack_Ergu2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_QPoisonAttack_Ergu2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_QPoisonAttack_Ergu2025.ipynb) | partially reproduced |
 | QC-191 | [Quantum Adversarial Machine Learning and Defense Strategies: Challenges and Opportunities](https://doi.org/10.1007/978-3-032-11153-1_4) | 2025 | [HybridQNN_CompoundAdversarialDefence_Yocam2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_CompoundAdversarialDefence_Yocam2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_CompoundAdversarialDefence_Yocam2025.ipynb) | partially reproduced |
-| QC-215 | [Quantum Support Vector Regression for Robust Anomaly Detection](https://doi.org/10.5220/0014218600004052) | 2025 | [QSVR_AnomalyDetection_Tscharke2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2025.ipynb) | partially reproduced |
+| QC-215 | [Quantum Support Vector Regression for Robust Anomaly Detection](https://arxiv.org/abs/2505.01012) | 2025 | [QSVR_AnomalyDetection_Tscharke2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QSVR_AnomalyDetection_Tscharke2025.ipynb) | partially reproduced |
 | QC-222 | [SoK: Critical Evaluation of Quantum Machine Learning for Adversarial Robustness](https://arxiv.org/abs/2511.14989) | 2025 | [QMLP_AdversarialRobustness_Nowmi2025](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QMLP_AdversarialRobustness_Nowmi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QMLP_AdversarialRobustness_Nowmi2025.ipynb) | partially reproduced |
 | QC-234 | [A Comparative Analysis of Adversarial Robustness for Quantum and Classical Machine Learning Models](https://arxiv.org/abs/2404.16154) | 2024 | [QNN_AdversarialRobustness_Wendlinger2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Wendlinger2024.ipynb) | partially reproduced |
 | QC-237 | [AdvQuNN: A Methodology for Analyzing the Adversarial Robustness of Quanvolutional Neural Networks](https://doi.org/10.1109/qsw62656.2024.00033) | 2024 | [QNN_AdversarialRobustness_Maouaki2024](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maouaki2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialRobustness_Maouaki2024.ipynb) | partially reproduced |
@@ -421,7 +476,9 @@ this repository.
 | QC-339 | [Quantum Adversarial Machine Learning](https://doi.org/10.1103/PhysRevResearch.2.033212) | 2020 | [VQC_QuantumAdversarialLearning_Lu2020](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_QuantumAdversarialLearning_Lu2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_QuantumAdversarialLearning_Lu2020.ipynb) | partially reproduced |
 | QC-342 | [Vulnerability of quantum classification to adversarial perturbations](https://doi.org/10.1103/PhysRevA.101.062331) | 2020 | [VQC_AdversarialConcentration_Liu2020](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialConcentration_Liu2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialConcentration_Liu2020.ipynb) | partially reproduced |
 
-### 24 Poisoning Attacks Against QML  (7 of 12 papers)
+### 24 Poisoning Attacks Against QML
+
+12 papers catalogued in this topic: 7 notebooks filed here; 2 with the notebook filed in another folder: QC-163 (in 15), QC-222 (in 23); 2 papers without code (QC-005, QC-048); 1 paper blocked (QC-206).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -433,7 +490,9 @@ this repository.
 | QC-251 | [On the Robustness of Variational Quantum Classifier Against "Label Flipping Attacks" in Federated Learning for Semiconductor Manufacturing](https://doi.org/10.1109/qce60285.2024.00028) | 2024 | [VQC_LabelFlippingFederated_Bhatia2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) | partially reproduced |
 | QC-327 | [Defending Against Byzantine Attacks in Quantum Federated Learning](https://doi.org/10.1109/msn53354.2021.00035) | 2021 | [QNN_ByzantineFederated_Xia2021](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_ByzantineFederated_Xia2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_ByzantineFederated_Xia2021.ipynb) | partially reproduced |
 
-### 25 Backdoor Trojan Attacks Against QML  (15 of 19 papers)
+### 25 Backdoor Trojan Attacks Against QML
+
+19 papers catalogued in this topic: 15 notebooks filed here; 1 with the notebook filed in another folder: QC-222 (in 23); 2 papers without code (QC-048, QC-052); 1 paper blocked (QC-206).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -453,7 +512,9 @@ this repository.
 | QC-300 | [QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks](https://doi.org/10.1109/QCE57702.2023.00124) | 2023 | [QNN_Backdoor_QDoor_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QDoor_Chu2023.ipynb) | partially reproduced |
 | QC-301 | [QTrojan: A Circuit Backdoor Against Quantum Neural Networks](https://doi.org/10.1109/ICASSP49357.2023.10096293) | 2023 | [QNN_Backdoor_QTrojan_Chu2023](https://github.com/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QTrojan_Chu2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/25_Backdoor_Trojan_Attacks_Against_QML/QNN_Backdoor_QTrojan_Chu2023.ipynb) | partially reproduced |
 
-### 26 QML Model Extraction Theft  (11 of 14 papers)
+### 26 QML Model Extraction Theft
+
+14 papers catalogued in this topic: 11 notebooks filed here; 2 with the notebook filed in another folder: QC-121 (in 28), QC-214 (in 27); 1 paper without code (QC-269).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -469,7 +530,9 @@ this repository.
 | QC-271 | [The Quantum Imitation Game: Reverse Engineering of Quantum Machine Learning Models](https://doi.org/10.1145/3689939.3695783) | 2024 | [BruteForceRE_TranspiledQNN_Ghosh2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) | partially reproduced |
 | QC-307 | [QuMoS: A Framework for Preserving Security of Quantum Machine Learning Model](https://doi.org/10.1109/qce57702.2023.00123) | 2023 | [QuMoS_ModelSecurity_Wang2023](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) | partially reproduced |
 
-### 27 QML Privacy Data Leakage  (18 of 22 papers)
+### 27 QML Privacy Data Leakage
+
+22 papers catalogued in this topic: 18 notebooks filed here; 3 with the notebook filed in another folder: QC-124 (in 24), QC-348 (in 14), QC-349 (in 14); 1 paper without code (QC-178).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -492,14 +555,18 @@ this repository.
 | QC-331 | [Quantum federated learning through blind quantum computing](https://doi.org/10.1007/s11433-021-1753-3) | 2021 | [VQC_BlindFederated_Li2021](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_BlindFederated_Li2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_BlindFederated_Li2021.ipynb) | partially reproduced |
 | QC-343 | [Hardening Quantum Machine Learning Against Adversaries](https://arxiv.org/abs/1711.06652) | 2017 | [QBagging_AdversarialRobustness_Wiebe2017](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QBagging_AdversarialRobustness_Wiebe2017.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QBagging_AdversarialRobustness_Wiebe2017.ipynb) | partially reproduced |
 
-### 28 QML Hardware Side Channel Crosstalk Attacks  (2 of 2 papers)
+### 28 QML Hardware Side Channel Crosstalk Attacks
+
+2 papers catalogued in this topic: 2 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-099 | [QML-PipeGuard: Drift-Aware Behavioral Fingerprinting for Quantum Machine Learning Pipeline Integrity](https://doi.org/10.48550/arxiv.2605.25066) | 2026 | [QSVM_PipelineIntegrity_Yeniaras2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) | partially reproduced |
 | QC-121 | [Security Aspects of Quantum Machine Learning (SecQML)](https://doi.org/10.24406/h-508719) | 2026 | [QNN_CrosstalkAttacks_Franco2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) | partially reproduced |
 
-### 29 Adversarial Robustness Defences for QML  (34 of 72 papers)
+### 29 Adversarial Robustness Defences for QML
+
+72 papers catalogued in this topic: 34 notebooks filed here; 30 with the notebook filed in another folder: QC-045 (in 23), QC-049 (in 05), QC-051 (in 23), QC-054 (in 15), QC-063 (in 23), QC-072 (in 23), QC-089 (in 23), QC-099 (in 28), QC-127 (in 23), QC-138 (in 23), QC-144 (in 23), QC-154 (in 23), QC-160 (in 23), QC-191 (in 23), QC-215 (in 23), QC-217 (in 24), QC-222 (in 23), QC-231 (in 27), QC-234 (in 23), QC-237 (in 23), QC-254 (in 23), QC-268 (in 23), QC-282 (in 23), QC-284 (in 23), QC-305 (in 23), QC-308 (in 23), QC-313 (in 23), QC-315 (in 23), QC-339 (in 23), QC-343 (in 27); 8 papers without code (QC-005, QC-046, QC-048, QC-102, QC-106, QC-178, QC-310, QC-324).
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -538,7 +605,9 @@ this repository.
 | QC-335 | [Robustness Verification of Quantum Classifiers](https://doi.org/10.1007/978-3-030-81685-8_7) | 2021 | [QCNN_RobustnessVerification_Guan2021](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QCNN_RobustnessVerification_Guan2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QCNN_RobustnessVerification_Guan2021.ipynb) | partially reproduced |
 | QC-338 | [A quantum active learning algorithm for sampling against adversarial attacks](https://doi.org/10.1088/1367-2630/ab976f) | 2020 | [QAL_AdversarialSampling_Casares2020](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAL_AdversarialSampling_Casares2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAL_AdversarialSampling_Casares2020.ipynb) | partially reproduced |
 
-### 30 QML Defences Against ML Attacks  (7 of 7 papers)
+### 30 QML Defences Against ML Attacks
+
+7 papers catalogued in this topic: 7 notebooks filed here.
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -550,47 +619,56 @@ this repository.
 | QC-185 | [Q-Detection: A Quantum-Classical Hybrid Poisoning Attack Detection Method](https://doi.org/10.24963/ijcai.2025/593) | 2025 | [QUBO_PoisoningDetection_He2025](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QUBO_PoisoningDetection_He2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/QUBO_PoisoningDetection_He2025.ipynb) | partially reproduced |
 | QC-326 | [Defence against adversarial attacks using classical and quantum-enhanced Boltzmann machines](https://doi.org/10.1088/2632-2153/abf834) | 2021 | [RBM_AdversarialDefence_Kehoe2021](https://github.com/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/RBM_AdversarialDefence_Kehoe2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/30_QML_Defences_Against_ML_Attacks/RBM_AdversarialDefence_Kehoe2021.ipynb) | partially reproduced |
 
-### Topic assignment unresolved  (0 of 12 papers)
+### Topic assignment unresolved
 
-_No notebook yet._
+11 papers catalogued without a final topic folder (surveys and reviews spanning several topics): 11 without code.
 
-## Papers without a notebook (blocked)
+## Papers without code (29)
 
-| QC-ID | Paper | Reason |
-|---|---|---|
-| QC-005 | Quantum Machine Learning: Perspectives in Cybersecurity | Perspective/position paper (SAFECOMP 2024 workshop, 9 pp.): overview of classical-shadow QGAN training [arXiv:2309.08426] and an Ising-machine learning scheme [ |
-| QC-019 | Quantum machine learning in intrusion detection systems: a systematic mapping study | Systematic mapping review of 21 primary studies (4 databases, Petersen et al. protocol): no dataset, no model trained, no metric of the authors' own; Table 7 co |
-| QC-027 | Quantum machine learning for network intrusion detection systems, a systematic literature review | Systematic literature review (Kitchenham SLR, Scopus 2017-2022, five included papers): no original experiment, dataset, model or metric; quoted accuracies belon |
-| QC-029 | Quantum Machine Learning for Anomaly Detection in Consumer Electronics | Survey/overview paper (Bhowmik & Thapliyal, ISVLSI 2024, arXiv:2409.00294): generic QML anomaly-detection framework and five case studies summarised from other  |
-| QC-046 | Adversarial Robustness in Quantum Machine Learning: A Scoping Review | Scoping review (PRISMA-ScR) of 53 published studies on adversarial robustness in QML; sections are Introduction, Methodology (search, screening, data extraction |
-| QC-048 | Adversarially Robust Federated Quantum Machine Learning for Healthcare | PDF is a one-page extended abstract (NYSDS 2026, AI for Science track): title and abstract only, 3,042 characters, no methods, dataset source, sample sizes, cir |
-| QC-052 | Backdoor Threats in Variational Quantum Circuits: Taxonomy, Attacks, and Defenses | Survey/taxonomy of backdoor attacks on VQCs (GLSVLSI 2026): sections Introduction, Preliminaries, Backdoors on VQCs (classical-like, compilation-enabled, quantu |
-| QC-060 | Comparative Analysis of Classical and Quantum Machine Learning Approaches for Anomaly Detection in IoT Security | Literature review (Turkish): the abstract states it reviews recent IoT intrusion-detection literature; Section IV describes the reviewed studies' methods and Ta |
-| QC-081 | Hybrid Quantum-Classical Machine Learning for Cybersecurity Threat Detection and Intrusion Prediction: a Systematic Review | Systematic review (PRISMA 2020, 87 primary studies, pooled estimates): the acknowledgment states that no original quantum experiments were conducted and all emp |
-| QC-086 | Intrusion Detection System based on Quantum Generative Adversarial Network and Blockchain-based Federated Learning | Short architecture paper (ICNC 2026, 4 pages): no dataset named, no numeric results (only a qualitative convergence plot, Fig. 4); the QGAN IDS experiment and i |
-| QC-102 | Quantum adversarial machine learning: from classical adaptations to quantum-native methods | Survey/review (Razavi-Far et al. 2026, arXiv 2605.18821): reports no original experiments; all tables summarise prior work; no rerunnable experiment. |
-| QC-106 | Quantum-Enhanced Adversarial Robustness in Artificial Intelligence | Book chapter / overview (Sen 2026) of adversarial ML and quantum ML with conceptual frameworks and tables only; no original experiment, dataset or reported resu |
-| QC-114 | Quantum Machine Learning for Cyber Threat Intelligence: A Scoping Review of Current Capabilities and Future Directions | Scoping review (PRISMA-ScR, Rezaei et al. 2026) of 24 QML cyber-threat-intelligence studies; contains no original experiment, only results quoted from other pap |
-| QC-140 | Adversarial Threats in Quantum Machine Learning: A Survey of Attacks and Defenses | Survey/book chapter (Ghosh et al. 2025, arXiv 2506.21842) with no original experiment; its quantitative results summarise cited works (HVIP/HA VIP, QuMoS, qGAN  |
-| QC-157 | Entangled Threats: A Unified Kill Chain Model for Quantum Machine Learning Security | Conceptual kill-chain taxonomy and literature survey (Debus et al. 2025, arXiv 2507.08623); no original experiment, dataset or reported numbers to reproduce. |
-| QC-178 | Next-Generation Quantum Neural Networks: Enhancing Efficiency, Security, and Privacy | Synthesis/position paper (Innan et al., IOLTS 2025, arXiv 2507.20537): all figures and Table I are reproduced from cited prior work (Kashif 2024, Marchisio, Ahm |
-| QC-204 | Quantum Machine Learning Approaches for Coordinated Stealth Attack Detection in Distributed Generation Systems | Paper's only dataset (High-Fidelity Distributed Generation Dataset for Coordinated Stealth Attack Detection, IEEE DataPort DOI 10.21227/qggf-5y43) needs an IEEE |
-| QC-205 | Quantum Machine Learning-Based Intrusion Detection: A Comparative Study on Real Quantum Hardware | Review / comparative literature paper (Nagy et al., SISY 2025) with no own experiment: it summarises four earlier studies (QC-003 Hdaib, QC-018 and QC-216 de Ab |
-| QC-206 | Quantum Machine Learning for 6G Network Intelligence and Adversarial Threats | Vision/survey magazine article (IEEE Commun. Stand. Mag. 2025). Its only experiment (Figs. 4-5: DRL resource allocation with a 4-qubit quantum policy attacked b |
-| QC-208 | Quantum Machine Learning for Cybersecurity: A Taxonomy and Future Directions | Survey/taxonomy of QML for cybersecurity (Sai et al. 2025, arXiv 2512.15286); no original experiment, all reported numbers are from cited works, so there is no  |
-| QC-211 | Quantum Machine Learning in Cybersecurity: A Review of Quantum-Safe and Quantum-Enhanced Approaches | Review/survey of QML for cybersecurity (Rahgozar et al. 2025, ICSPC); reports no original experiment or metrics, only qualitative discussion of others' work, so |
-| QC-224 | Subject Review: AI-Driven Security in Quantum Machine Learning: Vulnerabilities, Threats, and Defenses | Subject review (PRISMA-style literature survey) with no experiment of its own: no dataset, no trained model, no reported numbers; only taxonomy figures and conc |
-| QC-225 | Towards Adapting Federated & Quantum Machine Learning for Network Intrusion Detection: A Survey | Survey of federated and quantum ML for network intrusion detection; no experiment of its own. The case-study numbers in Sec. V.D / Table VII are quoted from oth |
-| QC-247 | HyQ2: A Hybrid Quantum Neural Network for NextG Vulnerability Detection | Experiment data are private srsRAN 5G fuzzing logs from the authors' Stevens fuzzing digital twin (state-transition graphs per log, 14-dimensional fuzzed-layer  |
-| QC-252 | Predominant Aspects on Security for Quantum Machine Learning: Literature Review | Systematic literature review (PRISMA: 4,658 records, 27 included) with no experiment of its own: no trained model, no dataset, no metric tables; every result di |
-| QC-260 | Quantum Machine Learning Based Network IDS for DDoS Attack Detection in IoT: A Novel Approach | Conceptual overview / position paper (Das 2024, NFSU JCSDF): IDS taxonomy, a literature table of nine earlier works and a proposed hybrid classical-quantum fram |
-| QC-269 | SoK Paper: Security Concerns in Quantum Machine Learning as a Service | SoK / survey of security concerns in QML-as-a-Service: sections are background, training and inference pipelines and a threat discussion; no dataset, no trained |
-| QC-310 | Towards quantum enhanced adversarial robustness in machine learning | Review article (Nature Machine Intelligence perspective, arXiv 2306.12688) with no experiment of its own: the text states 'In this review' and reports no number |
-| QC-321 | Security Aspects of Quantum Machine Learning: Opportunities, Threats and Defenses | Invited perspective (GLSVLSI 2022). Sections 3.2-5 summarise threats and defences from other papers (QuPUF, split compilation, dummy gates, buffer qubits, cross |
-| QC-322 | Sicherheit von Quantum Machine Learning | German-language overview article (Wirtschaftsinformatik und Management 14(2), 2022) with no experiment of its own: no dataset, no trained model, no evaluation;  |
-| QC-324 | Adversarial learning in quantum artificial intelligence | Invited review (Acta Physica Sinica 70, 140302, 2021, Chinese with English captions) of quantum adversarial learning with no experiment of its own: no methods s |
-| QC-325 | Analysis of ultra-high volumes of network traffic based on quantum machine learning | The downloaded PDF is not the article: it holds only the two table-of-contents pages (pp. 7-8) of Problems of Information Security, Computer Systems No. 1 (2021 |
-| QC-340 | Quantum Adversarial Machine Learning: Status, Challenges and Perspectives | Survey / perspective (IEEE TPS-ISA 2020) that calls itself 'a comprehensive review' and contains no experiment of its own: no dataset, trained model, qubit coun |
+These publications are part of the catalogue but provide no experiment that can be implemented: surveys, systematic reviews, taxonomies, perspectives, an extended abstract and an architecture-only paper. Each links to its original publication (DOI, arXiv or publisher page); the manifest keeps its full bibliographic row. They are catalogued, not unfinished work.
+
+| QC-ID | Paper | Year | Topic folder(s) | Reason |
+|---|---|---|---|---|
+| QC-005 | [Quantum Machine Learning: Perspectives in Cybersecurity](https://doi.org/10.1007/978-3-031-68738-9_20) | 2024 | 24; 29 | Perspective/position paper (SAFECOMP 2024 workshop, 9 pp.): overview of classical-shadow QGAN training [arXiv:2309.08426] and an Ising-machine learning scheme [SciPost Phys. Core 7, 013]; no data, no experiment, no me... |
+| QC-019 | [Quantum machine learning in intrusion detection systems: a systematic mapping study](https://doi.org/10.1007/978-981-99-7886-1_9) | 2023 | unresolved | Systematic mapping review of 21 primary studies (4 databases, Petersen et al. protocol): no dataset, no model trained, no metric of the authors' own; Table 7 copies accuracies from refs [22]-[39]. Nothing to reproduce. |
+| QC-027 | [Quantum machine learning for network intrusion detection systems, a systematic literature review](https://doi.org/10.1109/ICAIC57335.2023.10044125) | 2023 | unresolved | Systematic literature review (Kitchenham SLR, Scopus 2017-2022, five included papers): no original experiment, dataset, model or metric; quoted accuracies belong to the reviewed works [15]-[19]. Nothing to reproduce. |
+| QC-029 | [Quantum Machine Learning for Anomaly Detection in Consumer Electronics](https://doi.org/10.1109/ISVLSI61997.2024.00104) | 2024 | 01 | Survey/overview paper (Bhowmik & Thapliyal, ISVLSI 2024, arXiv:2409.00294): generic QML anomaly-detection framework and five case studies summarised from other authors' work (Table I quotes their accuracies); no exper... |
+| QC-046 | [Adversarial Robustness in Quantum Machine Learning: A Scoping Review](https://doi.org/10.3390/computers15040233) | 2026 | 29 | Scoping review (PRISMA-ScR) of 53 published studies on adversarial robustness in QML; sections are Introduction, Methodology (search, screening, data extraction), Results (counts and percentages across the included st... |
+| QC-048 | [Adversarially Robust Federated Quantum Machine Learning for Healthcare](https://doi.org/10.5281/zenodo.22756261) | 2026 | 24; 25; 29 | PDF is a one-page extended abstract (NYSDS 2026, AI for Science track): title and abstract only, 3,042 characters, no methods, dataset source, sample sizes, circuit, hyper-parameters or references. It names a 'liver c... |
+| QC-052 | [Backdoor Threats in Variational Quantum Circuits: Taxonomy, Attacks, and Defenses](https://doi.org/10.1145/3787109.3816392) | 2026 | 25 | Survey/taxonomy of backdoor attacks on VQCs (GLSVLSI 2026): sections Introduction, Preliminaries, Backdoors on VQCs (classical-like, compilation-enabled, quantum-specific), Watermarking, Defense, Future Direction, Con... |
+| QC-060 | [Comparative Analysis of Classical and Quantum Machine Learning Approaches for Anomaly Detection in IoT Security](https://doi.org/10.1109/SIU71813.2026.11636712) | 2026 | 01; 02; 14 | Literature review (Turkish): the abstract states it reviews recent IoT intrusion-detection literature; Section IV describes the reviewed studies' methods and Table I lists public datasets they used; Table II's compari... |
+| QC-081 | [Hybrid Quantum-Classical Machine Learning for Cybersecurity Threat Detection and Intrusion Prediction: a Systematic Review](https://doi.org/10.1109/AIMLA67915.2026.11522502) | 2026 | 01 | Systematic review (PRISMA 2020, 87 primary studies, pooled estimates): the acknowledgment states that no original quantum experiments were conducted and all empirical findings are attributed to cited primary studies;... |
+| QC-086 | [Intrusion Detection System based on Quantum Generative Adversarial Network and Blockchain-based Federated Learning](https://doi.org/10.1109/ICNC68183.2026.11416983) | 2026 | 01 | Short architecture paper (ICNC 2026, 4 pages): no dataset named, no numeric results (only a qualitative convergence plot, Fig. 4); the QGAN IDS experiment and its data live in the authors' earlier papers [2] ICAART 20... |
+| QC-102 | [Quantum adversarial machine learning: from classical adaptations to quantum-native methods](https://doi.org/10.1007/s10462-026-11578-7) | 2026 | 23; 29 | Survey/review (Razavi-Far et al. 2026, arXiv 2605.18821): reports no original experiments; all tables summarise prior work; no rerunnable experiment. |
+| QC-106 | [Quantum-Enhanced Adversarial Robustness in Artificial Intelligence](https://arxiv.org/abs/2605.28899) | 2026 | 23; 29 | Book chapter / overview (Sen 2026) of adversarial ML and quantum ML with conceptual frameworks and tables only; no original experiment, dataset or reported results to reproduce. |
+| QC-114 | [Quantum Machine Learning for Cyber Threat Intelligence: A Scoping Review of Current Capabilities and Future Directions](https://doi.org/10.1109/CSPA68262.2026.11517902) | 2026 | unresolved | Scoping review (PRISMA-ScR, Rezaei et al. 2026) of 24 QML cyber-threat-intelligence studies; contains no original experiment, only results quoted from other papers; no rerunnable experiment or dataset to reproduce. |
+| QC-140 | [Adversarial Threats in Quantum Machine Learning: A Survey of Attacks and Defenses](https://arxiv.org/abs/2506.21842) | 2025 | unresolved | Survey/book chapter (Ghosh et al. 2025, arXiv 2506.21842) with no original experiment; its quantitative results summarise cited works (HVIP/HA VIP, QuMoS, qGAN watermarking), so there is no rerunnable experiment to re... |
+| QC-157 | [Entangled Threats: A Unified Kill Chain Model for Quantum Machine Learning Security](https://doi.org/10.1109/qce65121.2025.00183) | 2025 | unresolved | Conceptual kill-chain taxonomy and literature survey (Debus et al. 2025, arXiv 2507.08623); no original experiment, dataset or reported numbers to reproduce. |
+| QC-178 | [Next-Generation Quantum Neural Networks: Enhancing Efficiency, Security, and Privacy](https://doi.org/10.1109/iolts65288.2025.11116981) | 2025 | 27; 29 | Synthesis/position paper (Innan et al., IOLTS 2025, arXiv 2507.20537): all figures and Table I are reproduced from cited prior work (Kashif 2024, Marchisio, Ahmed 2025, Maouaki AdvQuNN, FedQNN, MQFL-FHE); no own exper... |
+| QC-205 | [Quantum Machine Learning-Based Intrusion Detection: A Comparative Study on Real Quantum Hardware](https://doi.org/10.1109/SISY67000.2025.11205415) | 2025 | 01 | Review / comparative literature paper (Nagy et al., SISY 2025) with no own experiment: it summarises four earlier studies (QC-003 Hdaib, QC-018 and QC-216 de Abreu, QC-249 Kukliansky), so a notebook would duplicate th... |
+| QC-208 | [Quantum Machine Learning for Cybersecurity: A Taxonomy and Future Directions](https://arxiv.org/abs/2512.15286) | 2025 | unresolved | Survey/taxonomy of QML for cybersecurity (Sai et al. 2025, arXiv 2512.15286); no original experiment, all reported numbers are from cited works, so there is no rerunnable experiment. |
+| QC-211 | [Quantum Machine Learning in Cybersecurity: A Review of Quantum-Safe and Quantum-Enhanced Approaches](https://doi.org/10.1109/ICSPC68261.2025.11326546) | 2025 | unresolved | Review/survey of QML for cybersecurity (Rahgozar et al. 2025, ICSPC); reports no original experiment or metrics, only qualitative discussion of others' work, so there is no rerunnable experiment. |
+| QC-224 | [Subject Review: AI-Driven Security in Quantum Machine Learning: Vulnerabilities, Threats, and Defenses](https://doi.org/10.31695/ijerat.2025.4.1) | 2025 | unresolved | Subject review (PRISMA-style literature survey) with no experiment of its own: no dataset, no trained model, no reported numbers; only taxonomy figures and conceptual discussion of QML security. Nothing to rerun. |
+| QC-225 | [Towards Adapting Federated & Quantum Machine Learning for Network Intrusion Detection: A Survey](https://arxiv.org/abs/2509.21389) | 2025 | 01 | Survey of federated and quantum ML for network intrusion detection; no experiment of its own. The case-study numbers in Sec. V.D / Table VII are quoted from other papers (Hdaib, Kumar/QuIDS, Rahman/qGAN, Abreu/Quantum... |
+| QC-252 | [Predominant Aspects on Security for Quantum Machine Learning: Literature Review](https://doi.org/10.1109/QCE60285.2024.00173) | 2024 | unresolved | Systematic literature review (PRISMA: 4,658 records, 27 included) with no experiment of its own: no trained model, no dataset, no metric tables; every result discussed is quoted from other papers. Nothing to rerun. |
+| QC-260 | [Quantum Machine Learning Based Network IDS for DDoS Attack Detection in IoT: A Novel Approach](https://doi.org/10.69490/jcsdf4920250526) | 2024 | 03; 14 | Conceptual overview / position paper (Das 2024, NFSU JCSDF): IDS taxonomy, a literature table of nine earlier works and a proposed hybrid classical-quantum framework diagram only; no dataset, no quantum model specific... |
+| QC-269 | [SoK Paper: Security Concerns in Quantum Machine Learning as a Service](https://doi.org/10.1145/3696843.3696846) | 2024 | 26 | SoK / survey of security concerns in QML-as-a-Service: sections are background, training and inference pipelines and a threat discussion; no dataset, no trained model, no measured result; all numbers and attacks are c... |
+| QC-310 | [Towards quantum enhanced adversarial robustness in machine learning](https://doi.org/10.1038/s42256-023-00661-1) | 2023 | 29 | Review article (Nature Machine Intelligence perspective, arXiv 2306.12688) with no experiment of its own: the text states 'In this review' and reports no numbers. Fig. 2 reprints results of Lu et al. and Ren et al. (t... |
+| QC-321 | [Security Aspects of Quantum Machine Learning: Opportunities, Threats and Defenses](https://doi.org/10.1145/3526241.3530833) | 2022 | unresolved | Invited perspective (GLSVLSI 2022). Sections 3.2-5 summarise threats and defences from other papers (QuPUF, split compilation, dummy gates, buffer qubits, crosstalk). Its only experiment (Sec. 3.1, Table 2) is a convo... |
+| QC-322 | [Sicherheit von Quantum Machine Learning](https://doi.org/10.1365/s35764-022-00395-6) | 2022 | unresolved | German-language overview article (Wirtschaftsinformatik und Management 14(2), 2022) with no experiment of its own: no dataset, no trained model, no evaluation; every number it quotes is cited from other work (Sycamore... |
+| QC-324 | [Adversarial learning in quantum artificial intelligence](https://doi.org/10.7498/aps.70.20210789) | 2021 | 23; 29 | Invited review (Acta Physica Sinica 70, 140302, 2021, Chinese with English captions) of quantum adversarial learning with no experiment of its own: no methods section, hyper-parameters or metric table. Its figures and... |
+| QC-340 | [Quantum Adversarial Machine Learning: Status, Challenges and Perspectives](https://doi.org/10.1109/tps-isa50397.2020.00026) | 2020 | 23 | Survey / perspective (IEEE TPS-ISA 2020) that calls itself 'a comprehensive review' and contains no experiment of its own: no dataset, trained model, qubit count or numeric result (only generic encoding-complexity for... |
+
+## Papers blocked by inaccessible data or source (4)
+
+These papers describe an experiment, but it cannot be rerun here: the dataset needs a login with no public mirror, the data are private, or the article itself could not be obtained. Each can be built if the missing file is supplied (details in the manifest).
+
+| QC-ID | Paper | Year | Topic folder(s) | Reason |
+|---|---|---|---|---|
+| QC-204 | [Quantum Machine Learning Approaches for Coordinated Stealth Attack Detection in Distributed Generation Systems](https://arxiv.org/abs/2601.00873) | 2025 | 15 | Paper's only dataset (High-Fidelity Distributed Generation Dataset for Coordinated Stealth Attack Detection, IEEE DataPort DOI 10.21227/qggf-5y43) needs an IEEE login (HTTP 403), has no public mirror (arXiv, GitHub, Z... |
+| QC-206 | [Quantum Machine Learning for 6G Network Intelligence and Adversarial Threats](https://doi.org/10.1109/mcomstd.2025.3575261) | 2025 | 24; 25 | Vision/survey magazine article (IEEE Commun. Stand. Mag. 2025). Its only experiment (Figs. 4-5: DRL resource allocation with a 4-qubit quantum policy attacked by Q-FGSM / Q-PGD) is not rerunnable: the 16 srsRAN UE met... |
+| QC-247 | [HyQ2: A Hybrid Quantum Neural Network for NextG Vulnerability Detection](https://doi.org/10.1109/TQE.2024.3481280) | 2024 | 11 | Experiment data are private srsRAN 5G fuzzing logs from the authors' Stevens fuzzing digital twin (state-transition graphs per log, 14-dimensional fuzzed-layer labels); the paper has no data-availability statement, da... |
+| QC-325 | [Analysis of ultra-high volumes of network traffic based on quantum machine learning](https://jisp.spbstu.ru/en/article/2021.2.4) | 2021 | 01 | The downloaded PDF is not the article: it holds only the two table-of-contents pages (pp. 7-8) of Problems of Information Security, Computer Systems No. 1 (2021), where the title appears as a listing; the article itse... |
 
 ## Rules for adding a notebook
 

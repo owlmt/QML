@@ -17,12 +17,14 @@ This file lists what is in flight so a resumed session can check for half-built 
   (coverage exception in CLAUDE.md); the dispatcher names the target folder in the brief and
   moves/patches the badge if an agent files elsewhere.
 - Every paper ends with exactly one status: reproduced, partially reproduced, implemented but
-  unvalidated, or blocked (reason in the manifest Notes, recorded with `--no-notebook`).
+  unvalidated, paper without code (no rerunnable experiment: survey, review, abstract), or
+  blocked (data or article inaccessible); the reason is in the manifest Notes, recorded with
+  `--no-notebook`.
 - Since 2026-10-19 every notebook must contain the executed sections "Dataset Exploration and
   Visualisation" and "Quantum Circuit Architecture" (CLAUDE.md "Mandatory sections");
   `tools/verify_notebook.py` reports their status and the publisher records the five QA
   columns. Notebooks published before that date carry PENDING and are corrected in the
-  retrospective audit that runs after the 327-paper queue is complete (add the missing sections,
+  retrospective audit that runs now that the paper queue is complete (add the missing sections,
   execute them, keep results, sync duplicate copies, update manifest/log, commit and push).
 - Resume after an interruption: for each in-flight paper check the notebook file and
   `<scratch>\build_<QC-ID>\*.log` or `run_<QC-ID>\*.log`; if a full run finished (`RESULT : all
@@ -30,7 +32,17 @@ This file lists what is in flight so a resumed session can check for half-built 
   (`tools/notebook_summary.py`); otherwise message the agent to resume (SendMessage) or re-dispatch
   telling the new agent to reuse the scratch folders.
 
-## In flight 2026-10-23 (current state; the sections below are historical)
+## Queue complete (2026-10-27; the sections below are historical)
+
+Every catalogue entry has a final status: 333 entries (332 distinct publications; QC-215 is
+another arXiv version of QC-051), 300 with an executed notebook (1 reproduced, 299 partially
+reproduced) across all 30 topic folders, 29 papers without code (surveys, reviews, abstracts),
+4 blocked by inaccessible data or article (QC-204, QC-206, QC-247, QC-325; each can be built if
+the missing file is supplied). Last publication QC-337 (commit cc93775). No builder is running.
+Next: the retrospective audit of notebooks published before 2026-10-19, and user-supplied gated
+datasets for the atlas.
+
+## In flight 2026-10-23 (historical)
 
 283 papers final (256 partially reproduced, 27 blocked), 44 unprocessed, last publication QC-284
 (commit ad7eb2ec). Fifteen Sonnet builders are running, one per paper, in the session scratchpad

@@ -11,7 +11,8 @@ an honest comparison of its own numbers against the paper's.
 
 ```
 C:\Users\madji\Desktop\QML\                 git repo, branch main -> origin/main
-  manifest.csv                              327 rows, one per paper (QC-001 ... QC-327)
+  manifest.csv                              333 rows, one per paper (QC-001 ... QC-349 with gaps;
+                                            QC-215 is another arXiv version of QC-051, both kept)
   original_bibliography.md                  source bibliography (problem -> algorithm -> papers)
   README.md                                 public repo README (from origin/main)
   CLAUDE.md                                 this file
@@ -19,12 +20,14 @@ C:\Users\madji\Desktop\QML\                 git repo, branch main -> origin/main
   QuantumNetSec_VQC_DDoS_CICIDS2017.ipynb   reference notebook 2 (VQC/QCNN/QSVC, Qiskit)
   papers/2023_Said_QSVM_DDoS/               older layout from README; same code as root QSVM notebook
   01_Network_Intrusion_Detection/ ... 30_QML_Defences_Against_ML_Attacks/
-  _Topic_assignment_unresolved/             12 PDFs (surveys/reviews) with no final topic
+  new-october-2026/                         source PDFs of the six papers added on 2026-10-27
+  _Topic_assignment_unresolved/             11 PDFs (surveys/reviews) with no final topic
 ```
 
 The 30 topic folders (01 to 30) and `_Topic_assignment_unresolved` already exist and each holds
-the PDFs of the papers assigned to it (431 PDFs in total, 327 unique; a paper assigned to two
-topics is present in both folders). PDFs are gitignored and must never be committed.
+the PDFs of the papers assigned to it (443 PDF copies: 432 in the 30 topic folders and 11
+unresolved, for 333 catalogue entries; a paper assigned to two topics is present in both
+folders). PDFs are gitignored and must never be committed.
 `C:\Users\madji\Desktop\QML.zip` (751 MB) is a backup copy of the same PDFs plus the manifest and
 bibliography; do not extract it into the repo.
 
@@ -68,15 +71,20 @@ Reproduction columns (added by `tools/publish_notebook.py`): `Notebook path` (re
 - `reproduced`: notebook executes end to end and every checkable claim is within tolerance.
 - `partially reproduced`: executes end to end; some claims not reached / exceeded / uncheckable.
 - `implemented but unvalidated`: complete Colab-ready notebook that could not be executed here.
-- `blocked`: no notebook (survey/review, no public data or substitute, hardware-only, unreadable
-  PDF); the reason is in `Notes`, recorded with `publish_notebook.py --no-notebook`.
-An empty status means unprocessed. Queue order (user decision, 2026-10-18): coverage first,
+- `paper without code`: no notebook because the publication has no rerunnable experiment of its
+  own (survey, review, taxonomy, perspective, extended abstract, architecture-only paper); the
+  reason is in `Notes`, recorded with `publish_notebook.py --no-notebook`.
+- `blocked`: no notebook although the paper has an experiment, because its data or the article
+  itself is inaccessible (login-only dataset with no mirror, private data, missing article);
+  reason in `Notes`. (Label split on 2026-10-27; before that both groups were `blocked`.)
+An empty status means unprocessed. The queue completed on 2026-10-27: 333 entries, 300 with a
+notebook, 29 papers without code, 4 blocked. Queue order (user decision, 2026-10-18): coverage first,
 i.e. every topic folder gets at least two implemented notebooks (one where the folder holds a
 single paper) before the rest are filled in QC-ID order. `tools/next_papers.py --coverage 2
 --index paper_index.csv` lists the folders still short and their best candidates (readable text,
 known framework and dataset, not a survey); `tools/next_papers.py` without flags gives QC-ID
 order. `REPRODUCTION_QUEUE.md` lists what is in flight. Papers in
-`_Topic_assignment_unresolved` are mostly surveys and end up `blocked` unless they contain a
+`_Topic_assignment_unresolved` are surveys and end up `paper without code` unless they contain a
 rerunnable experiment.
 
 ## Filing rule for every notebook
@@ -209,7 +217,7 @@ PENDING / BLOCKED / NOT_APPLICABLE: `dataset_visualisation_status`, `class_scatt
 execution evidence) and `retrospective_audit_status`. Notebooks published before 2026-10-19
 carry PENDING until the retrospective audit (below) upgrades them.
 
-**Retrospective audit.** After the 327-paper queue is complete, every earlier notebook is
+**Retrospective audit.** Now that the paper queue is complete, every earlier notebook is
 inspected: missing sections are added, the new cells executed, previous results and methodology
 preserved, identical copies across folders synchronised, manifest/log updated, and the correction
 committed and pushed. Compliance is verified by content (real observations, ground-truth labels,

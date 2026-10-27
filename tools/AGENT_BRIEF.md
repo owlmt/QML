@@ -128,7 +128,7 @@ else gets a notebook. A public substitute dataset is allowed and must be documen
 
 ```
 QC-ID: ...
-STATUS: reproduced | partially reproduced | implemented but unvalidated | blocked
+STATUS: reproduced | partially reproduced | implemented but unvalidated | paper without code (no rerunnable experiment) | blocked (data or article inaccessible)
 NOTEBOOK: <repo-relative path or none>
 MODE/TIME: FAST_MODE=<True/False> executed, <minutes> min
 DATASET: <what was used, substitutions>

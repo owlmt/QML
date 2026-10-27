@@ -1,8 +1,23 @@
 """Regenerate README.md from manifest.csv so the repository front page stays current.
 
 Usage: python tools/update_readme.py
-The static introduction lives in this file; the per-folder tables are built from the manifest
-(every row with a notebook path) and the blocked list from rows with status "blocked".
+The static introduction lives in this file; every count, the per-folder tables, the list of
+papers without code and the list of blocked papers are computed from the manifest, so the
+README can never disagree with it.
+
+Counting rules (2026-10-27 consistency audit):
+- A catalogue entry is one manifest row (one QC-ID). Repository-wide totals count each entry
+  once. A paper assigned to several topic folders appears in each folder's catalogue count but
+  its notebook is listed only under the folder that holds it; the other folders cross-reference
+  it. Folder catalogue counts therefore add up to more than the repository-wide total.
+- "with code": the row has a notebook (status reproduced, partially reproduced or implemented
+  but unvalidated).
+- "paper without code": no notebook because the publication itself has no rerunnable
+  experiment (survey, review, taxonomy, perspective, extended abstract, architecture-only paper).
+- "blocked": no notebook although the paper has an experiment, because its data or the article
+  itself is inaccessible (reason in the manifest Notes).
+- DUPLICATES lists entries that are another version of an entry already in the catalogue; they
+  are kept (never removed) and counted once in the number of distinct publications.
 """
 import csv
 import datetime as dt
@@ -17,6 +32,11 @@ README = REPO / "README.md"
 WEB = "https://github.com/owlmt/QML/blob/main/"
 COLAB = "https://colab.research.google.com/github/owlmt/QML/blob/main/"
 IMPLEMENTED = {"reproduced", "partially reproduced", "implemented but unvalidated"}
+NO_CODE = "paper without code"
+BLOCKED = "blocked"
+UNRESOLVED = "Topic assignment unresolved"
+# entry -> the entry it duplicates (same publication, another arXiv version); both are kept
+DUPLICATES = {"QC-215": "QC-051"}
 
 INTRO = """# QML × Cybersecurity Colab Reproduction Factory
 
@@ -26,17 +46,18 @@ folders. Every notebook downloads its own public data, rebuilds the paper's meth
 with plain-language explanations, trains a classical baseline on the same inputs, compares its
 own numbers with the paper's claim by claim, and ends with a critical reading and exercises.
 
-The paper list (327 papers, `manifest.csv`) comes from the bibliography in
-`original_bibliography.md`. Reproductions are produced by an automated pipeline (see
-`CLAUDE.md`), executed end to end on a CPU before publication, and recorded with a truthful
-status:
+The paper catalogue (`manifest.csv`, {n_rows} entries) comes from the bibliography in
+`original_bibliography.md` plus six papers added in October 2026. Reproductions are produced by
+an automated pipeline (see `CLAUDE.md`), executed end to end on a CPU before publication, and
+recorded with a truthful status:
 
 | Status | Meaning |
 |---|---|
-| reproduced | executes end to end and every checkable claim is within tolerance |
+| reproduced | notebook executes end to end and every checkable claim is within tolerance |
 | partially reproduced | executes end to end; some claims not reached, exceeded or uncheckable |
 | implemented but unvalidated | complete Colab-ready notebook that could not be executed locally |
-| blocked | no notebook: survey/review, no public data, hardware-only, or unreadable PDF |
+| paper without code | no notebook: the publication is a survey, review, taxonomy, perspective, extended abstract or architecture-only paper with no rerunnable experiment of its own |
+| blocked | no notebook: the paper has an experiment, but its data or the article itself is inaccessible (reason in the manifest) |
 
 Each notebook also carries a **Dataset Exploration and Visualisation** section (real
 observations coloured by ground-truth label) and a **Quantum Circuit Architecture** section
@@ -62,7 +83,7 @@ matplotlib). The pipeline's own tools are in `tools/` (`execute_notebook.py`,
 manifest.csv                 one row per paper: title, DOI, topic folder(s), notebook path,
                              reproduction status, paper vs notebook metrics, notes, QA columns
 REPRODUCTION_LOG.md          one line per published notebook, newest last
-REPRODUCTION_QUEUE.md        what is in flight and the dispatch policy
+REPRODUCTION_QUEUE.md        dispatch policy and the state of the (completed) queue
 paper_index.csv              feasibility index (datasets, frameworks, models) per paper
 CLAUDE.md                    conventions, validation requirements, publication workflow
 tools/                       execution, verification, publication and queue scripts
@@ -121,63 +142,154 @@ this repository.
 """
 
 
+def folders_of(row):
+    return [t.strip() for t in row["Assigned cybersecurity topic folder(s)"].split(";") if t.strip()]
+
+
+def folder_label(folder):
+    return folder.replace("_", " ")
+
+
+def link_title(row):
+    title = row["Full paper title"].replace("|", "/")
+    url = row.get("DOI/arXiv URL", "").strip()
+    return f"[{title}]({url})" if url.startswith("http") else title
+
+
+def plural(n, word):
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
+
+
 def main() -> int:
     with MANIFEST.open(encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
+    by_id = {r["QC-ID"]: r for r in rows}
+    counts = Counter((r.get("Reproduction status") or "unprocessed") for r in rows)
+    with_code = [r for r in rows if r["Reproduction status"] in IMPLEMENTED and r["Notebook path"]]
+    no_code = [r for r in rows if r["Reproduction status"] == NO_CODE]
+    blocked = [r for r in rows if r["Reproduction status"] == BLOCKED]
+    unprocessed = counts.get("unprocessed", 0)
+    inconsistent = [r["QC-ID"] for r in rows
+                    if (r["Reproduction status"] in IMPLEMENTED) != bool(r["Notebook path"])]
+    if inconsistent:
+        raise SystemExit(f"status/notebook mismatch for {inconsistent}")
+    missing_links = [r["QC-ID"] for r in no_code + blocked if not r["DOI/arXiv URL"].strip().startswith("http")]
+    if missing_links:
+        raise SystemExit(f"papers without code must link to their publication: {missing_links}")
+    n_distinct = len(rows) - sum(1 for q in DUPLICATES if q in by_id)
+
     by_folder = defaultdict(list)
-    blocked = []
-    counts = Counter()
-    for r in rows:
-        status = r.get("Reproduction status", "")
-        counts[status or "unprocessed"] += 1
-        nb = r.get("Notebook path", "")
-        if status in IMPLEMENTED and nb:
-            by_folder[nb.split("/")[0]].append(r)
-        elif status == "blocked":
-            blocked.append(r)
-    folders = sorted({t.strip() for r in rows for t in r["Assigned cybersecurity topic folder(s)"].split(";")})
+    for r in with_code:
+        by_folder[r["Notebook path"].split("/")[0]].append(r)
+    for r in with_code:
+        if r["Notebook path"].split("/")[0] not in folders_of(r):
+            raise SystemExit(f"{r['QC-ID']} notebook folder not in its assigned folders")
+    folders = sorted({t for r in rows for t in folders_of(r) if t != UNRESOLVED})
 
-    out = [INTRO, ATLAS, CITE]
-    done = sum(v for k, v in counts.items() if k != "unprocessed")
-    out.append(f"\n## Progress ({dt.date.today().isoformat()})\n")
-    out.append(f"{done} of {len(rows)} papers have a final status: "
-               + ", ".join(f"{counts[k]} {k}" for k in ("reproduced", "partially reproduced",
-                                                        "implemented but unvalidated", "blocked") if counts[k])
-               + f"; {counts['unprocessed']} still to process. "
-               f"{sum(len(v) for v in by_folder.values())} notebooks are published across "
-               f"{len(by_folder)} of the 30 topic folders.\n")
+    out = [INTRO.format(n_rows=len(rows)), ATLAS, CITE]
 
+    # ---- collection status -------------------------------------------------------------
+    out.append(f"\n## Collection status ({dt.date.today().isoformat()})\n\n")
+    if unprocessed:
+        out.append(f"{unprocessed} entries are still being processed.\n\n")
+    else:
+        out.append("Processing of the catalogue is complete: every entry has a final status.\n\n")
+    dup_note = ""
+    if DUPLICATES:
+        pairs = ", ".join(f"{a} is another version of {b}" for a, b in DUPLICATES.items() if a in by_id)
+        dup_note = f" ({pairs}; both entries and their notebooks are kept)"
+    out.append(f"- **{len(rows)} catalogue entries**, describing {n_distinct} distinct publications{dup_note}.\n")
+    status_bits = ", ".join(f"{counts[k]} {k}" for k in ("reproduced", "partially reproduced",
+                                                        "implemented but unvalidated") if counts[k])
+    out.append(f"- **{len(with_code)} papers with code**: one executed notebook each ({status_bits}), "
+               f"filed across {len(by_folder)} of the 30 topic folders.\n")
+    out.append(f"- **{len(no_code)} papers without code**: surveys, reviews, taxonomies, perspectives, "
+               f"extended abstracts or architecture-only papers with no rerunnable experiment "
+               f"(listed with links below).\n")
+    out.append(f"- **{len(blocked)} papers blocked** by inaccessible data or an inaccessible article "
+               f"(listed with links below).\n")
+    out.append("\nCounting rule: every entry is counted once in the totals above. A paper assigned to "
+               "several topic folders is counted in each folder's catalogue figure below, but its "
+               "notebook is listed only under the folder that holds it; the other folders "
+               "cross-reference it. Folder figures therefore add up to more than the totals above.\n")
+
+    # ---- per-folder tables -------------------------------------------------------------
     out.append("\n## Notebooks by topic\n")
     for folder in folders:
-        if folder.startswith("_"):
-            continue
-        items = by_folder.get(folder, [])
-        n_papers = sum(1 for r in rows if folder in [t.strip() for t in r["Assigned cybersecurity topic folder(s)"].split(";")])
-        out.append(f"\n### {folder.replace('_', ' ')}  ({len(items)} of {n_papers} papers)\n")
+        items = sorted(by_folder.get(folder, []), key=lambda x: x["QC-ID"])
+        assigned = [r for r in rows if folder in folders_of(r)]
+        elsewhere = sorted((r for r in assigned if r["Notebook path"]
+                            and not r["Notebook path"].startswith(folder + "/")), key=lambda x: x["QC-ID"])
+        f_nocode = [r for r in assigned if r["Reproduction status"] == NO_CODE]
+        f_blocked = [r for r in assigned if r["Reproduction status"] == BLOCKED]
+        out.append(f"\n### {folder_label(folder)}\n\n")
+        parts = [f"{plural(len(items), 'notebook')} filed here"]
+        if elsewhere:
+            refs = ", ".join(f"{r['QC-ID']} (in {r['Notebook path'].split('/')[0][:2]})" for r in elsewhere)
+            parts.append(f"{len(elsewhere)} with the notebook filed in another folder: {refs}")
+        if f_nocode:
+            parts.append(f"{plural(len(f_nocode), 'paper')} without code ({', '.join(r['QC-ID'] for r in f_nocode)})")
+        if f_blocked:
+            parts.append(f"{plural(len(f_blocked), 'paper')} blocked ({', '.join(r['QC-ID'] for r in f_blocked)})")
+        out.append(f"{plural(len(assigned), 'paper')} catalogued in this topic: " + "; ".join(parts) + ".\n")
         if not items:
-            out.append("\n_No notebook yet._\n")
             continue
         out.append("\n| QC-ID | Paper | Year | Notebook | Status |\n|---|---|---|---|---|\n")
-        for r in sorted(items, key=lambda x: x["QC-ID"]):
+        for r in items:
             nb = r["Notebook path"]
             name = nb.split("/")[-1].replace(".ipynb", "")
-            title = r["Full paper title"].replace("|", "/")
-            doi = r.get("DOI/arXiv URL", "")
-            title_md = f"[{title}]({doi})" if doi.startswith("http") else title
-            out.append(f"| {r['QC-ID']} | {title_md} | {r['Year']} | "
+            out.append(f"| {r['QC-ID']} | {link_title(r)} | {r['Year']} | "
                        f"[{name}]({WEB}{nb}) · [Colab]({COLAB}{nb}) | {r['Reproduction status']} |\n")
+
+    unresolved = [r for r in rows if UNRESOLVED in folders_of(r)]
+    if unresolved:
+        out.append(f"\n### {UNRESOLVED}\n\n")
+        u_nocode = sum(1 for r in unresolved if r["Reproduction status"] == NO_CODE)
+        u_blocked = sum(1 for r in unresolved if r["Reproduction status"] == BLOCKED)
+        u_code = [r for r in unresolved if r["Notebook path"]]
+        bits = []
+        if u_nocode:
+            bits.append(f"{u_nocode} without code")
+        if u_blocked:
+            bits.append(f"{u_blocked} blocked")
+        if u_code:
+            bits.append("with code: " + ", ".join(f"{r['QC-ID']} (in {r['Notebook path'].split('/')[0][:2]})" for r in u_code))
+        out.append(f"{plural(len(unresolved), 'paper')} catalogued without a final topic folder "
+                   f"(surveys and reviews spanning several topics): " + "; ".join(bits) + ".\n")
+
+    # ---- papers without code / blocked ---------------------------------------------------
+    def table(title, intro, items):
+        out.append(f"\n## {title}\n\n{intro}\n\n| QC-ID | Paper | Year | Topic folder(s) | Reason |\n|---|---|---|---|---|\n")
+        for r in sorted(items, key=lambda x: x["QC-ID"]):
+            reason = re.sub(r"\s+", " ", r.get("Notes", "")).replace("|", "/")
+            if len(reason) > 220:
+                reason = reason[:217].rstrip() + "..."
+            topics = "; ".join(t[:2] if t != UNRESOLVED else "unresolved" for t in folders_of(r))
+            out.append(f"| {r['QC-ID']} | {link_title(r)} | {r['Year']} | {topics} | {reason} |\n")
+
+    if no_code:
+        table(f"Papers without code ({len(no_code)})",
+              "These publications are part of the catalogue but provide no experiment that can be "
+              "implemented: surveys, systematic reviews, taxonomies, perspectives, an extended abstract "
+              "and an architecture-only paper. Each links to its original publication (DOI, arXiv or "
+              "publisher page); the manifest keeps its full bibliographic row. They are catalogued, not "
+              "unfinished work.", no_code)
     if blocked:
-        out.append("\n## Papers without a notebook (blocked)\n\n| QC-ID | Paper | Reason |\n|---|---|---|\n")
-        for r in sorted(blocked, key=lambda x: x["QC-ID"]):
-            reason = re.sub(r"\s+", " ", r.get("Notes", ""))[:160]
-            out.append(f"| {r['QC-ID']} | {r['Full paper title'].replace('|', '/')} | {reason} |\n")
+        table(f"Papers blocked by inaccessible data or source ({len(blocked)})",
+              "These papers describe an experiment, but it cannot be rerun here: the dataset needs a "
+              "login with no public mirror, the data are private, or the article itself could not be "
+              "obtained. Each can be built if the missing file is supplied (details in the manifest).",
+              blocked)
+
     out.append("\n## Rules for adding a notebook\n\n"
                "See `CLAUDE.md`: one notebook per paper in its topic folder, public data downloaded\n"
                "inside the notebook, every transform fitted on the training split only, a classical\n"
                "baseline on identical inputs, a claim-by-claim comparison with the paper, the two\n"
                "mandatory visualisation sections, and a manifest row updated in the same commit.\n")
     README.write_text("".join(out), encoding="utf-8")
-    print(f"README.md regenerated: {done} final, {sum(len(v) for v in by_folder.values())} notebooks listed")
+    print(f"README.md regenerated: {len(rows)} entries, {n_distinct} distinct publications, "
+          f"{len(with_code)} with code ({len(by_folder)} folders), {len(no_code)} without code, "
+          f"{len(blocked)} blocked, {unprocessed} unprocessed")
     return 0
 
 

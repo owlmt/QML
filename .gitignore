@@ -1,7 +1,7 @@
 # QML x Cybersecurity Colab Reproduction Factory
 # Only notebooks (*.ipynb), manifest.csv, docs and small helper code are committed.
 
-# --- Paper PDFs: 431 files (~860 MB) live in the topic folders, never committed ---
+# --- Paper PDFs: 460 files (~940 MB) live in the topic folders and new-october-2026, never committed ---
 *.pdf
 *.PDF
 

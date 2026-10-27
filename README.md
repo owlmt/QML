@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-331 of 333 papers have a final status: 1 reproduced, 297 partially reproduced, 33 blocked; 2 still to process. 298 notebooks are published across 30 of the 30 topic folders.
+332 of 333 papers have a final status: 1 reproduced, 298 partially reproduced, 33 blocked; 1 still to process. 299 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (67 of 82 papers)
+### 01 Network Intrusion Detection  (68 of 82 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -170,6 +170,7 @@ this repository.
 | QC-318 | [Network Attack Traffic Recognition Based on Quantum Neural Network](https://doi.org/10.1109/ICCIA55271.2022.9828461) | 2022 | [QNN_AttackTrafficRecognition_Zhang2022](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_AttackTrafficRecognition_Zhang2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_AttackTrafficRecognition_Zhang2022.ipynb) | partially reproduced |
 | QC-336 | [Training a quantum annealing based restricted Boltzmann machine on cybersecurity data](https://doi.org/10.1109/TETCI.2021.3074916) | 2021 | [RBM_AnnealingIntrusionDetection_Dixit2021](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/RBM_AnnealingIntrusionDetection_Dixit2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/RBM_AnnealingIntrusionDetection_Dixit2021.ipynb) | partially reproduced |
 | QC-341 | [Towards Quantum-Enhanced Machine Learning for Network Intrusion Detection](https://doi.org/10.1109/NCA51143.2020.9306691) | 2020 | [QSVM_IntrusionDetection_Gouveia2020](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Gouveia2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVM_IntrusionDetection_Gouveia2020.ipynb) | partially reproduced |
+| QC-344 | [Quantum Machine Learning for Cybersecurity Applications: Simulation and Hardware Validation](https://arxiv.org/abs/2609.32911) | 2026 | [HybridQSVMVQC_IntrusionSpam_Zhu2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQSVMVQC_IntrusionSpam_Zhu2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridQSVMVQC_IntrusionSpam_Zhu2026.ipynb) | partially reproduced |
 | QC-347 | [Quantum Anomaly Detection in network traffic using Variational Quantum Classifiers](https://arxiv.org/abs/2610.34635) | 2026 | [VQC_AnomalyDetection_Ilham2026](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_AnomalyDetection_Ilham2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/VQC_AnomalyDetection_Ilham2026.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)

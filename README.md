@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-327 of 333 papers have a final status: 294 partially reproduced, 33 blocked; 6 still to process. 294 notebooks are published across 30 of the 30 topic folders.
+328 of 333 papers have a final status: 295 partially reproduced, 33 blocked; 5 still to process. 295 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -194,13 +194,14 @@ this repository.
 | QC-203 | [Quantum Long Short-Term Memory-based Identification of Distributed Denial of Service Attacks](https://doi.org/10.1109/ICAIC63015.2025.10849228) | 2025 | [QLSTM_DDoS_Tripathi2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/QLSTM_DDoS_Tripathi2025.ipynb) | partially reproduced |
 | QC-232 | [Unified hybrid quantum classical neural network framework for detecting distributed denial of service and Android mobile malware attacks](https://doi.org/10.1140/epjqt/s40507-025-00380-z) | 2025 | [HybridQNN_DDoSAndroidMalware_Sridevi2025](https://github.com/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSAndroidMalware_Sridevi2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/03_DDoS_DoS_Detection/HybridQNN_DDoSAndroidMalware_Sridevi2025.ipynb) | partially reproduced |
 
-### 04 Botnet DGA Detection  (3 of 5 papers)
+### 04 Botnet DGA Detection  (4 of 5 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-002 | [Stabilized quantum-enhanced SIEM architecture and speed-up through Hoeffding tree algorithms enable quantum cybersecurity analytics in botnet detection](https://doi.org/10.1038/s41598-024-51941-8) | 2024 | [QHTC_BotnetDGA_Tehrani2024](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QHTC_BotnetDGA_Tehrani2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QHTC_BotnetDGA_Tehrani2024.ipynb) | partially reproduced |
 | QC-024 | [Evaluating hybrid quantum-classical deep learning for cybersecurity botnet DGA detection](https://doi.org/10.1016/j.procs.2021.12.135) | 2022 | [HybridQNN_BotnetDGA_Suryotrisongko2022](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQNN_BotnetDGA_Suryotrisongko2022.ipynb) | partially reproduced |
 | QC-082 | [Hybrid Quantum Graph Neural Networks for Robust Botnet Detection in Modern IoT Ecosystems](https://doi.org/10.1016/j.future.2026.108650) | 2026 | [HybridQGNN_BotnetDetection_Sammartino2026](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/HybridQGNN_BotnetDetection_Sammartino2026.ipynb) | partially reproduced |
+| QC-346 | [Pareto-optimal quantum kernel selection for unsupervised anomaly detection on real malware beaconing data](https://arxiv.org/abs/2610.09717) | 2026 | [QOCSVM_MalwareBeaconing_Micah2026](https://github.com/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QOCSVM_MalwareBeaconing_Micah2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/04_Botnet_DGA_Detection/QOCSVM_MalwareBeaconing_Micah2026.ipynb) | partially reproduced |
 
 ### 05 Malware Detection  (14 of 16 papers)
 

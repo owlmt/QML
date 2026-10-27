@@ -96,11 +96,11 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-307 of 327 papers have a final status: 274 partially reproduced, 33 blocked; 20 still to process. 274 notebooks are published across 30 of the 30 topic folders.
+308 of 327 papers have a final status: 275 partially reproduced, 33 blocked; 19 still to process. 275 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (63 of 79 papers)
+### 01 Network Intrusion Detection  (64 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -167,6 +167,7 @@ this repository.
 | QC-296 | [Intrusion detection model using optimized quantum neural network and elliptical curve cryptography for data security](https://doi.org/10.1016/j.aej.2023.03.072) | 2023 | [WOAQNN_IntrusionDetection_Kadry2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/WOAQNN_IntrusionDetection_Kadry2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/WOAQNN_IntrusionDetection_Kadry2023.ipynb) | partially reproduced |
 | QC-299 | [On Hybrid Artificial Neural Networks and Variational Quantum Classifier for Network Intrusion Detection](https://doi.org/10.1109/CyberC58899.2023.00070) | 2023 | [HybridANN_VQC_IntrusionDetection_Venkatachalam2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridANN_VQC_IntrusionDetection_Venkatachalam2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridANN_VQC_IntrusionDetection_Venkatachalam2023.ipynb) | partially reproduced |
 | QC-306 | [Quantum Optimization for IoT Security Detection](https://doi.org/10.1007/978-3-031-22356-3_18) | 2023 | [QBoost_IoTAttackDetection_Barletta2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QBoost_IoTAttackDetection_Barletta2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QBoost_IoTAttackDetection_Barletta2023.ipynb) | partially reproduced |
+| QC-318 | [Network Attack Traffic Recognition Based on Quantum Neural Network](https://doi.org/10.1109/ICCIA55271.2022.9828461) | 2022 | [QNN_AttackTrafficRecognition_Zhang2022](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_AttackTrafficRecognition_Zhang2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QNN_AttackTrafficRecognition_Zhang2022.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

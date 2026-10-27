@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-304 of 327 papers have a final status: 272 partially reproduced, 32 blocked; 23 still to process. 272 notebooks are published across 30 of the 30 topic folders.
+305 of 327 papers have a final status: 272 partially reproduced, 33 blocked; 22 still to process. 272 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -562,6 +562,7 @@ _No notebook yet._
 | QC-322 | Sicherheit von Quantum Machine Learning | German-language overview article (Wirtschaftsinformatik und Management 14(2), 2022) with no experiment of its own: no dataset, no trained model, no evaluation;  |
 | QC-324 | Adversarial learning in quantum artificial intelligence | Invited review (Acta Physica Sinica 70, 140302, 2021, Chinese with English captions) of quantum adversarial learning with no experiment of its own: no methods s |
 | QC-325 | Analysis of ultra-high volumes of network traffic based on quantum machine learning | The downloaded PDF is not the article: it holds only the two table-of-contents pages (pp. 7-8) of Problems of Information Security, Computer Systems No. 1 (2021 |
+| QC-340 | Quantum Adversarial Machine Learning: Status, Challenges and Perspectives | Survey / perspective (IEEE TPS-ISA 2020) that calls itself 'a comprehensive review' and contains no experiment of its own: no dataset, trained model, qubit coun |
 
 ## Rules for adding a notebook
 

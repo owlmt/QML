@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-328 of 333 papers have a final status: 295 partially reproduced, 33 blocked; 5 still to process. 295 notebooks are published across 30 of the 30 topic folders.
+329 of 333 papers have a final status: 296 partially reproduced, 33 blocked; 4 still to process. 296 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -375,7 +375,7 @@ this repository.
 | QC-235 | [A Hybrid Quantum-Classical AI-Based Detection Strategy for Generative Adversarial Network-Based Deepfake Attacks on an Autonomous Vehicle Traffic Sign Classification System](https://arxiv.org/abs/2409.17311) | 2024 | [HybridQNN_DeepfakeTrafficSign_Salek2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/HybridQNN_DeepfakeTrafficSign_Salek2024.ipynb) | partially reproduced |
 | QC-264 | [Quantum-Trained Convolutional Neural Network for Deepfake Audio Detection](https://arxiv.org/abs/2410.09250) | 2024 | [QTCNN_AudioDeepfake_Lin2024](https://github.com/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QTCNN_AudioDeepfake_Lin2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/22_Deepfake_Spoofing_Detection/QTCNN_AudioDeepfake_Lin2024.ipynb) | partially reproduced |
 
-### 23 Adversarial Attacks Against QML  (36 of 44 papers)
+### 23 Adversarial Attacks Against QML  (37 of 44 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -413,6 +413,7 @@ this repository.
 | QC-312 | [A new method of constructing adversarial examples for quantum variational circuits](https://doi.org/10.1088/1674-1056/ac9b32) | 2022 | [VQC_AdversarialGradientCircuit_Yan2022](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialGradientCircuit_Yan2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialGradientCircuit_Yan2022.ipynb) | partially reproduced |
 | QC-313 | [Adversarial Robustness in Hybrid Quantum-Classical Deep Learning for Botnet DGA Detection](https://doi.org/10.2197/ipsjjip.30.636) | 2022 | [HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022.ipynb) | partially reproduced |
 | QC-315 | [Experimental quantum adversarial learning with programmable superconducting qubits](https://doi.org/10.1038/s43588-022-00351-9) | 2022 | [QNN_AdversarialLearning_Ren2022](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialLearning_Ren2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/QNN_AdversarialLearning_Ren2022.ipynb) | partially reproduced |
+| QC-334 | [Robust in Practice: Adversarial Attacks on Quantum Machine Learning](https://doi.org/10.1103/PhysRevA.103.042427) | 2021 | [VQC_AdversarialBounds_Liao2021](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialBounds_Liao2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialBounds_Liao2021.ipynb) | partially reproduced |
 | QC-339 | [Quantum Adversarial Machine Learning](https://doi.org/10.1103/PhysRevResearch.2.033212) | 2020 | [VQC_QuantumAdversarialLearning_Lu2020](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_QuantumAdversarialLearning_Lu2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_QuantumAdversarialLearning_Lu2020.ipynb) | partially reproduced |
 | QC-342 | [Vulnerability of quantum classification to adversarial perturbations](https://doi.org/10.1103/PhysRevA.101.062331) | 2020 | [VQC_AdversarialConcentration_Liu2020](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialConcentration_Liu2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialConcentration_Liu2020.ipynb) | partially reproduced |
 

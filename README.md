@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-308 of 327 papers have a final status: 275 partially reproduced, 33 blocked; 19 still to process. 275 notebooks are published across 30 of the 30 topic folders.
+309 of 327 papers have a final status: 276 partially reproduced, 33 blocked; 18 still to process. 276 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -405,7 +405,7 @@ this repository.
 | QC-312 | [A new method of constructing adversarial examples for quantum variational circuits](https://doi.org/10.1088/1674-1056/ac9b32) | 2022 | [VQC_AdversarialGradientCircuit_Yan2022](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialGradientCircuit_Yan2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/VQC_AdversarialGradientCircuit_Yan2022.ipynb) | partially reproduced |
 | QC-313 | [Adversarial Robustness in Hybrid Quantum-Classical Deep Learning for Botnet DGA Detection](https://doi.org/10.2197/ipsjjip.30.636) | 2022 | [HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022](https://github.com/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/23_Adversarial_Attacks_Against_QML/HybridQNN_AdversarialBotnetDGA_Suryotrisongko2022.ipynb) | partially reproduced |
 
-### 24 Poisoning Attacks Against QML  (6 of 12 papers)
+### 24 Poisoning Attacks Against QML  (7 of 12 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -415,6 +415,7 @@ this repository.
 | QC-124 | [Superior resilience to poisoning and amenability to unlearning in quantum machine learning](https://doi.org/10.1038/s41467-026-70420-4) | 2026 | [QNN_PoisoningUnlearning_Chen2026](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_PoisoningUnlearning_Chen2026.ipynb) | partially reproduced |
 | QC-217 | [RDQKL: Robust Decentralized Quantum Kernel Learning for Noisy and Adversarial Environment](https://doi.org/10.1109/qce65121.2025.00238) | 2025 | [RDQKL_DecentralizedKernelLearning_Ma2025](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/RDQKL_DecentralizedKernelLearning_Ma2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/RDQKL_DecentralizedKernelLearning_Ma2025.ipynb) | partially reproduced |
 | QC-251 | [On the Robustness of Variational Quantum Classifier Against "Label Flipping Attacks" in Federated Learning for Semiconductor Manufacturing](https://doi.org/10.1109/qce60285.2024.00028) | 2024 | [VQC_LabelFlippingFederated_Bhatia2024](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/VQC_LabelFlippingFederated_Bhatia2024.ipynb) | partially reproduced |
+| QC-327 | [Defending Against Byzantine Attacks in Quantum Federated Learning](https://doi.org/10.1109/msn53354.2021.00035) | 2021 | [QNN_ByzantineFederated_Xia2021](https://github.com/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_ByzantineFederated_Xia2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/24_Poisoning_Attacks_Against_QML/QNN_ByzantineFederated_Xia2021.ipynb) | partially reproduced |
 
 ### 25 Backdoor Trojan Attacks Against QML  (15 of 19 papers)
 

@@ -95,12 +95,12 @@ When citing a single reproduction, add the notebook path (for example
 dataset shown in the atlas, cite the dataset's own reference given on its atlas card in addition to
 this repository.
 
-## Progress (2026-10-23)
-288 of 327 papers have a final status: 260 partially reproduced, 28 blocked; 39 still to process. 260 notebooks are published across 30 of the 30 topic folders.
+## Progress (2026-10-27)
+289 of 327 papers have a final status: 261 partially reproduced, 28 blocked; 38 still to process. 261 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
-### 01 Network Intrusion Detection  (60 of 79 papers)
+### 01 Network Intrusion Detection  (61 of 79 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -164,6 +164,7 @@ this repository.
 | QC-279 | [A Quantum Generative Adversarial Network-based Intrusion Detection System](https://doi.org/10.1109/COMPSAC57700.2023.00280) | 2023 | [QGAN_IntrusionDetection_Rahman2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QGAN_IntrusionDetection_Rahman2023.ipynb) | partially reproduced |
 | QC-289 | [DEQSVC: Dimensionality Reduction and Encoding Technique for Quantum Support Vector Classifier Approach to Detect DDoS Attacks](https://doi.org/10.1109/ACCESS.2023.3322723) | 2023 | [QSVC_DDoS_Alomari2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVC_DDoS_Alomari2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QSVC_DDoS_Alomari2023.ipynb) | partially reproduced |
 | QC-294 | [Hybrid Continuous Variational Quantum Neural Networks for Network Intrusion Detection](https://doi.org/10.3233/ATDE230062) | 2023 | [HybridCVQNN_IntrusionDetection_Chao2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridCVQNN_IntrusionDetection_Chao2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/HybridCVQNN_IntrusionDetection_Chao2023.ipynb) | partially reproduced |
+| QC-306 | [Quantum Optimization for IoT Security Detection](https://doi.org/10.1007/978-3-031-22356-3_18) | 2023 | [QBoost_IoTAttackDetection_Barletta2023](https://github.com/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QBoost_IoTAttackDetection_Barletta2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/01_Network_Intrusion_Detection/QBoost_IoTAttackDetection_Barletta2023.ipynb) | partially reproduced |
 
 ### 02 Zero Day Attack Detection  (2 of 8 papers)
 

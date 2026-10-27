@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-290 of 327 papers have a final status: 262 partially reproduced, 28 blocked; 37 still to process. 262 notebooks are published across 30 of the 30 topic folders.
+291 of 327 papers have a final status: 263 partially reproduced, 28 blocked; 36 still to process. 263 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -443,7 +443,7 @@ this repository.
 | QC-270 | [STIQ: Safeguarding Training and Inferencing of Quantum Neural Networks from Untrusted Cloud](https://arxiv.org/abs/2405.18746) | 2024 | [QNN_STIQSplitCloud_Kundu2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QNN_STIQSplitCloud_Kundu2024.ipynb) | partially reproduced |
 | QC-271 | [The Quantum Imitation Game: Reverse Engineering of Quantum Machine Learning Models](https://doi.org/10.1145/3689939.3695783) | 2024 | [BruteForceRE_TranspiledQNN_Ghosh2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) | partially reproduced |
 
-### 27 QML Privacy Data Leakage  (13 of 20 papers)
+### 27 QML Privacy Data Leakage  (14 of 20 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -460,6 +460,7 @@ this repository.
 | QC-245 | [Harnessing Inherent Noises for Privacy Preservation in Quantum Machine Learning](https://doi.org/10.1109/icc51166.2024.10622663) | 2024 | [QNN_InherentNoisePrivacy_Ju2024](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_InherentNoisePrivacy_Ju2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QNN_InherentNoisePrivacy_Ju2024.ipynb) | partially reproduced |
 | QC-253 | [Privacy-preserving quantum federated learning via gradient hiding](https://doi.org/10.1088/2058-9565/ad40cc) | 2024 | [QFL_GradientHiding_Li2024](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_GradientHiding_Li2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_GradientHiding_Li2024.ipynb) | partially reproduced |
 | QC-263 | [Quantum Privacy Aggregation of Teacher Ensembles (QPATE) for Privacy Preserving Quantum Machine Learning](https://doi.org/10.1109/icassp48485.2024.10447786) | 2024 | [QPATE_PrivateAggregation_Watkins2024](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QPATE_PrivateAggregation_Watkins2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QPATE_PrivateAggregation_Watkins2024.ipynb) | partially reproduced |
+| QC-292 | [Expressive variational quantum circuits provide inherent privacy in federated learning](https://doi.org/10.48550/arxiv.2309.13002) | 2023 | [VQC_GradientInversionPrivacy_Kumar2023](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_GradientInversionPrivacy_Kumar2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_GradientInversionPrivacy_Kumar2023.ipynb) | partially reproduced |
 
 ### 28 QML Hardware Side Channel Crosstalk Attacks  (2 of 2 papers)
 

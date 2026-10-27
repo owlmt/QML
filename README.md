@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-330 of 333 papers have a final status: 297 partially reproduced, 33 blocked; 3 still to process. 297 notebooks are published across 30 of the 30 topic folders.
+331 of 333 papers have a final status: 1 reproduced, 297 partially reproduced, 33 blocked; 2 still to process. 298 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -347,11 +347,12 @@ this repository.
 | QC-194 | [Quantum Autoencoders for Anomaly Detection in Cybersecurity](https://arxiv.org/abs/2510.21837) | 2025 | [QAE_AnomalyDetection_Senthil2025](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QAE_AnomalyDetection_Senthil2025.ipynb) | partially reproduced |
 | QC-243 | [Exploring Unsupervised Anomaly Detection with Quantum Boltzmann Machines in Fraud Detection](https://doi.org/10.5220/0012326100003636) | 2024 | [QBM_AnomalyDetection_Stein2024](https://github.com/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QBM_AnomalyDetection_Stein2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/18_Cloud_Virtual_Environment_Threats/QBM_AnomalyDetection_Stein2024.ipynb) | partially reproduced |
 
-### 19 Cybersecurity Anomaly Detection  (1 of 4 papers)
+### 19 Cybersecurity Anomaly Detection  (2 of 4 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
 | QC-004 | [Anomaly detection speed-up by quantum restricted Boltzmann machines](https://doi.org/10.1038/s42005-023-01390-y) | 2023 | [QRBM_AnomalyDetection_Moro2023](https://github.com/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/QRBM_AnomalyDetection_Moro2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/QRBM_AnomalyDetection_Moro2023.ipynb) | partially reproduced |
+| QC-345 | [Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints](https://arxiv.org/abs/2610.05835) | 2026 | [VQC_AdaptiveShotAnomaly_Sudipto2026](https://github.com/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/VQC_AdaptiveShotAnomaly_Sudipto2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/19_Cybersecurity_Anomaly_Detection/VQC_AdaptiveShotAnomaly_Sudipto2026.ipynb) | reproduced |
 
 ### 20 Blockchain Attack Detection  (1 of 1 papers)
 

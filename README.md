@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-320 of 327 papers have a final status: 287 partially reproduced, 33 blocked; 7 still to process. 287 notebooks are published across 30 of the 30 topic folders.
+321 of 327 papers have a final status: 288 partially reproduced, 33 blocked; 6 still to process. 288 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -488,7 +488,7 @@ this repository.
 | QC-099 | [QML-PipeGuard: Drift-Aware Behavioral Fingerprinting for Quantum Machine Learning Pipeline Integrity](https://doi.org/10.48550/arxiv.2605.25066) | 2026 | [QSVM_PipelineIntegrity_Yeniaras2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QSVM_PipelineIntegrity_Yeniaras2026.ipynb) | partially reproduced |
 | QC-121 | [Security Aspects of Quantum Machine Learning (SecQML)](https://doi.org/10.24406/h-508719) | 2026 | [QNN_CrosstalkAttacks_Franco2026](https://github.com/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/28_QML_Hardware_Side_Channel_Crosstalk_Attacks/QNN_CrosstalkAttacks_Franco2026.ipynb) | partially reproduced |
 
-### 29 Adversarial Robustness Defences for QML  (32 of 72 papers)
+### 29 Adversarial Robustness Defences for QML  (33 of 72 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -524,6 +524,7 @@ this repository.
 | QC-329 | [Optimal Provable Robustness of Quantum Classification via Quantum Hypothesis Testing](https://doi.org/10.1038/s41534-021-00410-5) | 2021 | [QHT_CertifiedRobustness_Weber2021](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QHT_CertifiedRobustness_Weber2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QHT_CertifiedRobustness_Weber2021.ipynb) | partially reproduced |
 | QC-330 | [Provable Adversarial Robustness in the Quantum Model](https://doi.org/10.48550/arxiv.2112.09625) | 2021 | [QVerifier_ProvableRobustness_Barooti2021](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QVerifier_ProvableRobustness_Barooti2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QVerifier_ProvableRobustness_Barooti2021.ipynb) | partially reproduced |
 | QC-333 | [Quantum noise protects quantum classifiers against adversaries](https://doi.org/10.1103/PhysRevResearch.3.023153) | 2021 | [QNN_DepolarisingNoiseCertified_Du2021](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_DepolarisingNoiseCertified_Du2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QNN_DepolarisingNoiseCertified_Du2021.ipynb) | partially reproduced |
+| QC-338 | [A quantum active learning algorithm for sampling against adversarial attacks](https://doi.org/10.1088/1367-2630/ab976f) | 2020 | [QAL_AdversarialSampling_Casares2020](https://github.com/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAL_AdversarialSampling_Casares2020.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/29_Adversarial_Robustness_Defences_for_QML/QAL_AdversarialSampling_Casares2020.ipynb) | partially reproduced |
 
 ### 30 QML Defences Against ML Attacks  (7 of 7 papers)
 

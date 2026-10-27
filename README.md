@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-303 of 327 papers have a final status: 271 partially reproduced, 32 blocked; 24 still to process. 271 notebooks are published across 30 of the 30 topic folders.
+304 of 327 papers have a final status: 272 partially reproduced, 32 blocked; 23 still to process. 272 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -259,7 +259,7 @@ this repository.
 |---|---|---|---|---|
 | QC-151 | [Cyber Threat Detection Enabled by Quantum Computing](https://arxiv.org/abs/2512.18493) | 2025 | [HybridQSVM_SpamIDS_Chen2025](https://github.com/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/10_Spam_Detection/HybridQSVM_SpamIDS_Chen2025.ipynb) | partially reproduced |
 
-### 11 Vulnerability Software Supply Chain Attacks  (6 of 9 papers)
+### 11 Vulnerability Software Supply Chain Attacks  (7 of 9 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -269,6 +269,7 @@ this repository.
 | QC-267 | [Recurrent quantum embedding neural network and its application in vulnerability detection](https://doi.org/10.1038/s41598-024-63021-y) | 2024 | [RQENN_VulnerabilityDetection_Song2024](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/RQENN_VulnerabilityDetection_Song2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/RQENN_VulnerabilityDetection_Song2024.ipynb) | partially reproduced |
 | QC-275 | [Vulnerability detection in Java source code using a quantum convolutional neural network with self-attentive pooling, deep sequence, and graph-based hybrid feature extraction](https://doi.org/10.1038/s41598-024-56871-z) | 2024 | [QCNN_JavaVulnerability_Hussain2024](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QCNN_JavaVulnerability_Hussain2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QCNN_JavaVulnerability_Hussain2024.ipynb) | partially reproduced |
 | QC-283 | [Automated Vulnerability Detection in Source Code Using Quantum Natural Language Processing](https://arxiv.org/abs/2303.07525) | 2023 | [QLSTM_VulnerabilityDetection_Akter2023](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QLSTM_VulnerabilityDetection_Akter2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QLSTM_VulnerabilityDetection_Akter2023.ipynb) | partially reproduced |
+| QC-319 | [Quantum Machine Learning for Software Supply Chain Attacks: How Far Can We Go?](https://doi.org/10.1109/COMPSAC54236.2022.00097) | 2022 | [QSVM_SupplyChainClaMPReVeal_Masum2022](https://github.com/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QSVM_SupplyChainClaMPReVeal_Masum2022.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/11_Vulnerability_Software_Supply_Chain_Attacks/QSVM_SupplyChainClaMPReVeal_Masum2022.ipynb) | partially reproduced |
 
 ### 12 Cryptojacking Detection  (1 of 1 papers)
 

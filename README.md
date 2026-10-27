@@ -96,7 +96,7 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 
 ## Progress (2026-10-27)
-319 of 327 papers have a final status: 286 partially reproduced, 33 blocked; 8 still to process. 286 notebooks are published across 30 of the 30 topic folders.
+320 of 327 papers have a final status: 287 partially reproduced, 33 blocked; 7 still to process. 287 notebooks are published across 30 of the 30 topic folders.
 
 ## Notebooks by topic
 
@@ -459,7 +459,7 @@ this repository.
 | QC-271 | [The Quantum Imitation Game: Reverse Engineering of Quantum Machine Learning Models](https://doi.org/10.1145/3689939.3695783) | 2024 | [BruteForceRE_TranspiledQNN_Ghosh2024](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/BruteForceRE_TranspiledQNN_Ghosh2024.ipynb) | partially reproduced |
 | QC-307 | [QuMoS: A Framework for Preserving Security of Quantum Machine Learning Model](https://doi.org/10.1109/qce57702.2023.00123) | 2023 | [QuMoS_ModelSecurity_Wang2023](https://github.com/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/26_QML_Model_Extraction_Theft/QuMoS_ModelSecurity_Wang2023.ipynb) | partially reproduced |
 
-### 27 QML Privacy Data Leakage  (16 of 20 papers)
+### 27 QML Privacy Data Leakage  (17 of 20 papers)
 
 | QC-ID | Paper | Year | Notebook | Status |
 |---|---|---|---|---|
@@ -479,6 +479,7 @@ this repository.
 | QC-292 | [Expressive variational quantum circuits provide inherent privacy in federated learning](https://doi.org/10.48550/arxiv.2309.13002) | 2023 | [VQC_GradientInversionPrivacy_Kumar2023](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_GradientInversionPrivacy_Kumar2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_GradientInversionPrivacy_Kumar2023.ipynb) | partially reproduced |
 | QC-293 | [Federated Quantum Machine Learning with Differential Privacy](https://arxiv.org/abs/2310.06973) | 2023 | [QFL_DPPrivacyCatsDogs_Rofougaran2023](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_DPPrivacyCatsDogs_Rofougaran2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/QFL_DPPrivacyCatsDogs_Rofougaran2023.ipynb) | partially reproduced |
 | QC-304 | [Quantum machine learning with differential privacy](https://doi.org/10.1038/s41598-022-24082-z) | 2023 | [DPVQC_PrivateClassification_Watkins2023](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/DPVQC_PrivateClassification_Watkins2023.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/DPVQC_PrivateClassification_Watkins2023.ipynb) | partially reproduced |
+| QC-331 | [Quantum federated learning through blind quantum computing](https://doi.org/10.1007/s11433-021-1753-3) | 2021 | [VQC_BlindFederated_Li2021](https://github.com/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_BlindFederated_Li2021.ipynb) · [Colab](https://colab.research.google.com/github/owlmt/QML/blob/main/27_QML_Privacy_Data_Leakage/VQC_BlindFederated_Li2021.ipynb) | partially reproduced |
 
 ### 28 QML Hardware Side Channel Crosstalk Attacks  (2 of 2 papers)
 

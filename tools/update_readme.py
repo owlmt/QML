@@ -141,6 +141,27 @@ dataset shown in the atlas, cite the dataset's own reference given on its atlas 
 this repository.
 """
 
+LICENSING = """
+## Licensing
+
+This repository combines material under three licences; `LICENSING.md` gives the full scope,
+`COPYRIGHT.md` the ownership and `CONTRIBUTING.md` the terms for contributions. In short:
+
+| Material | Licence | SPDX |
+|---|---|---|
+| Source code: `tools/`, helper scripts and the **code cells** of every notebook | GNU Affero General Public License v3.0 only (`LICENSE`) | `AGPL-3.0-only` |
+| Original educational content: notebook **markdown cells**, explanations, documentation, original figures | Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (`LICENSES/CC-BY-NC-SA-4.0.txt`) | `CC-BY-NC-SA-4.0` |
+| The owner's original contributions to the catalogue (`manifest.csv`, `paper_index.csv`, the atlas CSVs) | Creative Commons Attribution 4.0 (`LICENSES/CC-BY-4.0.txt`) | `CC-BY-4.0` |
+
+The root `LICENSE` file covers the source code only, not the whole repository. The papers, datasets
+and software libraries the notebooks use are third-party works under their own terms and are not
+covered by any of these licences (details in `LICENSING.md`, section 5). AGPL permits commercial use
+of the code subject to its conditions; CC BY-NC-SA does not permit commercial use of the
+educational content, for which separate commercial licences are available from the copyright holder.
+Citation (above) and licensing are separate matters: the licences set the legal terms of reuse,
+the citation request is academic practice.
+"""
+
 
 def folders_of(row):
     return [t.strip() for t in row["Assigned cybersecurity topic folder(s)"].split(";") if t.strip()]
@@ -186,7 +207,7 @@ def main() -> int:
             raise SystemExit(f"{r['QC-ID']} notebook folder not in its assigned folders")
     folders = sorted({t for r in rows for t in folders_of(r) if t != UNRESOLVED})
 
-    out = [INTRO.format(n_rows=len(rows)), ATLAS, CITE]
+    out = [INTRO.format(n_rows=len(rows)), ATLAS, CITE, LICENSING]
 
     # ---- collection status -------------------------------------------------------------
     out.append(f"\n## Collection status ({dt.date.today().isoformat()})\n\n")
